@@ -12,7 +12,6 @@ def main():
 
 def get_city_urls(url):
     '''grab the source page from the root transit website in order to compile a list of all available cities for rating'''
-    print(url)
     source_page = requests.get(url).content
     
     '''Extract the urls related to each city from the source page'''
@@ -35,6 +34,7 @@ def get_route_info(city_urls):
         '''checks if the city url contains the string that we specified below as "kamloops". If its not found, that ciry url is skipped'''
         if test_city not in city_url:
             continue
+            
         '''Switch the url from "home" to "schedules-and-maps" be replacement. we use [1:] to exclude the extra / at the beginning of the string'''
         refined_city_url = city_url.replace('home','schedules-and-maps')[1:]
         
@@ -51,8 +51,10 @@ def get_route_info(city_urls):
             '''Same method as before'''
             route_url = '%s%s'%(url,route_url[1:])
             route_source_page = requests.get(route_url).content
+            
             '''finds the pattern route=\d+ (\d+ = more than one digit), and isolates the digit by splitting at route= and taking the second half'''
             route_number = re.findall(r'route=\d+',route_url)[0].split('route=')[-1]
+            
             '''finds occurences of trip departs along with the chars contained in between the [...]. Will implement window search to make more robust'''
             trip_info = [x for x in re.findall(r"trip departs[-\#_:<>\/'\"\\a-zA-Z0-9\.\(\)\& ]+", str(route_source_page))]
             
@@ -66,6 +68,7 @@ def get_route_info(city_urls):
                     '''Window search would fix this issue'''
                     print('\n\n\nERROR: Regular Expression fails on: %s \n %s \n\n\n' % (route_url, trip))
                     input()
+                    
                 '''Builds a list in a dictionary so that we can store the street and time of arrival for each bus route'''
                 '''we use the try except block in because we can't know wether or not the list has been preassigned or not, so we assume it exists. '''
                 '''If it doesnt exist, in the except block we create a list with the initial value we were going to append'''
