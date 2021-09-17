@@ -6,9 +6,7 @@ def main():
     city_urls = get_city_urls(url)
     route_info = get_route_info(city_urls)
     
-    for route in route_map:
-        print(route_map[route])
-        input()
+
 
 def get_city_urls(url):
     '''grab the source page from the root transit website in order to compile a list of all available cities for rating'''
@@ -51,9 +49,10 @@ def get_route_info(city_urls):
             '''Same method as before'''
             route_url = '%s%s'%(url,route_url[1:])
             route_source_page = requests.get(route_url).content
-            
+            with open('route_source_page.txt','w') as bug:
+                bug.write(str(route_source_page))
             '''finds the pattern route=\d+ (\d+ = more than one digit), and isolates the digit by splitting at route= and taking the second half'''
-            route_number = re.findall(r'route=\d+',route_url)[0].split('route=')[-1]
+            route_number = re.findall(r'route=\d+',route_url)[0]
             
             '''finds occurences of trip departs along with the chars contained in between the [...]. Will implement window search to make more robust'''
             trip_info = [x for x in re.findall(r"trip departs[-\#_:<>\/'\"\\a-zA-Z0-9\.\(\)\& ]+", str(route_source_page))]
@@ -72,11 +71,23 @@ def get_route_info(city_urls):
                 '''Builds a list in a dictionary so that we can store the street and time of arrival for each bus route'''
                 '''we use the try except block in because we can't know wether or not the list has been preassigned or not, so we assume it exists. '''
                 '''If it doesnt exist, in the except block we create a list with the initial value we were going to append'''
-                try:    route_map[route_number].append('%s|%s'%(street, time))
-                except: route_map[route_number] = ['%s|%s'%(street, time)]
-        
+                
+                try:
+                    route_map[route_number][street].append(time)
+                except:
+                    try:
+                        route_map[route_number][street] = [time]
+                    except:
+                        route_map[route_number] = {street: [time]}
+    with open('results.txt','w') as result:    
+        for route in route_map:
+            for street in route_map[route]:
+                result.write(str('\n %s | %s | %s \n'%(route,street,route_map[route][street])))
+                print('\n %s | %s | %s \n'%(route,street,route_map[route][street]))
+                input()
 
+        
 if __name__ == '__main__':
     url = 'https://www.bctransit.com/'
-    test_city = 'kamloops'
+    test_city = 'kelowna'
     main()
