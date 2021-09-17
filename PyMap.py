@@ -33,7 +33,7 @@ ox.config(use_cache=True, log_console=True)
 G = ox.graph_from_address('Okanagan College Exchange, Kelowna, Canada', dist=800, network_type='drive')
 
 print(origin,destination)
-print(origin[0])
+
 origin_node = ox.get_nearest_node(G, origin)
 destination_node = ox.get_nearest_node(G, destination)
 route = nx.shortest_path(G, origin_node, destination_node)
