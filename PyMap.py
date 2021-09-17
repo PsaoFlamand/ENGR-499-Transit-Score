@@ -1,9 +1,7 @@
 import networkx as nx
 import osmnx as ox
-import requests
 from geopy.geocoders import Nominatim
 import time
-from pprint import pprint
 
 app = Nominatim(user_agent="tutorial")
 
