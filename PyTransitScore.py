@@ -1,11 +1,22 @@
 import requests
 import re
-
+from geopy.geocoders import Nominatim
+import time
+import routingpy as rp
 
 def main():
     city_urls = get_city_urls(url)
     route_info = get_route_info(city_urls)
-    
+
+    with open('results.txt','w') as result:    
+        for route in route_info:
+            for street in route_info[route]:
+                print('street',street)
+                route_duration, route_distance= get_route_distance_duration('1018 Calder Court, Kelowna, Canada', f'{street}, Kelowna, Canada')
+                print(f'route_duration:{route_duration} | route_distance: {route_distance}')
+                result.write(str('\n %s | %s | %s \n'%(route,street,route_info[route][street])))
+                print('\n %s | %s | %s \n'%(route,street,route_info[route][street]))
+                input()    
 
 
 def get_city_urls(url):
@@ -79,15 +90,39 @@ def get_route_info(city_urls):
                         route_map[route_number][street] = [time]
                     except:
                         route_map[route_number] = {street: [time]}
-    with open('results.txt','w') as result:    
-        for route in route_map:
-            for street in route_map[route]:
-                result.write(str('\n %s | %s | %s \n'%(route,street,route_map[route][street])))
-                print('\n %s | %s | %s \n'%(route,street,route_map[route][street]))
-                input()
+    return route_map
 
-        
+
+def get_location_by_address(address):
+    """This function returns a location as raw from an address
+    will repeat until success"""
+    time.sleep(0.1)#Not sure if needed
+    try:
+        return app.geocode(address).raw
+    except:
+        return get_location_by_address(address)
+
+
+def get_route_distance_duration(origin_address, destination_address):
+    print('origin_address',origin_address)
+    print('destination_address',destination_address)
+    origin_location = get_location_by_address(origin_address)
+    origin  = [float(origin_location["lon"]), float(origin_location["lat"])]
+
+    destination_location = get_location_by_address(destination_address)
+    destination  = [float(destination_location["lon"]), float(destination_location["lat"])]
+
+    coordinates = [origin, destination]
+    api = rp.ORS(api_key="5b3ce3597851110001cf6248993396cdbce943a293d5fcf34c10bcee")
+
+    route = api.directions(locations=coordinates, profile='driving-car')
+
+    print(f'Duration: {route.duration/60} minutes \nDistance: {route.distance/1000} km')
+    return route.duration/60, route.distance/1000
+
+
 if __name__ == '__main__':
+    app = Nominatim(user_agent="tutorial")
     url = 'https://www.bctransit.com/'
     test_city = 'kelowna'
     main()
