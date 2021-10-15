@@ -1,0 +1,993 @@
+stopid,stopname,stopsite,latitude,longitude,syscode,system,muni
+102853,Queensway Exchange Bay B,Queensway_Exchange_Bay_B,49.887464,-119.495886,KEL,Kelowna Regional Transit System,Kelowna
+102854,Queensway Exchange Bay J,Queensway_Exchange_Bay_J,49.887357,-119.494738,KEL,Kelowna Regional Transit System,Kelowna
+102855,Queensway Exchange Bay I,Queensway_Exchange_Bay_I,49.887368,-119.494485,KEL,Kelowna Regional Transit System,Kelowna
+102856,Queensway Exchange Bay H,Queensway_Exchange_Bay_H,49.887365,-119.494192,KEL,Kelowna Regional Transit System,Kelowna
+102857,Queensway Exchange Bay G,Queensway_Exchange_Bay_G,49.887363,-119.493929,KEL,Kelowna Regional Transit System,Kelowna
+102858,Queensway Exchange Bay F,Queensway_Exchange_Bay_F,49.887254,-119.494045,KEL,Kelowna Regional Transit System,Kelowna
+102859,Queensway Exchange Bay E,Queensway_Exchange_Bay_E,49.887257,-119.494324,KEL,Kelowna Regional Transit System,Kelowna
+102860,Queensway Exchange Bay D,Queensway_Exchange_Bay_D,49.88726,-119.494602,KEL,Kelowna Regional Transit System,Kelowna
+102861,Queensway Exchange Bay C,Queensway_Exchange_Bay_C,49.887264,-119.494825,KEL,Kelowna Regional Transit System,Kelowna
+102862,Queensway Exchange Bay A,Queensway_Exchange_Bay_A,49.887462,-119.496218,KEL,Kelowna Regional Transit System,Kelowna
+102863,Rutland at Sumac (NB),NB_Rutland_FS_Sumac,49.90388,-119.38671,KEL,Kelowna Regional Transit System,Kelowna
+102865,Water at Doyle (NB),NB_Water_FS_Doyle,49.889233,-119.496511,KEL,Kelowna Regional Transit System,Kelowna
+102866,Doyle at St Paul (EB),EB_Doyle_FS_St Paul,49.888909,-119.491494,KEL,Kelowna Regional Transit System,Kelowna
+102867,Doyle at Bertram (WB),WB_Doyle_FS_Bertram,49.889073,-119.490581,KEL,Kelowna Regional Transit System,Kelowna
+102868,Water at Leon (SB),SB_Water_NS_Leon,49.884795,-119.496735,KEL,Kelowna Regional Transit System,Kelowna
+102869,Water at Harvey (NB),NB_Water_FS_Harvey,49.884199,-119.496348,KEL,Kelowna Regional Transit System,Kelowna
+102870,Water at Cawston (NB),NB_Water_FS_Cawston,49.892092,-119.496518,KEL,Kelowna Regional Transit System,Kelowna
+102874,Bernard at Bertram (WB),WB_Bernard_NS_Bertram,49.886381,-119.489869,KEL,Kelowna Regional Transit System,Kelowna
+102875,Richter at Lawrence (SB),SB_Richter_NS_Lawrence,49.885636,-119.488659,KEL,Kelowna Regional Transit System,Kelowna
+102877,Bernard at Richter (EB),EB_Bernard_FS_Richter,49.886248,-119.488177,KEL,Kelowna Regional Transit System,Kelowna
+102728,Spall 1440 block (SB),SB_1440_block_Spall,49.887981,-119.454629,KEL,Kelowna Regional Transit System,Kelowna
+102962,Burtch at Kelglen (WB),WB_Burtch_FS_Kelglen,49.883,-119.465106,KEL,Kelowna Regional Transit System,Kelowna
+102963,Burtch at Kelglen (EB),EB_Burtch_NS_Kelglen,49.882841,-119.465042,KEL,Kelowna Regional Transit System,Kelowna
+102964,Bernard at Noble (WB),WB_Bernard_FS_Noble,49.886353,-119.463665,KEL,Kelowna Regional Transit System,Kelowna
+102965,Clifton at Lambert (SB),SB_Clifton_NS_Lambert,49.895898,-119.465915,KEL,Kelowna Regional Transit System,Kelowna
+102966,Clifton at Lambert (NB),NB_Clifton_NS_Lambert,49.895442,-119.465642,KEL,Kelowna Regional Transit System,Kelowna
+102968,Clifton at Lynwood (SB),SB_Clifton_FS_Lynwood,49.897265,-119.465929,KEL,Kelowna Regional Transit System,Kelowna
+102969,Lawrence at Burtch (WB),WB_Lawrence_FS_Burtch,49.884564,-119.462915,KEL,Kelowna Regional Transit System,Kelowna
+102970,Burtch at Dickson (SB),SB_Burtch_FS_Dickson,49.878439,-119.46592,KEL,Kelowna Regional Transit System,Kelowna
+102971,Lawrence at Burtch (EB),EB_Lawrence_NS_Burtch,49.884388,-119.462891,KEL,Kelowna Regional Transit System,Kelowna
+102972,Burtch at Dickson (NB),NB_Burtch_NS_Dickson,49.878199,-119.465669,KEL,Kelowna Regional Transit System,Kelowna
+102973,Springfield at Burtch (WB),WB_Springfield_FS_Burtch,49.877036,-119.466345,KEL,Kelowna Regional Transit System,Kelowna
+102974,Bernard at Burtch (EB),EB_Bernard_FS_Burtch,49.886521,-119.46171,KEL,Kelowna Regional Transit System,Kelowna
+102975,Bernard at Cherry Cres W (SB),SB_Bernard_FS_Cherry Cres W,49.887003,-119.461213,KEL,Kelowna Regional Transit System,Kelowna
+102976,Pandosy at Raymer (SB),SB_Pandosy_NS_Raymer,49.865713,-119.491378,KEL,Kelowna Regional Transit System,Kelowna
+102977,High at Glengarry (EB),EB_High_NS_Glengarry,49.897692,-119.464104,KEL,Kelowna Regional Transit System,Kelowna
+102978,Gordon at Cameron (SB),SB_Gordon_FS_Cameron,49.86987,-119.474791,KEL,Kelowna Regional Transit System,Kelowna
+102979,Springfield at Burtch (EB),EB_Springfield_FS_Burtch,49.876726,-119.465007,KEL,Kelowna Regional Transit System,Kelowna
+102982,Pandosy at Groves (SB),SB_Pandosy_FS_Groves,49.863396,-119.491387,KEL,Kelowna Regional Transit System,Kelowna
+102984,Pandosy at Groves (NB),NB_Pandosy_FS_Groves,49.863954,-119.491055,KEL,Kelowna Regional Transit System,Kelowna
+102985,Harvey at Kirschner (EB),EB_Harvey_NS_Kirschner,49.881781,-119.459103,KEL,Kelowna Regional Transit System,Kelowna
+102986,Springfield at Dayton (WB),WB_Springfield_FS_Dayton,49.876856,-119.461731,KEL,Kelowna Regional Transit System,Kelowna
+102987,High at Tronson (WB),WB_High_NS_Tronson,49.898487,-119.462265,KEL,Kelowna Regional Transit System,Kelowna
+102988,High at Tronson (NB),NB_High_FS_Tronson,49.899143,-119.461287,KEL,Kelowna Regional Transit System,Kelowna
+102989,Harvey at Kirschner (WB),WB_Harvey_FS_Kirschner,49.882054,-119.458067,KEL,Kelowna Regional Transit System,Kelowna
+102990,Springfield at Dayton (EB),EB_Springfield_FS_Dayton,49.876722,-119.460622,KEL,Kelowna Regional Transit System,Kelowna
+102991,Bernard at Dilworth (WB),WB_Bernard_NS_Dilworth,49.888402,-119.456209,KEL,Kelowna Regional Transit System,Kelowna
+102993,Parkinson at Ufton (WB),WB_Parkinson_FS_Ufton,49.883206,-119.456353,KEL,Kelowna Regional Transit System,Kelowna
+102994,Parkinson at Ufton (EB),EB_Parkinson_NS_Ufton,49.883049,-119.455918,KEL,Kelowna Regional Transit System,Kelowna
+102995,Pandosy at Klo (NB),NB_Pandosy_FS_Klo,49.862286,-119.491115,KEL,Kelowna Regional Transit System,Kelowna
+102996,Springfield at Kirschner (WB),WB_Springfield_FS_Kirschner,49.87688,-119.458766,KEL,Kelowna Regional Transit System,Kelowna
+102997,KLO at Tutt (EB),EB_KLO_NS_Tutt,49.861885,-119.490847,KEL,Kelowna Regional Transit System,Kelowna
+102998,Rutland at Klassen (NB),NB_Rutland_FS_Klassen,49.907213,-119.386693,KEL,Kelowna Regional Transit System,Kelowna
+102999,Lakeshore at Cedar (SB),SB_Lakeshore_FS_Cedar,49.86167,-119.491383,KEL,Kelowna Regional Transit System,Kelowna
+103000,Glenmore at Dilworth (SB),SB_Glenmore_FS_Dilworth,49.88976,-119.454603,KEL,Kelowna Regional Transit System,Kelowna
+103002,Hwy 33 at Enterprise (SB),SB_Hwy 33_FS_Enterprise,49.890659,-119.423609,KEL,Kelowna Regional Transit System,Kelowna
+103003,Glenmore at Bernard (NB),NB_Glenmore_FS_Bernard,49.889047,-119.454197,KEL,Kelowna Regional Transit System,Kelowna
+103004,Springfield at Kirschner (EB),EB_Springfield_FS_Kirschner,49.876775,-119.457969,KEL,Kelowna Regional Transit System,Kelowna
+103005,High at Kennedy (WB),WB_High_FS_Kennedy,49.900463,-119.458494,KEL,Kelowna Regional Transit System,Kelowna
+103006,Gordon at Raymer (SB),SB_Gordon_FS_Raymer,49.864562,-119.474426,KEL,Kelowna Regional Transit System,Kelowna
+103007,Glenmore at Highland Dr N (SB),SB_Glenmore_FS_Highland Dr N,49.894025,-119.454601,KEL,Kelowna Regional Transit System,Kelowna
+103008,Glenmore at Highland Dr N (NB),NB_Glenmore_NS_Highland Dr N,49.894068,-119.454154,KEL,Kelowna Regional Transit System,Kelowna
+103009,Enterprise at Spall (EB),EB_Enterprise_FS_Spall,49.884053,-119.453544,KEL,Kelowna Regional Transit System,Kelowna
+103010,High at Kennedy (EB),EB_High_FS_Kennedy,49.900379,-119.457536,KEL,Kelowna Regional Transit System,Kelowna
+103011,Spall at Windsor (SB),SB_Spall_FS_Windsor,49.880412,-119.454699,KEL,Kelowna Regional Transit System,Kelowna
+103012,Spall at Windsor (NB),NB_Spall_FS_Windsor,49.880864,-119.454453,KEL,Kelowna Regional Transit System,Kelowna
+103013,Glenmore at Mountain (SB),SB_Glenmore_FS_Mountain,49.895917,-119.454562,KEL,Kelowna Regional Transit System,Kelowna
+103014,Springfield at Spall (WB),WB_Springfield_FS_Spall,49.877184,-119.455971,KEL,Kelowna Regional Transit System,Kelowna
+103015,Enterprise at Spall (WB),WB_Enterprise_NS_Spall,49.884218,-119.452895,KEL,Kelowna Regional Transit System,Kelowna
+103016,Lakeshore 3180 block (NB),NB_3180_block_Lakeshore,49.860392,-119.49107,KEL,Kelowna Regional Transit System,Kelowna
+103018,Spall at Kent (SB),SB_Spall_NS_Kent,49.878642,-119.454744,KEL,Kelowna Regional Transit System,Kelowna
+103020,KLO at Casorso (EB),EB_KLO_FS_Casorso,49.860845,-119.484909,KEL,Kelowna Regional Transit System,Kelowna
+103021,Mission Rec Exchange Bay A,Mission_Rec_Exchange_Bay_A,49.837086,-119.480457,KEL,Kelowna Regional Transit System,Kelowna
+103022,Mission Rec Exchange Bay B,Mission_Rec_Exchange_Bay_B,49.836917,-119.480506,KEL,Kelowna Regional Transit System,Kelowna
+103023,Mission Rec Exchange Bay C,Mission_Rec_Exchange_Bay_C,49.8366,-119.480617,KEL,Kelowna Regional Transit System,Kelowna
+103024,Spall at Kent (NB),NB_Spall_FS_Kent,49.878878,-119.454468,KEL,Kelowna Regional Transit System,Kelowna
+103025,Lakeshore 3190 block (SB),SB_3190_block_Lakeshore,49.860257,-119.491351,KEL,Kelowna Regional Transit System,Kelowna
+103026,Glenmore at Mountain (NB),NB_Glenmore_FS_Mountain,49.896786,-119.454079,KEL,Kelowna Regional Transit System,Kelowna
+103027,Westside at Nancee Way (EB),EB_Westside_FS_Nancee Way,49.883037,-119.538149,KEL,Kelowna Regional Transit System,Tsinstikeptum 10
+103028,Okanagan College Exchange Bay A,Okanagan_College_Exchange_Bay_A,49.861347,-119.479332,KEL,Kelowna Regional Transit System,Kelowna
+103098,Yates at Valley (EB),EB_Yates_NS_Valley,49.908634,-119.447272,KEL,Kelowna Regional Transit System,Kelowna
+103099,Dilworth at Leckie (NB),NB_Dilworth_FS_Leckie,49.887,-119.437646,KEL,Kelowna Regional Transit System,Kelowna
+103101,Dilworth at Enterprise (SB),SB_Dilworth_NS_Enterprise,49.884382,-119.437852,KEL,Kelowna Regional Transit System,Kelowna
+103102,Dilworth at Enterprise (NB),NB_Dilworth_FS_Enterprise,49.884511,-119.437641,KEL,Kelowna Regional Transit System,Kelowna
+103103,Glenmore at Watson (SB),SB_Glenmore_FS_Watson,49.91122,-119.449423,KEL,Kelowna Regional Transit System,Kelowna
+103104,Glenmore at Cross (SB),SB_Glenmore_FS_Cross,49.922403,-119.439953,KEL,Kelowna Regional Transit System,Kelowna
+103105,Enterprise at Dilworth (EB),EB_Enterprise_FS_Dilworth,49.883179,-119.436896,KEL,Kelowna Regional Transit System,Kelowna
+103107,Glenmore at Watson (NB),NB_Glenmore_FS_Watson,49.911648,-119.448733,KEL,Kelowna Regional Transit System,Kelowna
+103108,Dilworth at Baron (SB),SB_Dilworth_FS_Baron,49.878892,-119.437067,KEL,Kelowna Regional Transit System,Kelowna
+103110,Westlake at Keloka (NB),NB_Westlake_FS_Keloka,49.88711,-119.555683,KEL,Kelowna Regional Transit System,West Kelowna
+103111,Summit at Skeena (WB),WB_Summit_FS_Skeena,49.898599,-119.43644,KEL,Kelowna Regional Transit System,Kelowna
+103113,Lakeshore 3730 block (NB),NB_3730_block_Lakeshore,49.848947,-119.48604,KEL,Kelowna Regional Transit System,Kelowna
+103114,KLO at Como (EB),EB_KLO_NS_Como,49.860858,-119.450545,KEL,Kelowna Regional Transit System,Kelowna
+103115,Westlake at Horizon (EB),EB_Westlake_NS_Horizon,49.885028,-119.55698,KEL,Kelowna Regional Transit System,West Kelowna
+103116,KLO at Como (WB),WB_KLO_FS_Como,49.861047,-119.449973,KEL,Kelowna Regional Transit System,Kelowna
+103117,Summit at Skeena (EB),EB_Summit_FS_Skeena,49.898808,-119.435562,KEL,Kelowna Regional Transit System,Kelowna
+103118,Dilworth at Omineca (SB),SB_Dilworth_FS_Omineca,49.891224,-119.433266,KEL,Kelowna Regional Transit System,Kelowna
+103119,Lakeshore 3780 block (SB),SB_3780_block_Lakeshore,49.848548,-119.486383,KEL,Kelowna Regional Transit System,Kelowna
+103121,Baron at Underhill (EB),EB_Baron_FS_Underhill,49.879547,-119.434141,KEL,Kelowna Regional Transit System,Kelowna
+103122,Enterprise at Leckie (NB),NB_Enterprise_NS_Leckie,49.884015,-119.432704,KEL,Kelowna Regional Transit System,Kelowna
+103123,Dilworth at Omineca (NB),NB_Dilworth_FS_Omineca,49.891488,-119.432565,KEL,Kelowna Regional Transit System,Kelowna
+103125,Baron at Durnin (WB),WB_Baron_FS_Durnin,49.879677,-119.433265,KEL,Kelowna Regional Transit System,Kelowna
+103126,Enterprise at Leckie (SB),SB_Enterprise_NS_Leckie,49.885614,-119.431935,KEL,Kelowna Regional Transit System,Kelowna
+103127,Enterprise at Hunter (NB),NB_Enterprise_NS_Hunter,49.885917,-119.431644,KEL,Kelowna Regional Transit System,Kelowna
+103128,Summit at Lillooet (EB),EB_Summit_NS_Lillooet,49.899275,-119.433616,KEL,Kelowna Regional Transit System,Kelowna
+103129,Summit at Lillooet (WB),WB_Summit_FS_Lillooet,49.899363,-119.433079,KEL,Kelowna Regional Transit System,Kelowna
+103130,Springfield at Durnin (WB),WB_Springfield_FS_Durnin,49.877921,-119.432614,KEL,Kelowna Regional Transit System,Kelowna
+103131,Glenmore at Ballou (SB),SB_Glenmore_FS_Ballou,49.915649,-119.446367,KEL,Kelowna Regional Transit System,Kelowna
+103132,Cross at Glenmore (WB),WB_Cross_FS_Glenmore,49.923445,-119.440066,KEL,Kelowna Regional Transit System,Kelowna
+103133,Lakeshore at Cook (NB),NB_Lakeshore_FS_Cook,49.846219,-119.487269,KEL,Kelowna Regional Transit System,Kelowna
+103134,Anders at Thacker (EB),EB_Anders_NS_Thacker,49.859909,-119.545448,KEL,Kelowna Regional Transit System,West Kelowna
+103135,Anders at Thacker (WB),WB_Anders_FS_Thacker,49.860043,-119.545738,KEL,Kelowna Regional Transit System,West Kelowna
+103136,Glenmore at Kane (NB),NB_Glenmore_FS_Kane,49.916157,-119.445628,KEL,Kelowna Regional Transit System,Kelowna
+103138,Springfield at Durnin (EB),EB_Springfield_FS_Durnin,49.87798,-119.430779,KEL,Kelowna Regional Transit System,Kelowna
+103139,Lakeshore at Cook (SB),SB_Lakeshore_FS_Cook,49.845185,-119.487902,KEL,Kelowna Regional Transit System,Kelowna
+103140,Kane at Sutton (EB),EB_Kane_NS_Sutton,49.91524,-119.443902,KEL,Kelowna Regional Transit System,Kelowna
+103141,Enterprise at Banks (WB),WB_Enterprise_FS_Banks,49.888696,-119.428665,KEL,Kelowna Regional Transit System,Kelowna
+103142,Baron at Leckie (WB),WB_Baron_FS_Leckie,49.882505,-119.428758,KEL,Kelowna Regional Transit System,Kelowna
+103143,Summit at Purcell (SB),SB_Summit_NS_Purcell,49.899639,-119.430672,KEL,Kelowna Regional Transit System,Kelowna
+103144,Baron at Leckie (EB),EB_Baron_NS_Leckie,49.882448,-119.428555,KEL,Kelowna Regional Transit System,Kelowna
+103145,Dilworth at Cascade (WB),WB_Dilworth_NS_Cascade,49.892928,-119.428223,KEL,Kelowna Regional Transit System,Kelowna
+103146,KLO at Spiers (WB),WB_KLO_NS_Spiers,49.860618,-119.44219,KEL,Kelowna Regional Transit System,Kelowna
+103147,Dilworth at Cascade (EB),EB_Dilworth_FS_Cascade,49.892758,-119.428106,KEL,Kelowna Regional Transit System,Kelowna
+103148,Summit at Nahanni (EB),EB_Summit_NS_Nahanni,49.899911,-119.430096,KEL,Kelowna Regional Transit System,Kelowna
+103149,KLO at Spiers (EB),EB_KLO_FS_Spiers,49.86048,-119.442407,KEL,Kelowna Regional Transit System,Kelowna
+103151,Lakeshore at Truswell (NB),NB_Lakeshore_FS_Truswell,49.843897,-119.487698,KEL,Kelowna Regional Transit System,Kelowna
+103152,Lakeshore at Truswell (SB),SB_Lakeshore_NS_Truswell,49.843814,-119.488023,KEL,Kelowna Regional Transit System,Kelowna
+103153,Black Mountain at Large (NB),NB_Black Mountain_NS_Large,49.872011,-119.348474,KEL,Kelowna Regional Transit System,Kelowna
+103154,Glenmore at Dallas (SB),SB_Glenmore_FS_Dallas,49.917991,-119.444749,KEL,Kelowna Regional Transit System,Kelowna
+103156,Springfield at Leckie (WB),WB_Springfield_FS_Leckie,49.879644,-119.427608,KEL,Kelowna Regional Transit System,Kelowna
+103158,Springfield at Leckie (EB),EB_Springfield_NS_Leckie,49.879321,-119.427083,KEL,Kelowna Regional Transit System,Kelowna
+103159,Glenmore 330 block (NB),NB_330_block_Glenmore,49.918406,-119.444033,KEL,Kelowna Regional Transit System,Kelowna
+103160,Thacker at Douglas (NB),NB_Thacker_FS_Douglas,49.856391,-119.545408,KEL,Kelowna Regional Transit System,West Kelowna
+103161,Westlake at Starlight (NB),NB_Westlake_FS_Starlight,49.879147,-119.564259,KEL,Kelowna Regional Transit System,West Kelowna
+103162,Boucherie at Stuart (SB),SB_Boucherie_FS_Stuart,49.864125,-119.555125,KEL,Kelowna Regional Transit System,West Kelowna
+103163,Anders at Olalla (EB),EB_Anders_NS_Olalla,49.860124,-119.550637,KEL,Kelowna Regional Transit System,West Kelowna
+103164,Anders at Olalla (WB),WB_Anders_FS_Olalla,49.860326,-119.551986,KEL,Kelowna Regional Transit System,West Kelowna
+103029,Celment at Cerise (EB),EB_Celment_NS_Cerise,49.892367,-119.4706,KEL,Kelowna Regional Transit System,Kelowna
+103030,Okanagan College Exchange Bay B,Okanagan_College_Exchange_Bay_B,49.861047,-119.479879,KEL,Kelowna Regional Transit System,Kelowna
+103031,Clement at Cerise (WB),WB_Clement_FS_Cerise,49.892767,-119.471381,KEL,Kelowna Regional Transit System,Kelowna
+103033,Springfield at Spall (EB),EB_Springfield_FS_Spall,49.877146,-119.453851,KEL,Kelowna Regional Transit System,Kelowna
+103035,Glenmore at High (SB),SB_Glenmore_FS_High,49.899961,-119.454414,KEL,Kelowna Regional Transit System,Kelowna
+103036,Enterprise at Hardy (EB),EB_Enterprise_NS_Hardy,49.883132,-119.450303,KEL,Kelowna Regional Transit System,Kelowna
+103038,KLO at Lowe (EB),EB_KLO_FS_Lowe,49.860817,-119.475552,KEL,Kelowna Regional Transit System,Kelowna
+103039,Lanfranco at Lakeshore (WB),WB_Lanfranco_NS_Lakeshore,49.858134,-119.490325,KEL,Kelowna Regional Transit System,Kelowna
+103040,Casorso at Lanfranco (SB),SB_Casorso_NS_Lanfranco,49.858309,-119.485527,KEL,Kelowna Regional Transit System,Kelowna
+103041,Glenmore AT Summit (NB),NB_Glenmore_FS_Summit,49.901873,-119.453518,KEL,Kelowna Regional Transit System,Kelowna
+103042,KLO at Holland (WB),WB_KLO_FS_Holland,49.861039,-119.472745,KEL,Kelowna Regional Transit System,Kelowna
+103043,Westside at Bear Creek (SB),SB_Westside_FS_Bear Creek,49.892279,-119.542665,KEL,Kelowna Regional Transit System,Tsinstikeptum 10
+103044,Lakeshore at Lanfranco (NB),NB_Lakeshore_NS_Lanfranco,49.857142,-119.491101,KEL,Kelowna Regional Transit System,Kelowna
+103045,KLO at Holland (EB),EB_KLO_NS_Holland,49.860816,-119.472523,KEL,Kelowna Regional Transit System,Kelowna
+103046,Enterprise at Hardy (WB),WB_Enterprise_FS_Hardy,49.883348,-119.448108,KEL,Kelowna Regional Transit System,Kelowna
+103047,Westside 1520 block (SB),SB_1520_block_Westside,49.885506,-119.544146,KEL,Kelowna Regional Transit System,Tsinstikeptum 10
+103048,Glenmore at Glenmeadows (SB),SB_Glenmore_FS_Glenmeadows,49.904053,-119.453378,KEL,Kelowna Regional Transit System,Kelowna
+103049,Hwy 97 N at Banks (WB),WB_Hwy 97 N_FS_Banks,49.885664,-119.426698,KEL,Kelowna Regional Transit System,Kelowna
+103050,Enterprise at Hardy (EB),EB_Enterprise_FS_Hardy,49.883174,-119.446939,KEL,Kelowna Regional Transit System,Kelowna
+103051,Glenmore 720 block (NB),NB_720_block_Glenmore,49.903999,-119.452931,KEL,Kelowna Regional Transit System,Kelowna
+103052,Summit at Valley (WB),WB_Summit_NS_Valley,49.901196,-119.450258,KEL,Kelowna Regional Transit System,Kelowna
+103053,Summit at Valley (EB),EB_Summit_FS_Valley,49.901043,-119.450217,KEL,Kelowna Regional Transit System,Kelowna
+103054,KLO 1470 block (WB),WB_1470_block_KLO,49.861149,-119.4663,KEL,Kelowna Regional Transit System,Kelowna
+103056,Springfield at Barlee (EB),EB_Springfield_FS_Barlee,49.877088,-119.447809,KEL,Kelowna Regional Transit System,Kelowna
+103057,Springfield at Barlee (WB),WB_Springfield_NS_Barlee,49.877352,-119.447374,KEL,Kelowna Regional Transit System,Kelowna
+103058,Enterprise at Cooper (EB),EB_Enterprise_NS_Cooper,49.883158,-119.444586,KEL,Kelowna Regional Transit System,Kelowna
+103059,KLO at St Amand (EB),EB_KLO_NS_St Amand,49.860797,-119.466759,KEL,Kelowna Regional Transit System,Kelowna
+103060,Enterprise at Cooper (WB),WB_Enterprise_FS_Cooper,49.883333,-119.444378,KEL,Kelowna Regional Transit System,Kelowna
+103061,Harvey at Cooper (WB),WB_Harvey_FS_Cooper,49.882084,-119.444669,KEL,Kelowna Regional Transit System,Kelowna
+103062,Lakeshore at Swordy (SB),SB_Lakeshore_NS_Swordy,49.854748,-119.490134,KEL,Kelowna Regional Transit System,Kelowna
+103063,Bear Creek at McNaughton (SB),SB_Bear Creek_NS_McNaughton,49.892948,-119.547491,KEL,Kelowna Regional Transit System,West Kelowna
+103065,Boucherie at Carrall (EB),EB_Boucherie_FS_Carrall,49.825114,-119.609481,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103066,Parkinson at Bear Creek (SB),SB_Parkinson_NS_Bear Creek,49.898933,-119.547025,KEL,Kelowna Regional Transit System,West Kelowna
+103067,Harvey at Cooper (EB),EB_Harvey_FS_Cooper,49.881738,-119.442157,KEL,Kelowna Regional Transit System,Kelowna
+103069,Orchard Park Exchange Bay A,Orchard_Park_Exchange_Bay_A,49.880248,-119.442588,KEL,Kelowna Regional Transit System,Kelowna
+103070,Orchard Park Exchange Bay B,Orchard_Park_Exchange_Bay_B,49.880399,-119.442588,KEL,Kelowna Regional Transit System,Kelowna
+103071,Orchard Park Exchange Bay C,Orchard_Park_Exchange_Bay_C,49.880564,-119.442564,KEL,Kelowna Regional Transit System,Kelowna
+103072,Orchard Park Exchange Bay D,Orchard_Park_Exchange_Bay_D,49.880639,-119.442281,KEL,Kelowna Regional Transit System,Kelowna
+103073,Orchard Park Exchange Bay E,Orchard_Park_Exchange_Bay_E,49.880462,-119.442285,KEL,Kelowna Regional Transit System,Kelowna
+103075,Orchard Park Exchange Bay F,Orchard_Park_Exchange_Bay_F,49.88031,-119.442278,KEL,Kelowna Regional Transit System,Kelowna
+103076,Enterprise at Cooper (EB),EB_Enterprise_FS_Cooper,49.883161,-119.441662,KEL,Kelowna Regional Transit System,Kelowna
+103079,Orchard Park Exchange Bay G,Orchard_Park_Exchange_Bay_G,49.880038,-119.442283,KEL,Kelowna Regional Transit System,Kelowna
+103078,Boucherie at Hayman (WB),WB_Boucherie_FS_Hayman,49.872673,-119.544716,KEL,Kelowna Regional Transit System,West Kelowna
+103077,Orchard Park Exchange Bay H,Orchard_Park_Exchange_Bay_H,49.879624,-119.442285,KEL,Kelowna Regional Transit System,Kelowna
+103080,Glenmore at Yates (SB),SB_Glenmore_FS_Yates,49.909103,-119.450889,KEL,Kelowna Regional Transit System,Kelowna
+103081,McCurdy at Alsgard (WB),WB_McCurdy_FS_Alsgard,49.901251,-119.406116,KEL,Kelowna Regional Transit System,Kelowna
+103082,Summit at Denali (SB),SB_Summit_FS_Denali,49.898838,-119.442599,KEL,Kelowna Regional Transit System,Kelowna
+103083,Summit at Denali (NB),NB_Summit_NS_Denali,49.898413,-119.442305,KEL,Kelowna Regional Transit System,Kelowna
+103084,KLO at Benvoulin (WB),WB_KLO_FS_Benvoulin,49.861043,-119.458537,KEL,Kelowna Regional Transit System,Kelowna
+103086,Springfield at Cooper (EB),EB_Springfield_FS_Cooper,49.877101,-119.441644,KEL,Kelowna Regional Transit System,Kelowna
+103087,Glenmore at Yates (NB),NB_Glenmore_FS_Yates,49.909656,-119.450055,KEL,Kelowna Regional Transit System,Kelowna
+103088,KLO at Benvoulin (EB),EB_KLO_NS_Benvoulin,49.860816,-119.459949,KEL,Kelowna Regional Transit System,Kelowna
+103089,Summit at Lillooet (WB),WB_Summit_FS_Lillooet,49.895688,-119.439967,KEL,Kelowna Regional Transit System,Kelowna
+103090,Yates at Glenmore (EB),EB_Yates_FS_Glenmore,49.908908,-119.448941,KEL,Kelowna Regional Transit System,Kelowna
+103091,Lakeshore at Bechard (NB),NB_Lakeshore_NS_Bechard,49.851516,-119.486806,KEL,Kelowna Regional Transit System,Kelowna
+103092,Enterprise at Dilworth (WB),WB_Enterprise_FS_Dilworth,49.883316,-119.43862,KEL,Kelowna Regional Transit System,Kelowna
+103093,Lakeshore at Bechard (SB),SB_Lakeshore_FS_Bechard,49.851509,-119.487041,KEL,Kelowna Regional Transit System,Kelowna
+103094,Parkinson at Westlake (NB),NB_Parkinson_FS_Westlake,49.891248,-119.552765,KEL,Kelowna Regional Transit System,West Kelowna
+103095,Summit at Chilcotin (EB),EB_Summit_FS_Chilcotin,49.895922,-119.439118,KEL,Kelowna Regional Transit System,Kelowna
+103096,Dilworth at Leckie (SB),SB_Dilworth_NS_Leckie,49.886988,-119.437851,KEL,Kelowna Regional Transit System,Kelowna
+103097,Springfield at Benvoulin (WB),WB_Springfield_FS_Benvoulin,49.877337,-119.440136,KEL,Kelowna Regional Transit System,Kelowna
+103197,Thacker at Beverly (WB),WB_Thacker_NS_Beverly,49.852725,-119.548516,KEL,Kelowna Regional Transit System,West Kelowna
+103198,Lynrick at Loseth (WB),WB_Lynrick_NS_Loseth,49.867608,-119.353361,KEL,Kelowna Regional Transit System,Kelowna
+103201,Ziprick at Terai (SB),SB_Ziprick_NS_Terai,49.888304,-119.417729,KEL,Kelowna Regional Transit System,Kelowna
+103202,Springfield at Ziprick (WB),WB_Springfield_FS_Ziprick,49.880595,-119.41854,KEL,Kelowna Regional Transit System,Kelowna
+103203,Valley at Cross (NB),NB_Valley_NS_Cross,49.919185,-119.434744,KEL,Kelowna Regional Transit System,Kelowna
+103204,Ziprick at Terai (NB),NB_Ziprick_FS_Terai,49.888049,-119.417466,KEL,Kelowna Regional Transit System,Kelowna
+103205,Springfield at Ziprick (EB),EB_Springfield_NS_Ziprick,49.880365,-119.418405,KEL,Kelowna Regional Transit System,Kelowna
+103206,Snowsell at Cross (NB),NB_Snowsell_FS_Cross,49.924458,-119.441725,KEL,Kelowna Regional Transit System,Kelowna
+103213,Enterprise 2660 block (EB),EB_2660_block_Enterprise,49.895239,-119.41647,KEL,Kelowna Regional Transit System,Kelowna
+103214,Lakeshore at Lequime (NB),NB_Lakeshore_FS_Lequime,49.836528,-119.487132,KEL,Kelowna Regional Transit System,Kelowna
+103215,Enterprise at 2660 Blk (WB),WB_Enterprise_AT_2660 Blk,49.895542,-119.416067,KEL,Kelowna Regional Transit System,Kelowna
+103216,Ogden at Boucherie (WB),WB_Ogden_NS_Boucherie,49.853031,-119.555714,KEL,Kelowna Regional Transit System,West Kelowna
+103217,Ogden at Boucherie (EB),EB_Ogden_FS_Boucherie,49.852883,-119.555634,KEL,Kelowna Regional Transit System,West Kelowna
+103219,Alhambra at Brentwood (NB),NB_Alhambra_FS_Brentwood,49.862007,-119.566777,KEL,Kelowna Regional Transit System,West Kelowna
+102879,Richter at Wilson (SB),SB_Richter_FS_Wilson,49.891021,-119.488622,KEL,Kelowna Regional Transit System,Kelowna
+102880,Richter at Fuller (NB),NB_Richter_FS_Fuller,49.890611,-119.48836,KEL,Kelowna Regional Transit System,Kelowna
+102881,Pandosy at Buckland (SB),SB_Pandosy_FS_Buckland,49.881662,-119.495149,KEL,Kelowna Regional Transit System,Kelowna
+102882,Leon at Richter (WB),WB_Leon_NS_Richter,49.884579,-119.486903,KEL,Kelowna Regional Transit System,Kelowna
+102883,Pandosy at Buckland (NB),NB_Pandosy_NS_Buckland,49.88135,-119.494939,KEL,Kelowna Regional Transit System,Kelowna
+102884,Leon at Richter (EB),EB_Leon_FS_Richter,49.884417,-119.48666,KEL,Kelowna Regional Transit System,Kelowna
+102885,Richter at Clement (SB),SB_Richter_FS_Clement,49.893209,-119.488618,KEL,Kelowna Regional Transit System,Kelowna
+102886,Richter at Dehart (SB),SB_Richter_NS_Dehart,49.881921,-119.488697,KEL,Kelowna Regional Transit System,Kelowna
+102887,Richter at Dehart (NB),NB_Richter_FS_Dehart,49.882196,-119.48838,KEL,Kelowna Regional Transit System,Kelowna
+102888,Ellis at Industrial (NB),NB_Ellis_NS_Industrial,49.895813,-119.493414,KEL,Kelowna Regional Transit System,Kelowna
+102889,Bernard at Ethel (WB),WB_Bernard_FS_Ethel,49.886355,-119.483125,KEL,Kelowna Regional Transit System,Kelowna
+102890,Leon at Ethel (WB),WB_Leon_FS_Ethel,49.884535,-119.483686,KEL,Kelowna Regional Transit System,Kelowna
+102891,Leon at Ethel (EB),EB_Leon_NS_Ethel,49.884407,-119.483862,KEL,Kelowna Regional Transit System,Kelowna
+102892,Pandosy at Sutherland (NB),NB_Pandosy_FS_Sutherland,49.879699,-119.493572,KEL,Kelowna Regional Transit System,Kelowna
+102893,Bernard at Ethel (EB),EB_Bernard_FS_Ethel,49.886229,-119.482354,KEL,Kelowna Regional Transit System,Kelowna
+103348,McCulloch 3280 block (SB),SB_3280_block_McCulloch,49.846408,-119.410008,KEL,Kelowna Regional Transit System,Kelowna
+103349,McCulloch 3280 block (NB),NB_3280_block_McCulloch,49.84644,-119.409539,KEL,Kelowna Regional Transit System,Kelowna
+103351,Boucherie at Mission Hill (NB),NB_Boucherie_FS_Mission Hill,49.840131,-119.573593,KEL,Kelowna Regional Transit System,West Kelowna
+103354,Leathead at Ford (WB),WB_Leathead_NS_Ford,49.895649,-119.388095,KEL,Kelowna Regional Transit System,Kelowna
+103355,Lakeshore at Keith (SB),SB_Lakeshore_FS_Keith,49.818293,-119.493994,KEL,Kelowna Regional Transit System,Kelowna
+103357,Springfield at Neptune (EB),EB_Springfield_FS_Neptune,49.877662,-119.388535,KEL,Kelowna Regional Transit System,Kelowna
+103359,Boucherie at Mission Hill (SB),SB_Boucherie_FS_Mission Hill,49.839745,-119.574077,KEL,Kelowna Regional Transit System,West Kelowna
+103360,Fitzpatrick at Stafford (EB),EB_Fitzpatrick_FS_Stafford,49.907189,-119.391208,KEL,Kelowna Regional Transit System,Kelowna
+103361,Rutland Rd S at Robson Rd E (SB),SB_Rutland Rd S_FS_Robson Rd E,49.886768,-119.387022,KEL,Kelowna Regional Transit System,Kelowna
+103362,Hollywood at Sexsmith (SB),SB_Hollywood_NS_Sexsmith,49.918641,-119.398127,KEL,Kelowna Regional Transit System,Kelowna
+103363,Rutland Rd S at Gray (SB),SB_Rutland Rd S_NS_Gray,49.888478,-119.38707,KEL,Kelowna Regional Transit System,Kelowna
+103364,Rutland Rd S at Holbrook Rd E (SB),SB_Rutland Rd S_NS_Holbrook Rd E,49.885199,-119.387079,KEL,Kelowna Regional Transit System,Kelowna
+103365,Rutland Rd N at McIntosh (SB),SB_Rutland Rd N_FS_McIntosh,49.890902,-119.387055,KEL,Kelowna Regional Transit System,Kelowna
+103366,Rutland Rd S at Jupiter (SB),SB_Rutland Rd S_FS_Jupiter,49.879342,-119.387829,KEL,Kelowna Regional Transit System,Kelowna
+103367,Rutland Rd S at Jupiter (NB),NB_Rutland Rd S_FS_Jupiter,49.880053,-119.387594,KEL,Kelowna Regional Transit System,Kelowna
+103368,Crawford 1230 block (SB),SB_1230_block_Crawford,49.820218,-119.466927,KEL,Kelowna Regional Transit System,Kelowna
+103369,Rutland Rd S at Benchview (SB),SB_Rutland Rd S_FS_Benchview,49.882905,-119.387127,KEL,Kelowna Regional Transit System,Kelowna
+103370,Rutland Rd N at Mugford (SB),SB_Rutland Rd N_NS_Mugford,49.892748,-119.387035,KEL,Kelowna Regional Transit System,Kelowna
+103372,Rutland Rd S at Belgo (NB),NB_Rutland Rd S_FS_Belgo,49.882131,-119.386888,KEL,Kelowna Regional Transit System,Kelowna
+103373,Rutland Rd N at Mugford (NB),NB_Rutland Rd N_FS_Mugford,49.892957,-119.386799,KEL,Kelowna Regional Transit System,Kelowna
+103374,Hollywood at Sexsmith (NB),NB_Hollywood_FS_Sexsmith,49.91864,-119.397522,KEL,Kelowna Regional Transit System,Kelowna
+103375,Rutland Rd N at Hardie (SB),SB_Rutland Rd N_NS_Hardie,49.895118,-119.387022,KEL,Kelowna Regional Transit System,Kelowna
+103376,Rutland Rd N at Briarwood (NB),NB_Rutland Rd N_FS_Briarwood,49.894327,-119.386761,KEL,Kelowna Regional Transit System,Kelowna
+103377,Rutland Rd N at Leathead (SB),SB_Rutland Rd N_NS_Leathead,49.896677,-119.386964,KEL,Kelowna Regional Transit System,Kelowna
+103378,Hwy 33 E at Sadler (EB),EB_Hwy 33 E_NS_Sadler,49.888907,-119.386029,KEL,Kelowna Regional Transit System,Kelowna
+103379,Ross at Daimler (NB),NB_Ross_FS_Daimler,49.856235,-119.593859,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103380,Rutland Rd N at Hartman (SB),SB_Rutland Rd N_FS_Hartman,49.899456,-119.387036,KEL,Kelowna Regional Transit System,Kelowna
+103381,Ross at Daimler (SB),SB_Ross_NS_Daimler,49.856218,-119.594034,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103382,Rutland Rd N at McCurdy Rd E (SB),SB_Rutland Rd N_FS_McCurdy Rd E,49.900649,-119.386993,KEL,Kelowna Regional Transit System,Kelowna
+103383,Husch at Scarboro (EB),EB_Husch_FS_Scarboro,49.883602,-119.385261,KEL,Kelowna Regional Transit System,Kelowna
+103384,Rutland Rd N at McCurdy Rd E (NB),NB_Rutland Rd N_FS_McCurdy Rd E,49.901504,-119.386678,KEL,Kelowna Regional Transit System,Kelowna
+103385,Rutland Rd N at Sumac Rd E (SB),SB_Rutland Rd N_FS_Sumac Rd E,49.903345,-119.386936,KEL,Kelowna Regional Transit System,Kelowna
+103387,Fitzpatrick at Aldon (EB),EB_Fitzpatrick_FS_Aldon,49.907184,-119.388155,KEL,Kelowna Regional Transit System,Kelowna
+103388,East Boundary 3120 block (NB),NB_3120_block_East Boundary,49.848605,-119.588963,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103389,East Boundary 3130 block (SB),SB_3130_block_East Boundary,49.848559,-119.589197,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103392,Rutland Rd N at Klassen (SB),SB_Rutland Rd N_FS_Klassen,49.906881,-119.386873,KEL,Kelowna Regional Transit System,Kelowna
+103393,Old Okanagan at Daimler (NB),NB_Old Okanagan_NS_Daimler,49.856035,-119.596514,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103395,Old Okanagan at Daimler (SB),SB_Old Okanagan_FS_Daimler,49.856046,-119.596787,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103396,McCurdy Rd E at Keyes (WB),WB_McCurdy Rd E_FS_Keyes,49.901229,-119.384544,KEL,Kelowna Regional Transit System,Kelowna
+103399,McCulloch at June Springs (WB),WB_McCulloch_FS_June Springs,49.841037,-119.408292,KEL,Kelowna Regional Transit System,Kelowna
+103401,Westridge at Crawford (SB),SB_Westridge_FS_Crawford,49.817365,-119.463839,KEL,Kelowna Regional Transit System,Kelowna
+103403,East Boundary at Eagle (NB),NB_East Boundary_FS_Eagle,49.84568,-119.588918,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103405,Husch at Molnar (EB),EB_Husch_NS_Molnar,49.883596,-119.381522,KEL,Kelowna Regional Transit System,Kelowna
+103406,McCulloch at June Springs (EB),EB_McCulloch_FS_June Springs,49.840756,-119.406999,KEL,Kelowna Regional Transit System,Kelowna
+103407,East Boundary at Eagle (SB),SB_East Boundary_FS_Eagle,49.844882,-119.589162,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103408,Gordon at Buck (NB),NB_Gordon_NS_Buck,49.813639,-119.482891,KEL,Kelowna Regional Transit System,Kelowna
+103410,Molnar at Milton (NB),NB_Molnar_FS_Milton,49.887545,-119.379682,KEL,Kelowna Regional Transit System,Kelowna
+103411,Molnar at Husch (NB),NB_Molnar_FS_Husch,49.88419,-119.379628,KEL,Kelowna Regional Transit System,Kelowna
+103412,Molnar at Holbrook Rd E (NB),NB_Molnar_FS_Holbrook Rd E,49.885781,-119.379692,KEL,Kelowna Regional Transit System,Kelowna
+103414,Hwy 33 E at Molnar (EB),EB_Hwy 33 E_FS_Molnar,49.888942,-119.379181,KEL,Kelowna Regional Transit System,Kelowna
+103416,McCurdy Rd E at Friesen (WB),WB_McCurdy Rd E_FS_Friesen,49.901637,-119.380362,KEL,Kelowna Regional Transit System,Kelowna
+103417,Boucherie at Green Bay (SB),SB_Boucherie_NS_Green Bay,49.835005,-119.579299,KEL,Kelowna Regional Transit System,West Kelowna
+103418,Boucherie at Green Bay (EB),EB_Boucherie_NS_Green Bay,49.834747,-119.579462,KEL,Kelowna Regional Transit System,West Kelowna
+103419,McCulloch 3520 block (WB),WB_3520_block_McCulloch,49.840528,-119.40368,KEL,Kelowna Regional Transit System,Kelowna
+103420,McCulloch 3530 block (EB),EB_3530_block_McCulloch,49.840325,-119.403002,KEL,Kelowna Regional Transit System,Kelowna
+102894,Cawston at Ethel (WB),WB_Cawston_FS_Ethel,49.891682,-119.48331,KEL,Kelowna Regional Transit System,Kelowna
+102895,Richter at Gaston (SB),SB_Richter_NS_Gaston,49.895678,-119.4886,KEL,Kelowna Regional Transit System,Kelowna
+102896,Pandosy at Sutherland (SB),SB_Pandosy_FS_Sutherland,49.879037,-119.49296,KEL,Kelowna Regional Transit System,Kelowna
+102897,Richter at Sutherland (NB),NB_Richter_FS_Sutherland,49.880037,-119.488366,KEL,Kelowna Regional Transit System,Kelowna
+102898,Cawston at Ethel (EB),EB_Cawston_FS_Ethel,49.891553,-119.482337,KEL,Kelowna Regional Transit System,Kelowna
+102899,Sutherland at Richter (EB),EB_Sutherland_FS_Richter,49.879777,-119.488126,KEL,Kelowna Regional Transit System,Kelowna
+102900,Bernard at Graham (WB),WB_Bernard_FS_Graham,49.886367,-119.4802,KEL,Kelowna Regional Transit System,Kelowna
+102901,Ellis at Recreation (NB),NB_Ellis_FS_Recreation,49.897991,-119.493397,KEL,Kelowna Regional Transit System,Kelowna
+102902,Bernard at Graham (EB),EB_Bernard_FS_Graham,49.886269,-119.479738,KEL,Kelowna Regional Transit System,Kelowna
+102903,Cawston at Graham (WB),WB_Cawston_FS_Graham,49.891673,-119.480592,KEL,Kelowna Regional Transit System,Kelowna
+102905,Graham at Clement (SB),SB_Graham_FS_Clement,49.893276,-119.479999,KEL,Kelowna Regional Transit System,Kelowna
+102906,Sutherland at Ethel (WB),WB_Sutherland_FS_Ethel,49.87992,-119.483106,KEL,Kelowna Regional Transit System,Kelowna
+102907,Bernard at Gordon (EB),EB_Bernard_NS_Gordon,49.886238,-119.478071,KEL,Kelowna Regional Transit System,Kelowna
+102908,Graham at Clement (NB),NB_Graham_NS_Clement,49.89322,-119.479762,KEL,Kelowna Regional Transit System,Kelowna
+102909,Bernard at Gordon (WB),WB_Bernard_FS_Gordon,49.886402,-119.478006,KEL,Kelowna Regional Transit System,Kelowna
+102910,Pandosy at Cadder (NB),NB_Pandosy_FS_Cadder,49.876727,-119.491219,KEL,Kelowna Regional Transit System,Kelowna
+102911,Ellis at Roanoke (NB),NB_Ellis_NS_Roanoke,49.899573,-119.493427,KEL,Kelowna Regional Transit System,Kelowna
+102912,Sutherland at Ethel (EB),EB_Sutherland_FS_Ethel,49.879755,-119.482304,KEL,Kelowna Regional Transit System,Kelowna
+102913,Richter at Bay (SB),SB_Richter_FS_Bay,49.899274,-119.488595,KEL,Kelowna Regional Transit System,Kelowna
+102914,Pandosy at Cadder (SB),SB_Pandosy_FS_Cadder,49.875889,-119.491346,KEL,Kelowna Regional Transit System,Kelowna
+102915,Bernard at Gordon (EB),EB_Bernard_FS_Gordon,49.886217,-119.476048,KEL,Kelowna Regional Transit System,Kelowna
+102916,Lawrence at Gordon (EB),EB_Lawrence_FS_Gordon,49.885182,-119.476312,KEL,Kelowna Regional Transit System,Kelowna
+102917,Sutherland at Bowes (WB),WB_Sutherland_FS_Bowes,49.879904,-119.480242,KEL,Kelowna Regional Transit System,Kelowna
+102918,Lawrence at Gordon (WB),WB_Lawrence_NS_Gordon,49.885341,-119.475897,KEL,Kelowna Regional Transit System,Kelowna
+102919,Ellis at Okanagan (NB),NB_Ellis_FS_Okanagan,49.901052,-119.493401,KEL,Kelowna Regional Transit System,Kelowna
+102920,Sutherland at Lequime (EB),EB_Sutherland_NS_Lequime,49.879763,-119.478668,KEL,Kelowna Regional Transit System,Kelowna
+102921,Bernard at DAnjou (WB),WB_Bernard_FS_DAnjou,49.886388,-119.474304,KEL,Kelowna Regional Transit System,Kelowna
+102922,Richter at Okanagan (SB),SB_Richter_NS_Okanagan,49.901191,-119.488584,KEL,Kelowna Regional Transit System,Kelowna
+102923,Bernard at DAnjou (EB),EB_Bernard_NS_DAnjou,49.886267,-119.474125,KEL,Kelowna Regional Transit System,Kelowna
+102924,Ellis at Oxford (NB),NB_Ellis_FS_Oxford,49.901867,-119.493182,KEL,Kelowna Regional Transit System,Kelowna
+102925,Lawrence at Kelglen (EB),EB_Lawrence_FS_Kelglen,49.885183,-119.473185,KEL,Kelowna Regional Transit System,Kelowna
+102926,Lawrence at Kelglen (WB),WB_Lawrence_NS_Kelglen,49.885296,-119.472893,KEL,Kelowna Regional Transit System,Kelowna
+102927,Sutherland at Gordon (WB),WB_Sutherland_NS_Gordon,49.880284,-119.475923,KEL,Kelowna Regional Transit System,Kelowna
+102928,Kelowna Hospital Exchange Bay A,Kelowna_Hospital_Exchange_Bay_A,49.873982,-119.491385,KEL,Kelowna Regional Transit System,Kelowna
+102929,Springfield at Ethel (EB),EB_Springfield_FS_Ethel,49.876344,-119.480602,KEL,Kelowna Regional Transit System,Kelowna
+102930,Kelowna Hospital Exchange Bay C,Kelowna_Hospital_Exchange_Bay_C,49.873416,-119.491082,KEL,Kelowna Regional Transit System,Kelowna
+102931,Sutherland at Capri (EB),EB_Sutherland_NS_Capri,49.880127,-119.475248,KEL,Kelowna Regional Transit System,Kelowna
+102932,Cambridge at Ellis (EB),EB_Cambridge_FS_Ellis,49.903459,-119.492404,KEL,Kelowna Regional Transit System,Kelowna
+102933,Bernard at Richmond (WB),WB_Bernard_FS_Richmond,49.886368,-119.471245,KEL,Kelowna Regional Transit System,Kelowna
+102934,Cambridge at Kingsway (EB),EB_Cambridge_FS_Kingsway,49.903459,-119.490635,KEL,Kelowna Regional Transit System,Kelowna
+102935,Richter at Cambridge (SB),SB_Richter_FS_Cambridge,49.903032,-119.488606,KEL,Kelowna Regional Transit System,Kelowna
+102936,Bernard at Richmond (EB),EB_Bernard_NS_Richmond,49.886247,-119.470995,KEL,Kelowna Regional Transit System,Kelowna
+102937,Lawrence at Richmond (EB),EB_Lawrence_NS_Richmond,49.885189,-119.470718,KEL,Kelowna Regional Transit System,Kelowna
+102938,Sutherland at Capri (EB),EB_Sutherland_FS_Capri,49.880125,-119.473249,KEL,Kelowna Regional Transit System,Kelowna
+102939,Gordon at Springfield (SB),SB_Gordon_FS_Springfield,49.876463,-119.47727,KEL,Kelowna Regional Transit System,Kelowna
+102941,Springfield at Gordon (EB),EB_Springfield_FS_Gordon,49.876736,-119.476567,KEL,Kelowna Regional Transit System,Kelowna
+102942,Lawrence at Richmond (WB),WB_Lawrence_NS_Richmond,49.885334,-119.470187,KEL,Kelowna Regional Transit System,Kelowna
+102944,Sutherland at Pacific (WB),WB_Sutherland_FS_Pacific,49.880251,-119.472385,KEL,Kelowna Regional Transit System,Kelowna
+102945,Sutherland at Pacific (EB),EB_Sutherland_FS_Pacific,49.880121,-119.471297,KEL,Kelowna Regional Transit System,Kelowna
+102948,Lawrence at Lakeview (WB),WB_Lawrence_NS_Lakeview,49.885332,-119.467437,KEL,Kelowna Regional Transit System,Kelowna
+102950,Springfield at Wilkinson (WB),WB_Springfield_FS_Wilkinson,49.877065,-119.472005,KEL,Kelowna Regional Transit System,Kelowna
+102951,Lawrence at Alta Vista (EB),EB_Lawrence_FS_Alta Vista,49.885204,-119.466644,KEL,Kelowna Regional Transit System,Kelowna
+102952,Pandosy at Morrison (SB),SB_Pandosy_NS_Morrison,49.869339,-119.491338,KEL,Kelowna Regional Transit System,Kelowna
+102953,Bernard at Highland Dr S (WB),WB_Bernard_NS_Highland Dr S,49.88635,-119.466012,KEL,Kelowna Regional Transit System,Kelowna
+102954,Springfield at Wilkinson (EB),EB_Springfield_FS_Wilkinson,49.876897,-119.471058,KEL,Kelowna Regional Transit System,Kelowna
+102955,Sutherland at Chandler (WB),WB_Sutherland_NS_Chandler,49.880348,-119.467611,KEL,Kelowna Regional Transit System,Kelowna
+102956,Pandosy at Patterson (NB),NB_Pandosy_FS_Patterson,49.868596,-119.491149,KEL,Kelowna Regional Transit System,Kelowna
+102957,Sutherland at Chandler (EB),EB_Sutherland_FS_Chandler,49.880196,-119.467664,KEL,Kelowna Regional Transit System,Kelowna
+102958,Gordon at Guisachan (SB),SB_Gordon_FS_Guisachan,49.872439,-119.47614,KEL,Kelowna Regional Transit System,Kelowna
+102959,Clifton at Hartwick (SB),SB_Clifton_NS_Hartwick,49.893873,-119.465905,KEL,Kelowna Regional Transit System,Kelowna
+102960,Clifton at Hartwick (NB),NB_Clifton_NS_Hartwick,49.893653,-119.465703,KEL,Kelowna Regional Transit System,Kelowna
+102961,Pandosy at Patterson (SB),SB_Pandosy_FS_Patterson,49.868026,-119.491332,KEL,Kelowna Regional Transit System,Kelowna
+103310,Hollywood Rd S at Wayne (NB),NB_Hollywood Rd S_NS_Wayne,49.875168,-119.39818,KEL,Kelowna Regional Transit System,Kelowna
+103312,Hwy 33 W at Aurora (EB),EB_Hwy 33 W_NS_Aurora,49.888928,-119.395936,KEL,Kelowna Regional Transit System,Kelowna
+103313,Springfield at Monterey (EB),EB_Springfield_NS_Monterey,49.874339,-119.397573,KEL,Kelowna Regional Transit System,Kelowna
+103316,Dehart at Gordon (EB),EB_Dehart_FS_Gordon,49.822957,-119.48251,KEL,Kelowna Regional Transit System,Kelowna
+103317,Lakeshore at Dehart (NB),NB_Lakeshore_NS_Dehart,49.822175,-119.488896,KEL,Kelowna Regional Transit System,Kelowna
+103319,Lakeshore at Dehart (SB),SB_Lakeshore_FS_Dehart,49.822535,-119.48894,KEL,Kelowna Regional Transit System,Kelowna
+103321,Hwy 33 W at Dougall Rd N (WB),WB_Hwy 33 W_FS_Dougall Rd N,49.889123,-119.394283,KEL,Kelowna Regional Transit System,Kelowna
+103322,Leathead at Tartan (WB),WB_Leathead_FS_Tartan,49.895409,-119.393966,KEL,Kelowna Regional Transit System,Kelowna
+103323,McCulloch at Reekie (NB),NB_McCulloch_NS_Reekie,49.851977,-119.409564,KEL,Kelowna Regional Transit System,Kelowna
+103324,McCulloch at Reekie (SB),SB_McCulloch_FS_Reekie,49.851663,-119.410164,KEL,Kelowna Regional Transit System,Kelowna
+103325,Gordon at Dehart (SB),SB_Gordon_FS_Dehart,49.822185,-119.483285,KEL,Kelowna Regional Transit System,Kelowna
+103326,Dougall Rd N at McIntosh (NB),NB_Dougall Rd N_FS_McIntosh,49.89262,-119.39269,KEL,Kelowna Regional Transit System,Kelowna
+103327,Fitzpatrick at Findlay (EB),EB_Fitzpatrick_FS_Findlay,49.907197,-119.396839,KEL,Kelowna Regional Transit System,Kelowna
+103328,Ross at Bartley (WB),WB_Ross_FS_Bartley,49.860203,-119.589712,KEL,Kelowna Regional Transit System,West Kelowna
+103329,Ross at Bartley (EB),EB_Ross_NS_Bartley,49.86011,-119.589534,KEL,Kelowna Regional Transit System,West Kelowna
+103331,Springfield at Hollywood Rd S (WB),WB_Springfield_FS_Hollywood Rd S,49.874521,-119.394093,KEL,Kelowna Regional Transit System,Kelowna
+103334,Springfield at Hollywood Rd S (EB),EB_Springfield_NS_Hollywood Rd S,49.874324,-119.393808,KEL,Kelowna Regional Transit System,Kelowna
+103335,Leathead at Asher Rd (EB),EB_Leathead_NS_Asher Rd,49.895279,-119.391569,KEL,Kelowna Regional Transit System,Kelowna
+103337,Lakeshore at Eldorado (NB),NB_Lakeshore_FS_Eldorado,49.820534,-119.491029,KEL,Kelowna Regional Transit System,Kelowna
+103340,Lakeshore at Eldorado (SB),SB_Lakeshore_NS_Eldorado,49.82055,-119.491342,KEL,Kelowna Regional Transit System,Kelowna
+103342,Lakeshore at Lequime (SB),SB_Lakeshore_NS_Lequime,49.837845,-119.488029,KEL,Kelowna Regional Transit System,Kelowna
+103343,Fitzpatrick at Chichester (EB),EB_Fitzpatrick_FS_Chichester,49.907193,-119.394009,KEL,Kelowna Regional Transit System,Kelowna
+103344,Leathead at Pinetree (WB),WB_Leathead_FS_Pinetree,49.895405,-119.390234,KEL,Kelowna Regional Transit System,Kelowna
+103346,Springfield at Neptune (WB),WB_Springfield_FS_Neptune,49.877604,-119.390462,KEL,Kelowna Regional Transit System,Kelowna
+103347,Lakeshore at Keith (NB),NB_Lakeshore_FS_Keith,49.818795,-119.493094,KEL,Kelowna Regional Transit System,Kelowna
+103165,Enterprise at Powick (SB),SB_Enterprise_NS_Powick,49.890351,-119.425509,KEL,Kelowna Regional Transit System,Kelowna
+103166,Dilworth 960 block (SB),SB_960_block_Dilworth,49.896903,-119.426346,KEL,Kelowna Regional Transit System,Kelowna
+103167,Thacker at Douglas (SB),SB_Thacker_FS_Douglas,49.855786,-119.545701,KEL,Kelowna Regional Transit System,West Kelowna
+103168,Summit at Dilworth (EB),EB_Summit_NS_Dilworth,49.898639,-119.426847,KEL,Kelowna Regional Transit System,Kelowna
+103169,Baron 1900 block (NB),NB_1900_block_Baron,49.883696,-119.425184,KEL,Kelowna Regional Transit System,Kelowna
+103170,Summit at Dilworth (WB),WB_Summit_FS_Dilworth,49.898813,-119.426785,KEL,Kelowna Regional Transit System,Kelowna
+103171,Baron at 1655 Blk (SB),SB_Baron_AT_1655 Blk,49.884416,-119.424763,KEL,Kelowna Regional Transit System,Kelowna
+103172,Dilworth 970 block (NB),NB_970_block_Dilworth,49.896538,-119.425912,KEL,Kelowna Regional Transit System,Kelowna
+103173,Westlake at Caledonia (NB),NB_Westlake_NS_Caledonia,49.873506,-119.562943,KEL,Kelowna Regional Transit System,West Kelowna
+103174,Hwy 97 N at Banks (EB),EB_Hwy 97 N_FS_Banks,49.886849,-119.424077,KEL,Kelowna Regional Transit System,Kelowna
+103176,Gordon at Steele (WB),WB_Gordon_FS_Steele,49.80586,-119.473086,KEL,Kelowna Regional Transit System,Kelowna
+103177,Gordon at Frost (WB),WB_Gordon_NS_Frost,49.805314,-119.476309,KEL,Kelowna Regional Transit System,Kelowna
+103178,Westlake at Rosewood (NB),NB_Westlake_FS_Rosewood,49.877699,-119.566295,KEL,Kelowna Regional Transit System,West Kelowna
+103180,Hudson at Boucherie (EB),EB_Hudson_NS_Boucherie,49.862327,-119.556499,KEL,Kelowna Regional Transit System,West Kelowna
+103181,Thacker at Collens Hill (NB),NB_Thacker_NS_Collens Hill,49.853827,-119.545662,KEL,Kelowna Regional Transit System,West Kelowna
+103182,Thacker at Collens Hill (SB),SB_Thacker_FS_Collens Hill,49.853826,-119.545913,KEL,Kelowna Regional Transit System,West Kelowna
+103183,Hudson at Boucherie (WB),WB_Hudson_FS_Boucherie,49.862488,-119.55688,KEL,Kelowna Regional Transit System,West Kelowna
+103184,Baron at Spedding (WB),WB_Baron_NS_Spedding,49.886342,-119.422104,KEL,Kelowna Regional Transit System,Kelowna
+103185,Lakeshore at Bluebird (SB),SB_Lakeshore_NS_Bluebird,49.840342,-119.488773,KEL,Kelowna Regional Transit System,Kelowna
+103186,Baron at Spedding (EB),EB_Baron_FS_Spedding,49.886349,-119.421773,KEL,Kelowna Regional Transit System,Kelowna
+103187,Gordon at Frost (SB),SB_Gordon_NS_Frost,49.803729,-119.476941,KEL,Kelowna Regional Transit System,Kelowna
+103188,Lakeshore at Lexington (NB),NB_Lakeshore_FS_Lexington,49.840456,-119.488368,KEL,Kelowna Regional Transit System,Kelowna
+103189,Springfield at Parkview (EB),EB_Springfield_FS_Parkview,49.880284,-119.421913,KEL,Kelowna Regional Transit System,Kelowna
+103190,Springfield at Parkview (WB),WB_Springfield_NS_Parkview,49.880728,-119.421603,KEL,Kelowna Regional Transit System,Kelowna
+103191,South Ridge at Frost (NB),NB_South Ridge_FS_Frost,49.803392,-119.48269,KEL,Kelowna Regional Transit System,Kelowna
+103192,Hwy 33 E at Rutland Rd S (WB),WB_Hwy 33 E_FS_Rutland Rd S,49.889114,-119.387728,KEL,Kelowna Regional Transit System,Kelowna
+103193,Rutland Exchange Bay A,Rutland_Exchange_Bay_A,49.890664,-119.392385,KEL,Kelowna Regional Transit System,Kelowna
+103195,Thacker at Beverly (EB),EB_Thacker_FS_Beverly,49.852523,-119.547813,KEL,Kelowna Regional Transit System,West Kelowna
+103491,Old Boucherie 1950 block (WB),WB_1950_block_Old Boucherie,49.827815,-119.596989,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103492,Old Boucherie 1950 block (EB),EB_1950_block_Old Boucherie,49.827697,-119.597023,KEL,Kelowna Regional Transit System,West Kelowna
+103493,Shannon Lake at Shannon Way (NB),NB_Shannon Lake_NS_Shannon Way,49.849531,-119.619787,KEL,Kelowna Regional Transit System,West Kelowna
+103495,Shannon Lake at Shannon Way (SB),SB_Shannon Lake_FS_Shannon Way,49.849456,-119.620198,KEL,Kelowna Regional Transit System,West Kelowna
+103497,Louie at Elk (SB),SB_Louie_FS_Elk,49.840315,-119.612567,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103500,Old Boucherie at Boucherie (EB),EB_Old Boucherie_NS_Boucherie,49.827666,-119.598747,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103501,Hwy 33 E at Traut (WB),WB_Hwy 33 E_NS_Traut,49.869029,-119.362989,KEL,Kelowna Regional Transit System,Kelowna
+103502,Old Okanagan at Bayview (EB),EB_Old Okanagan_NS_Bayview,49.843359,-119.617363,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103503,Old Vernon at McKenzie (SB),SB_Old Vernon_FS_McKenzie,49.919618,-119.364328,KEL,Kelowna Regional Transit System,Kelowna
+103505,Old Okanagan at Bayview (WB),WB_Old Okanagan_FS_Bayview,49.843779,-119.617385,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103506,Old Vernon at McKenzie (NB),NB_Old Vernon_NS_McKenzie,49.91962,-119.364072,KEL,Kelowna Regional Transit System,Kelowna
+103507,Cooper at Harvey (NB),NB_Cooper_NS_Harvey,49.879568,-119.443091,KEL,Kelowna Regional Transit System,Kelowna
+103508,Carrington 3530 block (EB),EB_3530_block_Carrington,49.836792,-119.611145,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103509,Carrington 3530 block (WB),WB_3530_block_Carrington,49.836874,-119.61133,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103510,Boucherie 2070 block (WB),WB_2070_block_Boucherie,49.827688,-119.600225,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103511,Louie at Butt (SB),SB_Louie_NS_Butt,49.838587,-119.615095,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103512,Cooper at Harvey (SB),SB_Cooper_FS_Harvey,49.879527,-119.443425,KEL,Kelowna Regional Transit System,Kelowna
+103513,Shannon Lake at Old Okanagan Hwy (SB),SB_Shannon Lake_NS_Old Okanagan Hwy,49.846599,-119.622401,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103515,Loseth at Autumn (SB),SB_Loseth_NS_Autumn,49.866079,-119.354203,KEL,Kelowna Regional Transit System,Kelowna
+103516,Shannon Lake at Old Okanagan Hwy (NB),NB_Shannon Lake_FS_Old Okanagan Hwy,49.846163,-119.622212,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103518,Boucherie 2030 block (WB),WB_2030_block_Boucherie,49.826773,-119.602108,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103519,Boucherie 2030 block (EB),EB_2030_block_Boucherie,49.826647,-119.602017,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103520,Quilchena at Providence (NB),NB_Quilchena_FS_Providence,49.796658,-119.51163,KEL,Kelowna Regional Transit System,Kelowna
+103521,Loseth at Feedham (SB),SB_Loseth_FS_Feedham,49.869216,-119.355412,KEL,Kelowna Regional Transit System,Kelowna
+103522,Chute Lake 5150 block (EB),EB_5150_block_Chute Lake,49.795586,-119.502189,KEL,Kelowna Regional Transit System,Kelowna
+103523,Quilchena at Thalia (WB),WB_Quilchena_FS_Thalia,49.796228,-119.514825,KEL,Kelowna Regional Transit System,Kelowna
+103524,Sunrise at Loseth (EB),EB_Sunrise_FS_Loseth,49.862198,-119.357754,KEL,Kelowna Regional Transit System,Kelowna
+103525,Butt at Carrington (WB),WB_Butt_FS_Carrington,49.835595,-119.614303,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103526,Large at St Clare (WB),WB_Large_FS_St Clare,49.871898,-119.353768,KEL,Kelowna Regional Transit System,Kelowna
+103527,Butt at Carrington (EB),EB_Butt_NS_Carrington,49.83532,-119.614413,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103528,Old Okanagan at Shannon Lake (EB),EB_Old Okanagan_FS_Shannon Lake,49.844794,-119.62391,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103529,Boucherie 2040 block (EB),EB_2040_block_Boucherie,49.826233,-119.604741,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103531,Loseth at Lynrick (SB),SB_Loseth_FS_Lynrick,49.867476,-119.354804,KEL,Kelowna Regional Transit System,Kelowna
+103532,Boucherie 2040 block (WB),WB_2040_block_Boucherie,49.826191,-119.605261,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103220,Alhambra at Brentwood (SB),SB_Alhambra_NS_Brentwood,49.862031,-119.566977,KEL,Kelowna Regional Transit System,West Kelowna
+103221,Hwy 33 W at Taylor (WB),WB_Hwy 33 W_NS_Taylor,49.889098,-119.413398,KEL,Kelowna Regional Transit System,Kelowna
+103222,Hwy 33 W at Taylor (EB),EB_Hwy 33 W_FS_Taylor,49.888984,-119.413155,KEL,Kelowna Regional Transit System,Kelowna
+103224,Valley at Drysdale (EB),EB_Valley_FS_Drysdale,49.923136,-119.432961,KEL,Kelowna Regional Transit System,Kelowna
+103225,Stevens 1370 block (WB),WB_1370_block_Stevens,49.866506,-119.571362,KEL,Kelowna Regional Transit System,West Kelowna
+103226,Snowsell at Porthill (NB),NB_Snowsell_FS_Porthill,49.927193,-119.439019,KEL,Kelowna Regional Transit System,Kelowna
+103227,Springfield at Graham (WB),WB_Springfield_NS_Graham,49.879763,-119.413361,KEL,Kelowna Regional Transit System,Kelowna
+103230,Stevens 1380 block (EB),EB_1380_block_Stevens,49.866101,-119.571859,KEL,Kelowna Regional Transit System,West Kelowna
+103231,KLO at McCulloch (SB),SB_KLO_FS_McCulloch,49.859737,-119.424271,KEL,Kelowna Regional Transit System,Kelowna
+103232,KLO at McCulloch (NB),NB_KLO_NS_McCulloch,49.859491,-119.424029,KEL,Kelowna Regional Transit System,Kelowna
+103233,Brentwood at Denny (EB),EB_Brentwood_NS_Denny,49.861143,-119.569309,KEL,Kelowna Regional Transit System,West Kelowna
+103234,Brentwood at Denny (WB),WB_Brentwood_FS_Denny,49.861306,-119.569258,KEL,Kelowna Regional Transit System,West Kelowna
+103235,Springfield at Gerstmar (EB),EB_Springfield_NS_Gerstmar,49.87881,-119.411882,KEL,Kelowna Regional Transit System,Kelowna
+103236,Union at Wyndham (EB),EB_Union_NS_Wyndham,49.927786,-119.437138,KEL,Kelowna Regional Transit System,Kelowna
+103239,Boucherie at Montigny (NB),NB_Boucherie_NS_Montigny,49.848947,-119.557071,KEL,Kelowna Regional Transit System,West Kelowna
+103240,Hwy 33 W at Kneller (WB),WB_Hwy 33 W_NS_Kneller,49.889113,-119.410015,KEL,Kelowna Regional Transit System,Kelowna
+103243,Union at Valley Rd N (WB),WB_Union_FS_Valley Rd N,49.925398,-119.432029,KEL,Kelowna Regional Transit System,Kelowna
+103244,Boucherie at Montigny (SB),SB_Boucherie_FS_Montigny,49.848724,-119.557592,KEL,Kelowna Regional Transit System,West Kelowna
+103245,Hwy 33 W at Gerstmar (EB),EB_Hwy 33 W_FS_Gerstmar,49.888925,-119.408852,KEL,Kelowna Regional Transit System,Kelowna
+103246,Gerstmar at Thompson (SB),SB_Gerstmar_FS_Thompson,49.879038,-119.409568,KEL,Kelowna Regional Transit System,Kelowna
+103248,Lakeshore at Old Meadows (NB),NB_Lakeshore_NS_Old Meadows,49.831965,-119.487765,KEL,Kelowna Regional Transit System,Kelowna
+103249,Brentwood at Applewood (WB),WB_Brentwood_NS_Applewood,49.861495,-119.572555,KEL,Kelowna Regional Transit System,West Kelowna
+103250,Gerstmar at Thompson (NB),NB_Gerstmar_NS_Thompson,49.879033,-119.409359,KEL,Kelowna Regional Transit System,Kelowna
+103251,Ross at Stevens (NB),NB_Ross_NS_Stevens,49.86582,-119.57582,KEL,Kelowna Regional Transit System,West Kelowna
+103252,Graham at Gerstmar (EB),EB_Graham_FS_Gerstmar,49.881709,-119.408742,KEL,Kelowna Regional Transit System,Kelowna
+103253,Graham at Irma (WB),WB_Graham_FS_Irma,49.881846,-119.408565,KEL,Kelowna Regional Transit System,Kelowna
+103254,Brentwood at Applewood (EB),EB_Brentwood_FS_Applewood,49.861339,-119.572589,KEL,Kelowna Regional Transit System,West Kelowna
+103645,Glenrosa at Rosedale (EB),EB_Glenrosa_FS_Rosedale,49.838025,-119.66743,KEL,Kelowna Regional Transit System,West Kelowna
+103646,Oriole at Canary (SB),SB_Oriole_FS_Canary,49.847672,-119.673305,KEL,Kelowna Regional Transit System,West Kelowna
+103647,Gates at McPherson (SB),SB_Gates_FS_McPherson,49.842001,-119.670466,KEL,Kelowna Regional Transit System,West Kelowna
+103648,Salmon at Oriole (EB),EB_Salmon_FS_Oriole,49.845417,-119.672871,KEL,Kelowna Regional Transit System,West Kelowna
+103649,Gates at Glenrosa (SB),SB_Gates_NS_Glenrosa,49.840894,-119.6704,KEL,Kelowna Regional Transit System,West Kelowna
+103650,Hwy 97 at Parkinson (NB),NB_Hwy 97_FS_Parkinson,50.000744,-119.402788,KEL,Kelowna Regional Transit System,Duck Lake 7
+103652,Hwy 97 at Commonwealth (SB),SB_Hwy 97_FS_Commonwealth,50.00711,-119.403201,KEL,Kelowna Regional Transit System,Lake Country
+103653,Hwy 97 at Commonwealth (NB),NB_Hwy 97_FS_Commonwealth,50.008331,-119.402754,KEL,Kelowna Regional Transit System,Duck Lake 7
+103654,Hwy 97 at Beaver Lake (NB),NB_Hwy 97_FS_Beaver Lake,50.020814,-119.406171,KEL,Kelowna Regional Transit System,Lake Country
+103655,Hwy 97 at Okanagan Centre (SB),SB_Hwy 97_FS_Okanagan Centre,50.021783,-119.406768,KEL,Kelowna Regional Transit System,Lake Country
+103656,Aerospace Dr  & Airport Way (SB),SB_Aerospace Dr  & Airport Way,49.952067,-119.38334,KEL,Kelowna Regional Transit System,Kelowna
+103657,Hwy 97 at Pollard (SB),SB_Hwy 97_NS_Pollard,50.02627,-119.40536,KEL,Kelowna Regional Transit System,Lake Country
+103658,Main at Hill (NB),NB_Main_FS_Hill,50.023517,-119.404179,KEL,Kelowna Regional Transit System,Lake Country
+103659,Okanagan Centre at Berry (SB),SB_Okanagan Centre_NS_Berry,50.030786,-119.410336,KEL,Kelowna Regional Transit System,Lake Country
+103660,Berry at Bottom Wood Lake (WB),WB_Berry_FS_Bottom Wood Lake,50.029497,-119.402772,KEL,Kelowna Regional Transit System,Lake Country
+103661,Bottom Wood Lake 10220 block (NB),NB_10220_block_Bottom Wood Lake,50.031051,-119.401957,KEL,Kelowna Regional Transit System,Lake Country
+103662,Okanagan Centre at Camp (SB),SB_Okanagan Centre_FS_Camp,50.035858,-119.411561,KEL,Kelowna Regional Transit System,Lake Country
+103663,Lodge at Bottom Wood Lake (EB),EB_Lodge_FS_Bottom Wood Lake,50.034615,-119.400961,KEL,Kelowna Regional Transit System,Lake Country
+103664,Lodge at Meadow (EB),EB_Lodge_FS_Meadow,50.034645,-119.395356,KEL,Kelowna Regional Transit System,Lake Country
+103665,Huston at Huston (WB),WB_Huston_FS_Huston,49.795643,-119.698385,KEL,Kelowna Regional Transit System,Peachland
+103666,Lodge 3580 block (EB),EB_3580_block_Lodge,50.034656,-119.393348,KEL,Kelowna Regional Transit System,Lake Country
+103667,Buchanan at Burden (NB),NB_Buchanan_NS_Burden,49.794582,-119.699329,KEL,Kelowna Regional Transit System,Peachland
+103668,Okanagan Centre at Seaton (SB),SB_Okanagan Centre_NS_Seaton,50.041273,-119.414525,KEL,Kelowna Regional Transit System,Lake Country
+103669,Huston at Shaw (WB),WB_Huston_FS_Shaw,49.794779,-119.701406,KEL,Kelowna Regional Transit System,Peachland
+103670,Okanagan Centre at Williams (SB),SB_Okanagan Centre_FS_Williams,50.044057,-119.41677,KEL,Kelowna Regional Transit System,Lake Country
+103671,Buchanan at Tailyour (NB),NB_Buchanan_NS_Tailyour,49.792418,-119.702556,KEL,Kelowna Regional Transit System,Peachland
+103672,Huston at Lang (SB),SB_Huston_FS_Lang,49.792475,-119.70545,KEL,Kelowna Regional Transit System,Peachland
+103673,Lodge at Quail (NB),NB_Lodge_FS_Quail,50.040676,-119.391908,KEL,Kelowna Regional Transit System,Lake Country
+103674,Okanagan Centre 11330 block (SB),SB_11330_block_Okanagan Centre,50.04746,-119.418336,KEL,Kelowna Regional Transit System,Lake Country
+103675,Buchanan at Hwy 97 S (NB),NB_Buchanan_FS_Hwy 97 S,49.789104,-119.707431,KEL,Kelowna Regional Transit System,Peachland
+103676,Lodge at Sherman (NB),NB_Lodge_FS_Sherman,50.042989,-119.391357,KEL,Kelowna Regional Transit System,Lake Country
+103677,Okanagan Centre at Davidson (SB),SB_Okanagan Centre_FS_Davidson,50.050028,-119.419128,KEL,Kelowna Regional Transit System,Lake Country
+103678,Lodge 11200 block (NB),NB_11200_block_Lodge,50.045133,-119.390833,KEL,Kelowna Regional Transit System,Lake Country
+103679,Woodsdale at Turtle Bay (WB),WB_Woodsdale_FS_Turtle Bay,50.049335,-119.407736,KEL,Kelowna Regional Transit System,Lake Country
+103680,Aerospace Dr & Airport Way (NB),NB_Aerospace Dr & Airport Way,49.952111,-119.383079,KEL,Kelowna Regional Transit System,Kelowna
+103681,Woodsdale at Bottom Wood Lake (WB),WB_Woodsdale_NS_Bottom Wood Lake,50.049339,-119.402667,KEL,Kelowna Regional Transit System,Lake Country
+103682,Trepanier Bench at Desert Pines (SB),SB_Trepanier Bench_NS_Desert Pines,49.786359,-119.710771,KEL,Kelowna Regional Transit System,Peachland
+103683,Woodsdale at Reiswig (WB),WB_Woodsdale_FS_Reiswig,50.049341,-119.397673,KEL,Kelowna Regional Transit System,Lake Country
+103684,Woodsdale at Lodge (WB),WB_Woodsdale_FS_Lodge,50.049365,-119.390961,KEL,Kelowna Regional Transit System,Lake Country
+103685,Oceola at Pretty (NB),NB_Oceola_FS_Pretty,50.05469,-119.411244,KEL,Kelowna Regional Transit System,Lake Country
+103686,Peachland Village Mall,Peachland Village Mall,49.784704,-119.717975,KEL,Kelowna Regional Transit System,Peachland
+103688,Okanagan Centre Rd E 12180 block (SB),SB_12180_block_Okanagan Centre Rd E,50.060042,-119.418691,KEL,Kelowna Regional Transit System,Lake Country
+103689,13th St at San Clemente (SB),SB_13th St_FS_San Clemente,49.782642,-119.723326,KEL,Kelowna Regional Transit System,Peachland
+103690,13th St at Lake (NB),NB_13th St_FS_Lake,49.782699,-119.723101,KEL,Kelowna Regional Transit System,Peachland
+103691,Beach at 11th St (WB),WB_Beach_FS_11th St,49.781917,-119.729107,KEL,Kelowna Regional Transit System,Peachland
+103692,Beach at 11th St (NB),NB_Beach_NS_11th St,49.781202,-119.731116,KEL,Kelowna Regional Transit System,Peachland
+103693,Beach at 8th St (SB),SB_Beach_NS_8th St,49.780514,-119.732036,KEL,Kelowna Regional Transit System,Peachland
+103694,Beach at 6th St (SB),SB_Beach_NS_6th St,49.77759,-119.733788,KEL,Kelowna Regional Transit System,Peachland
+103695,Beach at 6th St (NB),NB_Beach_NS_6th St,49.776371,-119.734211,KEL,Kelowna Regional Transit System,Peachland
+103696,Beach at 5th St (NB),NB_Beach_NS_5th St,49.775371,-119.734673,KEL,Kelowna Regional Transit System,Peachland
+103697,Beach at 5th St (SB),SB_Beach_FS_5th St,49.77528,-119.734961,KEL,Kelowna Regional Transit System,Peachland
+103700,Beach 5880 block (NB),NB_5880_block_Beach,49.770983,-119.738936,KEL,Kelowna Regional Transit System,Peachland
+103701,Beach 5890 block (SB),SB_5890_block_Beach,49.77048,-119.73971,KEL,Kelowna Regional Transit System,Peachland
+103702,Princeton at Lakeview (WB),WB_Princeton_FS_Lakeview,49.769934,-119.742624,KEL,Kelowna Regional Transit System,Peachland
+103703,Princeton at Princess (EB),EB_Princeton_NS_Princess,49.768789,-119.744641,KEL,Kelowna Regional Transit System,Peachland
+103704,Princeton at Columbia (WB),WB_Princeton_FS_Columbia,49.768513,-119.745773,KEL,Kelowna Regional Transit System,Peachland
+103705,Princeton at Somerset (WB),WB_Princeton_FS_Somerset,49.766682,-119.748253,KEL,Kelowna Regional Transit System,Peachland
+103706,Princeton at Somerset (EB),EB_Princeton_NS_Somerset,49.766239,-119.748663,KEL,Kelowna Regional Transit System,Peachland
+103707,Princeton at Lipsett (NB),NB_Princeton_FS_Lipsett,49.764707,-119.751428,KEL,Kelowna Regional Transit System,Peachland
+103708,Princeton at Lipsett (SB),SB_Princeton_NS_Lipsett,49.764657,-119.751737,KEL,Kelowna Regional Transit System,Peachland
+103709,Princeton at Ellison (EB),EB_Princeton_FS_Ellison,49.762583,-119.754717,KEL,Kelowna Regional Transit System,Peachland
+103255,Ross at Stevens (SB),SB_Ross_FS_Stevens,49.865786,-119.575985,KEL,Kelowna Regional Transit System,West Kelowna
+103256,Hwy 97 N at McCurdy Rd (SB),SB_Hwy 97_N_FS_McCurdy Rd,49.900552,-119.409749,KEL,Kelowna Regional Transit System,Kelowna
+103257,Gordon at Welke (SB),SB_Gordon_NS_Welke,49.831492,-119.483343,KEL,Kelowna Regional Transit System,Kelowna
+103258,Ross at Western (NB),NB_Ross_NS_Western,49.863678,-119.575827,KEL,Kelowna Regional Transit System,West Kelowna
+103259,Ross at Western (SB),SB_Ross_FS_Western,49.863602,-119.576057,KEL,Kelowna Regional Transit System,West Kelowna
+103260,Hwy 33 W at Bryden (WB),WB_Hwy 33 W_FS_Bryden,49.889164,-119.406354,KEL,Kelowna Regional Transit System,Kelowna
+103261,Brentwood at Vista (EB),EB_Brentwood_NS_Vista,49.861359,-119.575227,KEL,Kelowna Regional Transit System,West Kelowna
+103262,Ross at Brentwood (NB),NB_Ross_FS_Brentwood,49.861896,-119.57583,KEL,Kelowna Regional Transit System,West Kelowna
+103263,Hwy 97 N at McCurdy (NB),NB_Hwy 97 N_FS_McCurdy,49.902097,-119.407909,KEL,Kelowna Regional Transit System,Kelowna
+103264,Hwy 33 W at Bryden (EB),EB_Hwy 33 W_FS_Bryden,49.88893,-119.405389,KEL,Kelowna Regional Transit System,Kelowna
+103265,Ross at Brentwood (SB),SB_Ross_FS_Brentwood,49.860838,-119.576452,KEL,Kelowna Regional Transit System,West Kelowna
+103266,Boucherie at Gregory (EB),EB_Boucherie_FS_Gregory,49.846758,-119.560176,KEL,Kelowna Regional Transit System,West Kelowna
+103268,Boucherie at Gregory (WB),WB_Boucherie_FS_Gregory,49.846492,-119.561022,KEL,Kelowna Regional Transit System,West Kelowna
+103271,Graham at Matt (WB),WB_Graham_FS_Matt,49.881866,-119.403433,KEL,Kelowna Regional Transit System,Kelowna
+103272,Lakeshore at Simeon (NB),NB_Lakeshore_NS_Simeon,49.828278,-119.488617,KEL,Kelowna Regional Transit System,Kelowna
+103274,Hwy 33 W at Franklyn (WB),WB_Hwy 33 W_FS_Franklyn,49.889109,-119.403019,KEL,Kelowna Regional Transit System,Kelowna
+103277,Graham at Matt (EB),EB_Graham_FS_Matt,49.881703,-119.402822,KEL,Kelowna Regional Transit System,Kelowna
+103278,Hwy 33 W at Barber (EB),EB_Hwy 33 W_NS_Barber,49.88893,-119.401796,KEL,Kelowna Regional Transit System,Kelowna
+103279,Ross at Applegreen (WB),WB_Ross_NS_Applegreen,49.860873,-119.580096,KEL,Kelowna Regional Transit System,West Kelowna
+103282,Ross at Applegreen (EB),EB_Ross_FS_Applegreen,49.860722,-119.580118,KEL,Kelowna Regional Transit System,West Kelowna
+103283,McCurdy at Mayfair (WB),WB_McCurdy_FS_Mayfair,49.901264,-119.403089,KEL,Kelowna Regional Transit System,Kelowna
+103285,McCulloch at Hart (EB),EB_McCulloch_FS_Hart,49.853355,-119.416728,KEL,Kelowna Regional Transit System,Kelowna
+103286,McCulloch at Hart (WB),WB_McCulloch_NS_Hart,49.853582,-119.415895,KEL,Kelowna Regional Transit System,Kelowna
+103287,Leathead at Franklyn (WB),WB_Leathead_NS_Franklyn,49.895444,-119.40033,KEL,Kelowna Regional Transit System,Kelowna
+103288,Franklyn at Pearson (NB),NB_Franklyn_NS_Pearson,49.898092,-119.400862,KEL,Kelowna Regional Transit System,Kelowna
+103289,Hollydell at Stirling (SB),SB_Hollydell_FS_Stirling,49.882729,-119.399869,KEL,Kelowna Regional Transit System,Kelowna
+103290,Lakeshore at Willms (NB),NB_Lakeshore_FS_Willms,49.825965,-119.488638,KEL,Kelowna Regional Transit System,Kelowna
+103291,Hollydell at Stirling (NB),NB_Hollydell_NS_Stirling,49.882824,-119.399683,KEL,Kelowna Regional Transit System,Kelowna
+103292,Franklyn at McCurdy (NB),NB_Franklyn_NS_McCurdy,49.900875,-119.400888,KEL,Kelowna Regional Transit System,Kelowna
+103293,Dehart at Bartholomew (WB),WB_Dehart_NS_Bartholomew,49.826568,-119.476277,KEL,Kelowna Regional Transit System,Kelowna
+103294,Crawford at Dehart (NB),NB_Crawford_NS_Dehart,49.82868,-119.464161,KEL,Kelowna Regional Transit System,Kelowna
+103295,Crawford at Dehart (SB),SB_Crawford_FS_Dehart,49.828723,-119.46437,KEL,Kelowna Regional Transit System,Kelowna
+103296,Hwy 33 W at Hollywood Rd N (EB),EB_Hwy 33 W_FS_Hollywood Rd N,49.888901,-119.398761,KEL,Kelowna Regional Transit System,Kelowna
+103297,Hwy 33 W at Hollywood Rd N (WB),WB_Hwy 33 W_NS_Hollywood Rd N,49.889155,-119.39897,KEL,Kelowna Regional Transit System,Kelowna
+103298,Dehart at Bartholomew (EB),EB_Dehart_FS_Bartholomew,49.826462,-119.47619,KEL,Kelowna Regional Transit System,Kelowna
+103299,Ross at Cameron (EB),EB_Ross_NS_Cameron,49.86073,-119.583017,KEL,Kelowna Regional Transit System,West Kelowna
+103300,Finns at Fitzpatrick (EB),EB_Finns_NS_Fitzpatrick,49.906505,-119.402429,KEL,Kelowna Regional Transit System,Kelowna
+103301,Ross at Riffington (WB),WB_Ross_FS_Riffington,49.860895,-119.583695,KEL,Kelowna Regional Transit System,West Kelowna
+103302,Boucherie at Sunnyside (EB),EB_Boucherie_FS_Sunnyside,49.843882,-119.565455,KEL,Kelowna Regional Transit System,West Kelowna
+103303,Hollywood Rd S at Perry (SB),SB_Hollywood Rd S_FS_Perry,49.88085,-119.398369,KEL,Kelowna Regional Transit System,Kelowna
+103304,Hollywood Rd S at Perry (NB),NB_Hollywood Rd S_NS_Perry,49.881185,-119.398152,KEL,Kelowna Regional Transit System,Kelowna
+103305,Gordon at Balsam (SB),SB_Gordon_FS_Balsam,49.825028,-119.483292,KEL,Kelowna Regional Transit System,Kelowna
+103306,Boucherie at Sunnyside (WB),WB_Boucherie_FS_Sunnyside,49.843678,-119.566108,KEL,Kelowna Regional Transit System,West Kelowna
+103307,Hollywood Rd S at Juniper (SB),SB_Hollywood Rd S_FS_Juniper,49.877543,-119.398372,KEL,Kelowna Regional Transit System,Kelowna
+103308,Hollywood Rd S at Juniper (NB),NB_Hollywood Rd S_NS_Juniper,49.877762,-119.398107,KEL,Kelowna Regional Transit System,Kelowna
+103309,Hollywood Rd S at Wayne (SB),SB_Hollywood Rd S_NS_Wayne,49.875624,-119.39841,KEL,Kelowna Regional Transit System,Kelowna
+103629,McIver at McRobbie (SB),SB_McIver_NS_McRobbie,49.846662,-119.665912,KEL,Kelowna Regional Transit System,West Kelowna
+103630,Lower Glenrosa at Glenford (NB),NB_Lower Glenrosa_FS_Glenford,49.82829,-119.652634,KEL,Kelowna Regional Transit System,West Kelowna
+103631,McLeod at McGinnis (NB),NB_McLeod_FS_McGinnis,49.843999,-119.665389,KEL,Kelowna Regional Transit System,West Kelowna
+103632,Lower Glenrosa at Glen (NB),NB_Lower Glenrosa_FS_Glen,49.825128,-119.650579,KEL,Kelowna Regional Transit System,West Kelowna
+103633,McGinnis at McGee (NB),NB_McGinnis_FS_McGee,49.842241,-119.664876,KEL,Kelowna Regional Transit System,West Kelowna
+103634,McIver at Glenrosa (SB),SB_McIver_NS_Glenrosa,49.834342,-119.65986,KEL,Kelowna Regional Transit System,West Kelowna
+103635,Glenrosa 2940 block (SB),SB_2940_block_Glenrosa,49.830205,-119.65646,KEL,Kelowna Regional Transit System,West Kelowna
+103636,McLeod at McCoy (WB),WB_McLeod_NS_McCoy,49.846017,-119.667554,KEL,Kelowna Regional Transit System,West Kelowna
+103637,Glenrosa at Glen Abbey (SB),SB_Glenrosa_FS_Glen Abbey,49.831936,-119.658771,KEL,Kelowna Regional Transit System,West Kelowna
+103638,McLeod at Blue Jay (NB),NB_McLeod_NS_Blue Jay,49.84748,-119.668998,KEL,Kelowna Regional Transit System,West Kelowna
+103639,Glenrosa at McIver Rd W (SB),SB_Glenrosa_NS_McIver Rd W,49.83455,-119.662114,KEL,Kelowna Regional Transit System,West Kelowna
+103640,Glenrosa at Parkhurst (NB),NB_Glenrosa_NS_Parkhurst,49.836585,-119.663154,KEL,Kelowna Regional Transit System,West Kelowna
+103641,Canary at Blue Jay (SB),SB_Canary_FS_Blue Jay,49.848702,-119.671692,KEL,Kelowna Regional Transit System,West Kelowna
+103642,McGinnis at Liard (NB),NB_McGinnis_NS_Liard,49.838946,-119.666324,KEL,Kelowna Regional Transit System,West Kelowna
+103643,Glenrosa at Dunfield (SB),SB_Glenrosa_NS_Dunfield,49.824155,-119.654092,KEL,Kelowna Regional Transit System,West Kelowna
+103644,Gates at McMurchie (SB),SB_Gates_NS_McMurchie,49.844716,-119.670424,KEL,Kelowna Regional Transit System,West Kelowna
+103421,Muir at McKenzie (NB),NB_Muir_FS_McKenzie,49.889734,-119.377283,KEL,Kelowna Regional Transit System,Kelowna
+103422,East Boundary at Elk (NB),NB_East Boundary_FS_Elk,49.840472,-119.588921,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103423,Westridge at Blueridge (SB),SB_Westridge_FS_Blueridge,49.813662,-119.465286,KEL,Kelowna Regional Transit System,Kelowna
+103424,Parkridge at Mission Ridge (NB),NB_Parkridge_NS_Mission Ridge,49.815026,-119.457974,KEL,Kelowna Regional Transit System,Kelowna
+103425,Old Vernon at Acland (EB),EB_Old Vernon_FS_Acland,49.918048,-119.382879,KEL,Kelowna Regional Transit System,Kelowna
+103426,Hardie at Hemlock (WB),WB_Hardie_NS_Hemlock,49.894929,-119.376819,KEL,Kelowna Regional Transit System,Kelowna
+103427,East Boundary at Elk (SB),SB_East Boundary_NS_Elk,49.840231,-119.58916,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103428,Merrifield at Mugford (NB),NB_Merrifield_NS_Mugford,49.892342,-119.376026,KEL,Kelowna Regional Transit System,Kelowna
+103429,Craig at Hartman (NB),NB_Craig_NS_Hartman,49.89947,-119.376885,KEL,Kelowna Regional Transit System,Kelowna
+103430,McCurdy Rd E at Craig (WB),WB_McCurdy Rd E_FS_Craig,49.90184,-119.377519,KEL,Kelowna Regional Transit System,Kelowna
+103432,Chute Lake at Barnaby (SB),SB_Chute Lake_FS_Barnaby,49.809682,-119.49825,KEL,Kelowna Regional Transit System,Kelowna
+103433,McCulloch at Spaarpak (WB),WB_McCulloch_FS_Spaarpak,49.840127,-119.399667,KEL,Kelowna Regional Transit System,Kelowna
+103436,McCulloch at Spaarpak (EB),EB_McCulloch_FS_Spaarpak,49.83993,-119.399007,KEL,Kelowna Regional Transit System,Kelowna
+103439,Gordon 870 block (WB),WB_870_block_Gordon,49.809905,-119.472002,KEL,Kelowna Regional Transit System,Kelowna
+103440,Parkridge at Appleridge (NB),NB_Parkridge_NS_Appleridge,49.812257,-119.456911,KEL,Kelowna Regional Transit System,Kelowna
+103441,Westridge at Appleridge (SB),SB_Westridge_FS_Appleridge,49.810851,-119.463123,KEL,Kelowna Regional Transit System,Kelowna
+103442,Quail 1970 block (WB),WB_1970_block_Quail,49.840721,-119.595133,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103444,Westridge 4780 block (SB),SB_4780_block_Westridge,49.809055,-119.461363,KEL,Kelowna Regional Transit System,Kelowna
+103445,Chute Lake 4910 Block (SB),SB_4910_Block_Chute Lake,49.805968,-119.499583,KEL,Kelowna Regional Transit System,Kelowna
+103446,Hwy 33 E at Toovey (SB),SB_Hwy 33 E_NS_Toovey,49.877485,-119.368794,KEL,Kelowna Regional Transit System,Kelowna
+103447,Ridge Estates at Elk (NB),NB_Ridge Estates_FS_Elk,49.836201,-119.594672,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103448,Hwy 33 E at Toovey (NB),NB_Hwy 33 E_FS_Toovey,49.878837,-119.369306,KEL,Kelowna Regional Transit System,Kelowna
+103450,Elk at Ridge Estates (WB),WB_Elk_FS_Ridge Estates,49.836313,-119.595871,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103451,Arbor View at Windsong (EB),EB_Arbor View_FS_Windsong,49.805735,-119.481243,KEL,Kelowna Regional Transit System,Kelowna
+103452,Boucherie at Pritchard (EB),EB_Boucherie_FS_Pritchard,49.83093,-119.588215,KEL,Kelowna Regional Transit System,West Kelowna
+103457,Okanagan College Exchange Bay C,Okanagan_College_Exchange_Bay_C,49.860833,-119.481204,KEL,Kelowna Regional Transit System,Kelowna
+103458,McCulloch at McClain (EB),EB_McCulloch_NS_McClain,49.837911,-119.392937,KEL,Kelowna Regional Transit System,Kelowna
+103459,Old Okanagan at Louie (EB),EB_Old Okanagan_FS_Louie,49.845389,-119.606395,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103460,Pritchard 3800 block (SB),SB_3800_block_Pritchard,49.830583,-119.58906,KEL,Kelowna Regional Transit System,West Kelowna
+103461,McCulloch at Lakevale (WB),WB_McCulloch_FS_Lakevale,49.837755,-119.391559,KEL,Kelowna Regional Transit System,Kelowna
+103462,Old Okanagan at Louie (WB),WB_Old Okanagan_FS_Louie,49.845553,-119.607345,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103463,Elk at Cougar (EB),EB_Elk_FS_Cougar,49.838969,-119.601337,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103464,Parkridge at Westridge (NB),NB_Parkridge_FS_Westridge,49.807642,-119.455922,KEL,Kelowna Regional Transit System,Kelowna
+103465,Elk at Cougar (WB),WB_Elk_FS_Cougar,49.839162,-119.602456,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103467,Old Boucherie at Pritchard (EB),EB_Old Boucherie_NS_Pritchard,49.827719,-119.589386,KEL,Kelowna Regional Transit System,West Kelowna
+103469,Woodstock at Sandstone Dr (SB),SB_Woodstock_FS_Sandstone Dr,49.849628,-119.613769,KEL,Kelowna Regional Transit System,West Kelowna
+103470,Parkridge at Woodridge (NB),NB_Parkridge_FS_Woodridge,49.809489,-119.456228,KEL,Kelowna Regional Transit System,Kelowna
+103471,Woodstock at Shannon (SB),SB_Woodstock_FS_Shannon,49.850821,-119.614948,KEL,Kelowna Regional Transit System,West Kelowna
+103472,Main at Grant Rd (NB),NB_Main_NS_Grant,50.027302,-119.403414,KEL,Kelowna Regional Transit System,Lake Country
+103473,Old Okanagan at Skyview (EB),EB_Old Okanagan_NS_Skyview,49.84459,-119.609848,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103474,Old Boucherie at Pritchard (WB),WB_Old Boucherie_FS_Pritchard,49.827907,-119.589955,KEL,Kelowna Regional Transit System,West Kelowna
+103477,Hwy 33 E at Langford (WB),WB_Hwy 33 E_FS_Langford,49.889099,-119.378995,KEL,Kelowna Regional Transit System,Kelowna
+103478,Old Vernon at Morrison (WB),WB_Old Vernon_FS_Morrison,49.918208,-119.370116,KEL,Kelowna Regional Transit System,Kelowna
+103480,Old Vernon at Morrison (EB),EB_Old Vernon_FS_Morrison,49.918071,-119.369456,KEL,Kelowna Regional Transit System,Kelowna
+103481,Shannon Way at Westville (WB),WB_Shannon Way_NS_Westville,49.849038,-119.61561,KEL,Kelowna Regional Transit System,West Kelowna
+103482,Hwy 33 E at Sadler (WB),WB_Hwy 33 E_FS_Sadler,49.889037,-119.385844,KEL,Kelowna Regional Transit System,Kelowna
+103483,Carrington at elk (NB),NB_Carrington_NS_Elk,49.838428,-119.609033,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103484,Old Boucherie at Hitchner (EB),EB_Old Boucherie_FS_Hitchner,49.827594,-119.593019,KEL,Kelowna Regional Transit System,West Kelowna
+103485,Carrington at Elk (SB),SB_Carrington_FS_Elk,49.838669,-119.609115,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103486,Old Boucherie at Hitchner (WB),WB_Old Boucherie_FS_Hitchner,49.827862,-119.59358,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103489,McCulloch at Gallaghers Blvd S (WB),WB_McCulloch_FS_Gallaghers Blvd S,49.837955,-119.382259,KEL,Kelowna Regional Transit System,Kelowna
+103490,Hwy 33 E at Hume (EB),EB_Hwy 33 E_FS_Hume,49.868728,-119.361103,KEL,Kelowna Regional Transit System,Kelowna
+140030,Gordon at Casorso (NB),NB_Gordon_FS_Casorso,49.851242,-119.476153,KEL,Kelowna Regional Transit System,Kelowna
+140031,Gordon at Bothe (NB),NB_Gordon_FS_Bothe,49.857681,-119.474219,KEL,Kelowna Regional Transit System,Kelowna
+140032,Gordon at KLO (NB),NB_Gordon_NS_KLO,49.860178,-119.474164,KEL,Kelowna Regional Transit System,Kelowna
+140033,Gordon at Raymer (NB),NB_Gordon_FS_Raymer,49.865329,-119.474101,KEL,Kelowna Regional Transit System,Kelowna
+140034,Gordon at Cameron (NB),NB_Gordon_FS_Cameron,49.870559,-119.474763,KEL,Kelowna Regional Transit System,Kelowna
+140035,Gordon at Guisachan (NB),NB_Gordon_FS_Guisachan,49.873192,-119.476145,KEL,Kelowna Regional Transit System,Kelowna
+140036,Gordon at Springfield (NB),NB_Gordon_FS_Springfield,49.87724,-119.476939,KEL,Kelowna Regional Transit System,Kelowna
+140037,Gordon at Harvey (NB),NB_Gordon_NS_Harvey,49.882587,-119.476881,KEL,Kelowna Regional Transit System,Kelowna
+140038,Gordon at Bernard (NB),NB_Gordon_FS_Bernard,49.886885,-119.476836,KEL,Kelowna Regional Transit System,Kelowna
+140039,Gordon at Cawston (NB),NB_Gordon_FS_Cawston,49.891852,-119.476877,KEL,Kelowna Regional Transit System,Kelowna
+140040,Clement at Ethel (WB),WB_Clement_FS_Ethel,49.893617,-119.483303,KEL,Kelowna Regional Transit System,Kelowna
+140041,Clement at Richter (WB),WB_Clement_FS_Richter,49.89365,-119.48889,KEL,Kelowna Regional Transit System,Kelowna
+140042,Ellis at Clement (SB),SB_Ellis_FS_Clement,49.893153,-119.493616,KEL,Kelowna Regional Transit System,Kelowna
+140043,Cadder at Richter (EB),EB_Cadder_FS_Richter,49.876314,-119.487651,KEL,Kelowna Regional Transit System,Kelowna
+140045,Cadder at Ethel (WB),WB_Cadder_FS_Ethel,49.876417,-119.483137,KEL,Kelowna Regional Transit System,Kelowna
+140046,Cadder at Richter (WB),WB_Cadder_FS_Richter,49.876411,-119.488915,KEL,Kelowna Regional Transit System,Kelowna
+140047,Cadder at Pandosy (EB),EB_Cadder_FS_Pandosy,49.876294,-119.490743,KEL,Kelowna Regional Transit System,Kelowna
+140048,Springfirld at Gordon (WB),WB_Springfirld_FS_Gordon,49.876867,-119.478149,KEL,Kelowna Regional Transit System,Kelowna
+140049,Hwy 97 at Richter (EB),EB_Hwy 97_NS_Richter,49.883484,-119.490352,KEL,Kelowna Regional Transit System,Kelowna
+140050,Clement at Gordon (WB),WB_Clement_FS_Gordon,49.893682,-119.47777,KEL,Kelowna Regional Transit System,Kelowna
+140051,Clement at Gordon (EB),EB_Clement_FS_Gordon,49.893372,-119.475888,KEL,Kelowna Regional Transit System,Kelowna
+140053,Pandosy at Osprey (NB),NB_Pandosy_NS_Osprey,49.865794,-119.491083,KEL,Kelowna Regional Transit System,Kelowna
+140058,Asquith at Saddleback (WB),WB_Asquith_NS_Saddleback,49.850727,-119.623529,KEL,Kelowna Regional Transit System,West Kelowna
+140059,Ironridge at Ironridge Pl (SB),SB_Ironridge_FS_Ironridge Pl,49.854497,-119.62782,KEL,Kelowna Regional Transit System,West Kelowna
+140060,Wild Horse at Bridlehill (WB),WB_Wild Horse_NS_Bridlehill,49.853878,-119.633022,KEL,Kelowna Regional Transit System,West Kelowna
+140061,Wild Horse at 2560 Blk (WB),WB_Wild Horse_AT_2560 Blk,49.853485,-119.635578,KEL,Kelowna Regional Transit System,West Kelowna
+140062,Whispering Hills at Wild Horse (NB),NB_Whispering Hills_FS_Wild Horse,49.852284,-119.641657,KEL,Kelowna Regional Transit System,West Kelowna
+140063,Copper Ridge at Smith Creek (WB),WB_Copper Ridge_NS_Smith Creek,49.853908,-119.64385,KEL,Kelowna Regional Transit System,West Kelowna
+140064,Smith Creek at Sugosa (SB),SB_Smith Creek_FS_Sugosa,49.851763,-119.643095,KEL,Kelowna Regional Transit System,West Kelowna
+140065,Hudson at Concord (WB),WB_Hudson_NS_Concord,49.862714,-119.562871,KEL,Kelowna Regional Transit System,West Kelowna
+140066,Hudson at Westlake (EB),EB_Hudson_NS_Westlake,49.862631,-119.563892,KEL,Kelowna Regional Transit System,West Kelowna
+140067,Louie at Butt (NB),NB_Louie_FS_Butt,49.837685,-119.615568,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+140068,Louie at Elk (NB),NB_Louie_NS_Elk,49.840285,-119.612265,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+140069,Stevens at Mcdougall (EB),EB_Stevens_FS_Mcdougall,49.865887,-119.567556,KEL,Kelowna Regional Transit System,West Kelowna
+140070,Stevens at Westlake (WB),WB_Stevens_FS_Westlake,49.866286,-119.567485,KEL,Kelowna Regional Transit System,West Kelowna
+140071,Hwy 97 at Butt (EB),EB_Hwy 97_FS_Butt,49.837154,-119.614171,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+140072,Hwy 97 at Butt (WB),WB_Hwy 97_FS_Butt,49.835323,-119.617136,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+140073,Hwy 97 at Westlake (EB),EB_Hwy 97_FS_Westlake,49.86423,-119.562831,KEL,Kelowna Regional Transit System,West Kelowna
+140074,Hwy 97 at Westlake (WB),WB_Hwy 97_FS_Westlake,49.863219,-119.566566,KEL,Kelowna Regional Transit System,West Kelowna
+800006,Mission Rec Exchange,Mission Rec Exchange,49.836817,-119.480482,KEL,Kelowna Regional Transit System,Kelowna
+800008,Okanagan College Exchange,Okanagan College Exchange,49.861041,-119.48,KEL,Kelowna Regional Transit System,Kelowna
+800009,Orchard Park Exchange,Orchard Park Exchange,49.880034,-119.443061,KEL,Kelowna Regional Transit System,Kelowna
+800010,Queensway Exchange,Queensway Exchange,49.887316,-119.495162,KEL,Kelowna Regional Transit System,Kelowna
+800013,Stevens Exchange,Stevens Exchange,49.865099,-119.56495,KEL,Kelowna Regional Transit System,West Kelowna
+800016,Westbank Exchange,Westbank Exchange,49.828965,-119.631071,KEL,Kelowna Regional Transit System,West Kelowna
+800022,Rutland Exchange,Rutland Exchange,49.890848,-119.392708,KEL,Kelowna Regional Transit System,Kelowna
+800029,Kelowna Hospital Exchange,Kelowna Hospital Exchange,49.873407,-119.491322,KEL,Kelowna Regional Transit System,Kelowna
+800032,Boucherie Mountain Exchange,Boucherie Mountain Exchange,49.861624,-119.58518,KEL,Kelowna Regional Transit System,West Kelowna
+140000,Highway 97 at Bertram (WB),WB_Highway 97_FS_Bertram,49.883844,-119.491439,KEL,Kelowna Regional Transit System,Kelowna
+140002,Highway 97 at Gordon (WB),WB_Highway 97_FS_Gordon,49.883752,-119.478705,KEL,Kelowna Regional Transit System,Kelowna
+140003,Highway 97 at Gordon (EB),EB_Highway 97_FS_Gordon,49.883267,-119.475337,KEL,Kelowna Regional Transit System,Kelowna
+140004,Westbank Exchange Bay A,Westbank_Exchange_Bay_A,49.828648,-119.631149,KEL,Kelowna Regional Transit System,West Kelowna
+140005,Westbank Exchange Bay B,Westbank_Exchange_Bay_B,49.829331,-119.631118,KEL,Kelowna Regional Transit System,West Kelowna
+140006,Westbank Exchange Bay C,Westbank_Exchange_Bay_C,49.82875,-119.630792,KEL,Kelowna Regional Transit System,West Kelowna
+140007,Boucherie Mountain Exchange Bay A,Boucherie_Mountain_Exchange_Bay_A,49.862085,-119.585281,KEL,Kelowna Regional Transit System,West Kelowna
+140008,Boucherie Mountain Exchange Bay B,Boucherie_Mountain_Exchange_Bay_B,49.862138,-119.584936,KEL,Kelowna Regional Transit System,West Kelowna
+140009,Boucherie Mountain Exchange Bay C,Boucherie_Mountain_Exchange_Bay_C,49.862094,-119.58511,KEL,Kelowna Regional Transit System,West Kelowna
+140010,Boucherie Mountain Exchange Bay D,Boucherie_Mountain_Exchange_Bay_D,49.861538,-119.585188,KEL,Kelowna Regional Transit System,West Kelowna
+140011,Boucherie Mountain Exchange Bay E,Boucherie_Mountain_Exchange_Bay_E,49.861386,-119.585177,KEL,Kelowna Regional Transit System,West Kelowna
+140018,Ellis at Clement (NB),NB_Ellis_NS_Clement,49.893181,-119.493396,KEL,Kelowna Regional Transit System,Kelowna
+140019,Clement at Richter (EB),EB_Clement_FS_Richter,49.893488,-119.487941,KEL,Kelowna Regional Transit System,Kelowna
+140020,Clement at Ethel (EB),EB_Clement_FS_Ethel,49.893467,-119.482296,KEL,Kelowna Regional Transit System,Kelowna
+140021,Gordon at Coronation (SB),SB_Gordon_FS_Coronation,49.892379,-119.477131,KEL,Kelowna Regional Transit System,Kelowna
+140022,Gordon at Bernard (SB),SB_Gordon_NS_Bernard,49.886779,-119.477164,KEL,Kelowna Regional Transit System,Kelowna
+140023,Gordon at Laurier (SB),SB_Gordon_NS_Laurier,49.882371,-119.47722,KEL,Kelowna Regional Transit System,Kelowna
+140024,Gordon at KLO (SB),SB_Gordon_FS_KLO,49.860216,-119.474513,KEL,Kelowna Regional Transit System,Kelowna
+140025,Gordon at Lanfranco (SB),SB_Gordon_FS_Lanfranco,49.857063,-119.474586,KEL,Kelowna Regional Transit System,Kelowna
+140026,Gordon at Casorso (SB),SB_Gordon_FS_Casorso,49.850557,-119.476978,KEL,Kelowna Regional Transit System,Kelowna
+140027,Gordon at Cook (SB),SB_Gordon_FS_Cook,49.845169,-119.480603,KEL,Kelowna Regional Transit System,Kelowna
+140028,Gordon at Lexington (NB),NB_Gordon_FS_Lexington,49.83991,-119.482082,KEL,Kelowna Regional Transit System,Kelowna
+140029,Gordon at Cook (NB),NB_Gordon_FS_Cook,49.845721,-119.479876,KEL,Kelowna Regional Transit System,Kelowna
+140077,Bottom Wood Lake at Powley (SB),SB_Bottom Wood Lake_NS_Powley,50.037816,-119.403102,KEL,Kelowna Regional Transit System,Lake Country
+140078,Bottom Wood Lake at Mayrus (SB),SB_Bottom Wood Lake_NS_Mayrus,50.043116,-119.403155,KEL,Kelowna Regional Transit System,Lake Country
+140079,Bottom Wood Lake at Wageman (SB),SB_Bottom Wood Lake_FS_Wageman,50.045966,-119.403121,KEL,Kelowna Regional Transit System,Lake Country
+140080,Lake Hill at Lake Breeze (NB),NB_Lake Hill_FS_Lake Breeze,50.06598,-119.419004,KEL,Kelowna Regional Transit System,Lake Country
+140081,Shoreline at Stillwater (NB),NB_Shoreline_NS_Stillwater,50.068593,-119.420104,KEL,Kelowna Regional Transit System,Lake Country
+140082,Shoreline Way at Lake Hill (EB),EB_Shoreline Way_FS_Lake Hill,50.073517,-119.41726,KEL,Kelowna Regional Transit System,Lake Country
+140083,Lake Hill at Shoreline Way (SB),SB_Lake Hill_FS_Shoreline Way,50.071711,-119.416468,KEL,Kelowna Regional Transit System,Lake Country
+140084,Stillwater at Lake Hill (WB),WB_Stillwater_FS_Lake Hill,50.069555,-119.418569,KEL,Kelowna Regional Transit System,Lake Country
+140085,Stillwater at Driftwood (EB),EB_Stillwater_NS_Driftwood,50.06784,-119.419295,KEL,Kelowna Regional Transit System,Lake Country
+140086,Lake Hill at Lake Breeze (SB),SB_Lake Hill_NS_Lake Breeze,50.066288,-119.419065,KEL,Kelowna Regional Transit System,Lake Country
+140087,Lake Hill at Oceola (SB),SB_Lake Hill_NS_Oceola,50.061205,-119.41838,KEL,Kelowna Regional Transit System,Lake Country
+140088,Oceola at Pretty (SB),SB_Oceola_NS_Pretty,50.054704,-119.411454,KEL,Kelowna Regional Transit System,Lake Country
+140089,Woodsdale at Turtle Bay (EB),EB_Woodsdale_NS_Turtle Bay,50.049195,-119.407624,KEL,Kelowna Regional Transit System,Lake Country
+140090,Bottom Wood Lake at Wageman (NB),NB_Bottom Wood Lake_FS_Wageman,50.046292,-119.402931,KEL,Kelowna Regional Transit System,Lake Country
+140091,Bottom Wood Lake at Mayrus (NB),NB_Bottom Wood Lake_FS_Mayrus,50.043349,-119.402901,KEL,Kelowna Regional Transit System,Lake Country
+140055,KLO at Benvoulin (EB),EB_KLO_FS_Benvoulin,49.860846,-119.455012,KEL,Kelowna Regional Transit System,Kelowna
+140014,Bottom Wood Lake at Konschuh (EB),EB_Bottom Wood Lake_NS_Konschuh,50.028711,-119.399356,KEL,Kelowna Regional Transit System,Lake Country
+140015,Bottom Wood Lake at Seniors Centre (SB),SB_Bottom Wood Lake_NS_Beaver Lake,50.023462,-119.399205,KEL,Kelowna Regional Transit System,Lake Country
+140016,Beaver Lake at Jensen (WB),WB_Beaver Lake_NS_Jensen,50.020172,-119.401057,KEL,Kelowna Regional Transit System,Lake Country
+140017,Main at Hill Road (NB),NB_Main_NS_Hill,50.020835,-119.404179,KEL,Kelowna Regional Transit System,Lake Country
+940000,Kelowna Transit Centre,Kelowna_Transit_Centre,49.88611,-119.447852,KEL,Kelowna Regional Transit System,Kelowna
+140001,Woodsdale at Bottom Wood Lake (WB),WB_Woodsdale_FS_Bootm Wood Lake,50.049344,-119.404002,KEL,Kelowna Regional Transit System,Lake Country
+140054,Woodsdale at Bottom Wood Lake (EB),EB_Woodsdale_NS_Bottom Wood Lake,50.049203,-119.403999,KEL,Kelowna Regional Transit System,Lake Country
+140092,Bottom Wood Lake at Powley (NB),NB_Bottom Wood Lake_FS_Powley,50.038302,-119.402878,KEL,Kelowna Regional Transit System,Lake Country
+140093,Bottom Wood Lake at Berry (SB),SB_Bottom_Wood_Lake_NS_Berry,50.030315,-119.401959,KEL,Kelowna Regional Transit System,Lake Country
+103802,Lakeshore at Old Meadows (SB),SB_Lakeshore_NS_Old Meadows,49.832564,-119.487343,KEL,Kelowna Regional Transit System,Kelowna
+103803,Lakeshore at Simeon (SB),SB_Lakeshore_FS_Simeon,49.828395,-119.488805,KEL,Kelowna Regional Transit System,Kelowna
+103804,Lakeshore at Willms (SB),SB_Lakeshore_NS_Willms,49.826054,-119.488838,KEL,Kelowna Regional Transit System,Kelowna
+103805,Chute Lake at Barnaby (NB),NB_Chute Lake_NS_Barnaby,49.809916,-119.497759,KEL,Kelowna Regional Transit System,Kelowna
+103806,Chute Lake 5020 Block (SB),SB_5020_Block_Chute Lake,49.801792,-119.49817,KEL,Kelowna Regional Transit System,Kelowna
+103807,Chute Lake 5020 block (NB),NB_5020_block_Chute Lake,49.801875,-119.497815,KEL,Kelowna Regional Transit System,Kelowna
+103808,Chute Lake at South Crest (SB),SB_Chute Lake_FS_South Crest,49.798376,-119.499105,KEL,Kelowna Regional Transit System,Kelowna
+103809,Chute Lake at South Crest (NB),NB_Chute Lake_FS_South Crest,49.798863,-119.498774,KEL,Kelowna Regional Transit System,Kelowna
+103810,Chute Lake 5160 block (WB),WB_5160_block_Chute Lake,49.795713,-119.502598,KEL,Kelowna Regional Transit System,Kelowna
+103811,Chute Lake at Lark (WB),WB_Chute Lake_FS_Lark,49.795388,-119.508634,KEL,Kelowna Regional Transit System,Kelowna
+103812,Chute Lake at Hedeman (NB),NB_Chute Lake_NS_Hedeman,49.79458,-119.510644,KEL,Kelowna Regional Transit System,Kelowna
+103813,Chute Lake at Lakepointe (EB),EB_Chute Lake_FS_Lakepointe,49.790987,-119.513941,KEL,Kelowna Regional Transit System,Kelowna
+103814,South Perimeter at Farron (EB),EB_South Perimeter_FS_Farron,49.789321,-119.517953,KEL,Kelowna Regional Transit System,Kelowna
+103815,Gordon at Old Meadows (NB),NB_Gordon_FS_Old Meadows,49.832381,-119.483105,KEL,Kelowna Regional Transit System,Kelowna
+103816,Gordon at Young (NB),NB_Gordon_FS_Young,49.828929,-119.483104,KEL,Kelowna Regional Transit System,Kelowna
+103817,Gordon at Young (SB),SB_Gordon_FS_Young,49.828434,-119.483365,KEL,Kelowna Regional Transit System,Kelowna
+103818,Gordon at Tozer (NB),NB_Gordon_FS_Tozer,49.824264,-119.483043,KEL,Kelowna Regional Transit System,Kelowna
+103820,Gordon at Raymer (NB),NB_Gordon Dr_FS_Raymer,49.819715,-119.482945,KEL,Kelowna Regional Transit System,Kelowna
+103821,Gordon Dr at Raymer (SB),SB_Gordon Dr_FS_Raymer,49.818865,-119.483291,KEL,Kelowna Regional Transit System,Kelowna
+103824,Gordon Dr at McClure (NB),NB_Gordon Dr_FS_McClure,49.816117,-119.482926,KEL,Kelowna Regional Transit System,Kelowna
+103825,Gordon at McClure (SB),SB_Gordon_FS_McClure,49.81536,-119.483318,KEL,Kelowna Regional Transit System,Kelowna
+103826,Gordon at Buck (SB),SB_Gordon_FS_Buck,49.813672,-119.483192,KEL,Kelowna Regional Transit System,Kelowna
+103827,Gordon at Paret (EB),EB_Gordon_NS_Paret,49.810943,-119.477958,KEL,Kelowna Regional Transit System,Kelowna
+103828,Gordon at Paret (WB),WB_Gordon_FS_Paret,49.811059,-119.477786,KEL,Kelowna Regional Transit System,Kelowna
+103829,Gordon 870 block (EB),EB_870_block_Gordon,49.809641,-119.471665,KEL,Kelowna Regional Transit System,Kelowna
+103833,Arbor View at Windsong (EB),EB_Arbor View_FS_Windsong,49.806117,-119.477393,KEL,Kelowna Regional Transit System,Kelowna
+103844,Princeton at Pierce (SB),SB_Princeton_NS_Pierce,49.753158,-119.790039,KEL,Kelowna Regional Transit System,Peachland
+103845,Country Club at Via Centrale (NB),NB_Country Club_NS_Via Centrale,49.954973,-119.399753,KEL,Kelowna Regional Transit System,Kelowna
+103846,Innovation at Fleet (NB),NB_Innovation_NS_Fleet,49.949521,-119.389452,KEL,Kelowna Regional Transit System,Kelowna
+103847,Innovation at Fleet (SB),SB_Innovation_NS_Fleet,49.950192,-119.389962,KEL,Kelowna Regional Transit System,Kelowna
+103848,Country Club at Quail Ridge (WB),WB_Country Club_FS_Quail Ridge,49.962902,-119.399077,KEL,Kelowna Regional Transit System,Kelowna
+103849,Country Club at Via Centrale (SB),SB_Country Club_NS_Via Centrale,49.955036,-119.399958,KEL,Kelowna Regional Transit System,Kelowna
+103851,Quail Ridge at Country Club (SB),SB_Quail Ridge_FS_Country Club,49.962491,-119.398245,KEL,Kelowna Regional Transit System,Kelowna
+103852,Country Club  1840 block (NB),NB_1840_block_Country Club,49.953112,-119.399438,KEL,Kelowna Regional Transit System,Kelowna
+103853,1840 Country Club Drive  (SB),SB_1840_block_Country Club,49.953002,-119.39968,KEL,Kelowna Regional Transit System,Kelowna
+103858,Country Club 1740 block (NB),NB_1740_block_Country Club,49.951168,-119.399762,KEL,Kelowna Regional Transit System,Kelowna
+103533,Quilchena 370 block (WB),WB_370_block_Quilchena,49.795054,-119.518686,KEL,Kelowna Regional Transit System,Kelowna
+103535,Butt at Louie (WB),WB_Butt_FS_Louie,49.837012,-119.619361,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103537,Butt at Louie (EB),EB_Butt_NS_Louie,49.836897,-119.619366,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103538,Hwy 33 E at Oswell (EB),EB_Hwy 33 E_NS_Oswell,49.868178,-119.350593,KEL,Kelowna Regional Transit System,Kelowna
+103539,Sunrise at Lynrick (EB),EB_Sunrise_NS_Lynrick,49.863169,-119.353659,KEL,Kelowna Regional Transit System,Kelowna
+103540,Quilchena at Raven (SB),SB_Quilchena_NS_Raven,49.793962,-119.52099,KEL,Kelowna Regional Transit System,Kelowna
+103541,Old Okanagan at Village Green Way (NB),NB_Old Okanagan_FS_Village Green Way,49.842447,-119.625113,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103542,Old Okanagan at Village Green Way (SB),SB_Old Okanagan_NS_Village Green Way,49.842336,-119.625765,KEL,Kelowna Regional Transit System,West Kelowna
+103547,Old Vernon at Scotty Creek (SB),SB_Old Vernon_NS_Scotty Creek,49.933218,-119.364262,KEL,Kelowna Regional Transit System,Central Okanagan
+103548,Old Vernon at Scotty Creek (NB),NB_Old Vernon_FS_Scotty Creek,49.933012,-119.364054,KEL,Kelowna Regional Transit System,Central Okanagan
+103550,Lynrick at Autumn (NB),NB_Lynrick_FS_Autumn,49.865283,-119.350586,KEL,Kelowna Regional Transit System,Kelowna
+103551,Old Okanagan at Chieftain (NB),NB_Old Okanagan_NS_Chieftain,49.840301,-119.625131,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103552,Old Okanagan at Chieftain (SB),SB_Old Okanagan_FS_Chieftain,49.840198,-119.625776,KEL,Kelowna Regional Transit System,West Kelowna
+103553,Boucherie at Carrall (WB),WB_Boucherie_NS_Carrall,49.825236,-119.609474,KEL,Kelowna Regional Transit System,West Kelowna
+103554,Black Mountain at Linda (NB),NB_Black Mountain_FS_Linda,49.870802,-119.347973,KEL,Kelowna Regional Transit System,Kelowna
+103556,Old Okanagan at Quince (SB),SB_Old Okanagan_FS_Quince,49.838299,-119.62574,KEL,Kelowna Regional Transit System,West Kelowna
+103557,Black Mountain at Begley (NB),NB_Black Mountain_FS_Begley,49.869365,-119.347167,KEL,Kelowna Regional Transit System,Kelowna
+103561,Old Vernon 3600 block (NB),NB_3600_block_Old Vernon,49.93716,-119.364022,KEL,Kelowna Regional Transit System,Central Okanagan
+103562,Quilchena at Providence (SB),SB_Quilchena_NS_Providence,49.791274,-119.521882,KEL,Kelowna Regional Transit System,Kelowna
+103563,Old Okanagan at Butt (NB),NB_Old Okanagan_FS_Butt,49.837115,-119.625071,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103564,Old Vernon 3660 block (SB),SB_3660_block_Old Vernon,49.937535,-119.364228,KEL,Kelowna Regional Transit System,Central Okanagan
+103565,Old Okanagan at Butt (SB),SB_Old Okanagan_FS_Butt,49.836544,-119.625699,KEL,Kelowna Regional Transit System,West Kelowna
+103566,Boucherie at Carrall (WB),WB_Boucherie_FS_Carrall,49.824763,-119.61268,KEL,Kelowna Regional Transit System,West Kelowna
+103569,Airport 5610 block (NB),NB_5610_block_Airport,49.955849,-119.381414,KEL,Kelowna Regional Transit System,Kelowna
+103573,Elliott at Reece (SB),SB_Elliott_NS_Reece,49.844185,-119.634269,KEL,Kelowna Regional Transit System,West Kelowna
+103574,Airport 5680 block (SB),SB_5680_block_Airport,49.955711,-119.381639,KEL,Kelowna Regional Transit System,Kelowna
+103575,Old Okanagan at Bering (SB),SB_Old Okanagan_FS_Bering,49.834197,-119.625576,KEL,Kelowna Regional Transit System,West Kelowna
+103576,Old Vernon at Bulman (NB),NB_Old Vernon_FS_Bulman,49.940426,-119.364035,KEL,Kelowna Regional Transit System,Central Okanagan
+103577,Old Vernon at Bulman (SB),SB_Old Vernon_NS_Bulman,49.94079,-119.364547,KEL,Kelowna Regional Transit System,Central Okanagan
+103579,Gellatly at Carrington (NB),NB_Gellatly_NS_Carrington,49.829173,-119.620626,KEL,Kelowna Regional Transit System,West Kelowna
+103580,Gellatly at Witt (EB),EB_Gellatly_NS_Witt,49.82732,-119.618773,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103581,Gellatly at Carrington (SB),SB_Gellatly_FS_Carrington,49.829409,-119.621094,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103582,Gellatly at Witt (WB),WB_Gellatly_FS_Witt,49.827615,-119.618942,KEL,Kelowna Regional Transit System,West Kelowna
+103584,Old Okanagan at 3590 Blk (NB),NB_Old Okanagan_AT_3590 Blk,49.833436,-119.625314,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103585,Elliott at Neufeld (SB),SB_Elliott_NS_Neufeld,49.841981,-119.634172,KEL,Kelowna Regional Transit System,West Kelowna
+103586,Boucherie at Gellatly (EB),EB_Boucherie_FS_Gellatly,49.823794,-119.615841,KEL,Kelowna Regional Transit System,West Kelowna
+103589,Smith Creek at Elliott (SB),SB_Smith Creek_NS_Elliott,49.847822,-119.639259,KEL,Kelowna Regional Transit System,West Kelowna
+103590,Boucherie at Gellatly (WB),WB_Boucherie_NS_Gellatly,49.823769,-119.616587,KEL,Kelowna Regional Transit System,West Kelowna
+103593,Old Okanagan at Drought (SB),SB_Old Okanagan_NS_Drought,49.830673,-119.625503,KEL,Kelowna Regional Transit System,West Kelowna
+103594,Elliott at Butt (SB),SB_Elliott_FS_Butt,49.83642,-119.631315,KEL,Kelowna Regional Transit System,West Kelowna
+103595,Old Okanagan at Drought (NB),NB_Old Okanagan_NS_Drought,49.830139,-119.62529,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103596,Dobbin at Old Okanagan (EB),EB_Dobbin_FS_Old Okanagan,49.828631,-119.624756,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+103597,Main at Hoskins (WB),WB_Main_NS_Hoskins,49.829686,-119.626289,KEL,Kelowna Regional Transit System,West Kelowna
+103598,Elliott at 3580 Blk (SB),SB_Elliott_AT_3580 Blk,49.833537,-119.631278,KEL,Kelowna Regional Transit System,West Kelowna
+103599,Old Vernon at Black (SB),SB_Old Vernon_NS_Black,49.951123,-119.368855,KEL,Kelowna Regional Transit System,Kelowna
+103600,Old Vernon at Black (NB),NB_Old Vernon_FS_Black,49.951133,-119.36867,KEL,Kelowna Regional Transit System,Central Okanagan
+103602,Elliott at Delray (SB),SB_Elliott_FS_Delray,49.830154,-119.631133,KEL,Kelowna Regional Transit System,West Kelowna
+103604,Airport Way Farside Aerospace (NB),NB_Airport Way_FS_Aerospace,49.964145,-119.381675,KEL,Kelowna Regional Transit System,Kelowna
+103607,Airport Way AT Areospace (SB),SB_Airport Way_AT_Areospace,49.964185,-119.381893,KEL,Kelowna Regional Transit System,Kelowna
+103608,Lower Glenrosa at Paynter (WB),WB_Lower Glenrosa_FS_Paynter,49.82973,-119.635655,KEL,Kelowna Regional Transit System,West Kelowna
+103609,6250 Blk Airport Way  (SB),SB_6250 Blk_Airport Way,49.969763,-119.38377,KEL,Kelowna Regional Transit System,Kelowna
+103610,6240 Blk Airport Way  (NB),NB_6240 Blk_Airport Way,49.969502,-119.383393,KEL,Kelowna Regional Transit System,Kelowna
+103611,Hwy 97 at Old Vernon (NB),NB_Hwy 97_FS_Old Vernon,49.970782,-119.385689,KEL,Kelowna Regional Transit System,Kelowna
+103613,Old Vernon at Teather (SB),SB_Old Vernon_FS_Teather,49.960966,-119.368982,KEL,Kelowna Regional Transit System,Central Okanagan
+103614,Webber at Dunbarton (NB),NB_Webber_FS_Dunbarton,49.839014,-119.653082,KEL,Kelowna Regional Transit System,West Kelowna
+103615,Webber at McAllister (WB),WB_Webber_NS_McAllister,49.84106,-119.655325,KEL,Kelowna Regional Transit System,West Kelowna
+103616,Webber at Gorman (NB),NB_Webber_FS_Gorman,49.837002,-119.653044,KEL,Kelowna Regional Transit System,West Kelowna
+103617,Webber at Lyon (NB),NB_Webber_NS_Lyon,49.835355,-119.652954,KEL,Kelowna Regional Transit System,West Kelowna
+103618,Webber at McRae (NB),NB_Webber_FS_McRae,49.84319,-119.658852,KEL,Kelowna Regional Transit System,West Kelowna
+103619,Old Vernon at Spencer (EB),EB_Old Vernon_NS_Spencer,49.970359,-119.370699,KEL,Kelowna Regional Transit System,Central Okanagan
+103620,Old Vernon at Spencer (WB),WB_Old Vernon_FS_Spencer,49.970513,-119.370675,KEL,Kelowna Regional Transit System,Kelowna
+103621,Lower Glenrosa at Glenway (SB),SB_Lower Glenrosa_NS_Glenway,49.826582,-119.646948,KEL,Kelowna Regional Transit System,West Kelowna
+103622,Webber at McGregor (NB),NB_Webber_NS_McGregor,49.845421,-119.661499,KEL,Kelowna Regional Transit System,West Kelowna
+103623,Webber at Scottstown (NB),NB_Webber_NS_Scottstown,49.832816,-119.652928,KEL,Kelowna Regional Transit System,West Kelowna
+103624,McNair at Webber (WB),WB_McNair_FS_Webber,49.84729,-119.663544,KEL,Kelowna Regional Transit System,West Kelowna
+103625,McIver at McRae (SB),SB_McIver_FS_McRae,49.841965,-119.661998,KEL,Kelowna Regional Transit System,West Kelowna
+103626,McIver at McBain (SB),SB_McIver_NS_McBain,49.843684,-119.663867,KEL,Kelowna Regional Transit System,West Kelowna
+103627,Webber at Salloum (NB),NB_Webber_FS_Salloum,49.829971,-119.65295,KEL,Kelowna Regional Transit System,West Kelowna
+103628,McIver at McTaggart (SB),SB_McIver_NS_McTaggart,49.839649,-119.661079,KEL,Kelowna Regional Transit System,West Kelowna
+103710,Princeton at Ellison (WB),WB_Princeton_FS_Ellison,49.762341,-119.757108,KEL,Kelowna Regional Transit System,Peachland
+103711,Princeton at Whinton (EB),EB_Princeton_NS_Whinton,49.759468,-119.760764,KEL,Kelowna Regional Transit System,Peachland
+103712,Princeton at Turner (WB),WB_Princeton_NS_Turner,49.759621,-119.761612,KEL,Kelowna Regional Transit System,Peachland
+103713,Princeton at Whinton (NB),NB_Princeton_FS_Whinton,49.757002,-119.763564,KEL,Kelowna Regional Transit System,Peachland
+103714,Princeton at Whinton (SB),SB_Princeton_NS_Whinton,49.756878,-119.763989,KEL,Kelowna Regional Transit System,Peachland
+103715,Princeton at Vernon (EB),EB_Princeton_FS_Vernon,49.755119,-119.766365,KEL,Kelowna Regional Transit System,Peachland
+103716,Princeton at Vernon (WB),WB_Princeton_FS_Vernon,49.755062,-119.766992,KEL,Kelowna Regional Transit System,Peachland
+103717,Princeton 5000 block (WB),WB_5000_block_Princeton,49.753777,-119.771651,KEL,Kelowna Regional Transit System,Peachland
+103718,Princeton 5000 block (EB),EB_5000_block_Princeton,49.753643,-119.771485,KEL,Kelowna Regional Transit System,Peachland
+103719,Princeton at Forest Hill (WB),WB_Princeton_FS_Forest Hill,49.752414,-119.778416,KEL,Kelowna Regional Transit System,Peachland
+103720,Princeton at Forest Hill (EB),EB_Princeton_NS_Forest Hill,49.752294,-119.778558,KEL,Kelowna Regional Transit System,Peachland
+103721,Princeton at Pineridge (WB),WB_Princeton_FS_Pineridge,49.752133,-119.783573,KEL,Kelowna Regional Transit System,Peachland
+103722,Princeton at Pineridge (EB),EB_Princeton_NS_Pineridge,49.752,-119.783545,KEL,Kelowna Regional Transit System,Peachland
+103723,Princeton at Bradbury (EB),EB_Princeton_FS_Bradbury,49.751924,-119.787647,KEL,Kelowna Regional Transit System,Peachland
+103744,Hwy 97 at Westside (SB),SB_Hwy 97_FS_Westside,49.88182,-119.536365,KEL,Kelowna Regional Transit System,Tsinstikeptum 10
+103745,Hwy 97 Offramp at Sneena (NB),NB_Hwy 97 Offramp_NS_Sneena,49.880823,-119.534995,KEL,Kelowna Regional Transit System,Tsinstikeptum 10
+103800,Lequime 670 block (WB),WB_670_block_Lequime,49.835566,-119.484825,KEL,Kelowna Regional Transit System,Kelowna
+103801,Lequime 670 block (EB),EB_670_block_Lequime,49.835561,-119.484333,KEL,Kelowna Regional Transit System,Kelowna
+140098,Alumni Ave at Transit Way (SB),SB_Alumni Ave_NS_Transit Way,49.939924,-119.394613,KEL,Kelowna Regional Transit System,Kelowna
+140099,UBCO Exchange Bay A,UBCO Exchange_Bay_A,49.93931,-119.394996,KEL,Kelowna Regional Transit System,Kelowna
+140100,Transit Way at Alumni Ave (EB),EB_Transit Way_FS_ALumni Ave,49.939482,-119.394268,KEL,Kelowna Regional Transit System,Kelowna
+140101,UBCO Exchange Bay B,UBCO Exchange_Bay B,49.939429,-119.394061,KEL,Kelowna Regional Transit System,Kelowna
+140118,Gellatly Rd at Gellatly Rd turn lane (WB),WB_Gellatly Rd_AT_Gellatly_Turn_Lane,49.823617,-119.618058,KEL,Kelowna Regional Transit System,West Kelowna
+140119,Gellatly Rd at Gellatly Aquatic Park (NB),NB_Gellatly Rd_AT_Gellatly_Aquatic_Park,49.822438,-119.619371,KEL,Kelowna Regional Transit System,West Kelowna
+140120,Gellatly Rd near South access of Angus Dr (NB),NB_Gellatly Rd_near_South_Access_of_Angus Dr,49.818827,-119.62097,KEL,Kelowna Regional Transit System,West Kelowna
+140121,Gellatly Rd at Angus Dr (SB),SB_Gellatly Rd_AT_Angus Dr,49.81727,-119.623184,KEL,Kelowna Regional Transit System,West Kelowna
+140122,Gellatly Rd at Rotary Trails (SB),SB_Gellatly Rd_AT_Rotary_Trails,49.815702,-119.623069,KEL,Kelowna Regional Transit System,West Kelowna
+140123,Gellatly Rd at Boat Launch (NB),NB_Gellatly Rd_AT_Boat Launch,49.815064,-119.622779,KEL,Kelowna Regional Transit System,West Kelowna
+140124,Gellatly Rd at Gellatly Rd S (SB),SB_Gellatly Rd_AT_Gellatly Rd_S,49.812429,-119.623286,KEL,Kelowna Regional Transit System,West Kelowna
+140125,Gellatly Rd at Gellatly Rd S (NB),NB_Gellatly Rd_AT_Gellatly Rd S,49.81206,-119.623204,KEL,Kelowna Regional Transit System,West Kelowna
+140126,Whitworth Rd at Gellatly Rd S (SB),SB_Whitworth Rd_AT_Gellatly Rd S,49.812604,-119.627203,KEL,Kelowna Regional Transit System,West Kelowna
+140127,Whitworth Rd at Gellatly Nut Farm (NB),NB_Whitworth Rd_AT_Gellatly_Nut_Farm,49.811893,-119.6274,KEL,Kelowna Regional Transit System,West Kelowna
+140128,Whitworth Rd at George Crt (SB),SB_Whitworth Rd_AT_George Crt,49.809323,-119.628192,KEL,Kelowna Regional Transit System,West Kelowna
+140129,Whitworth Rd at 2431 Block (WB),WB_Whitworth Rd_AT_2431 Block,49.808554,-119.633651,KEL,Kelowna Regional Transit System,West Kelowna
+140130,Whitworth Rd at Pebble Beach Park (WB),WB_Whitworth Rd_AT_Pebble_Beach_Park,49.809626,-119.637366,KEL,Kelowna Regional Transit System,West Kelowna
+140102,UBCO Exchange Bay C,UBCO Exchange_Bay C,49.939382,-119.393874,KEL,Kelowna Regional Transit System,Kelowna
+140103,UBCO Exchange Bay D,UBCO Exchange_Bay_D,49.939348,-119.393726,KEL,Kelowna Regional Transit System,Kelowna
+140104,UBCO Exchange Bay E,UBCO Exchange_Bay E,49.939979,-119.394333,KEL,Kelowna Regional Transit System,Kelowna
+140161,Arbor View Dr at Steele Rd (EB),EB_Arbor View Dr_NS_Steele Rd,49.806543,-119.472664,KEL,Kelowna Regional Transit System,Kelowna
+140156,Sexsmith Rd at Adams (WB),WB_Sexsmith_FS_Adams,49.91822,-119.389931,KEL,Kelowna Regional Transit System,Kelowna
+140157,Sexsmith Rd at Adams,EB_Sexsmith Rd_FS_Adams,49.918103,-119.389011,KEL,Kelowna Regional Transit System,Kelowna
+140131,Glenmore Rd at Cross (NB),NB_Glenmore Rd_FS_Cross ,49.923368,-119.438328,KEL,Kelowna Regional Transit System,Kelowna
+140132,Glenmore at Union (NB),NB_Glenmore_FS_Union,49.927654,-119.434737,KEL,Kelowna Regional Transit System,Kelowna
+140133,Glenmore at Union (SB),SB_Glenmore_FS_Union,49.926307,-119.43607,KEL,Kelowna Regional Transit System,Kelowna
+140134,Glenmore at Scenic (NB),NB_Glenmore_NS_Scenic,49.932964,-119.433206,KEL,Kelowna Regional Transit System,Kelowna
+140135,Glenmore at Scenic (SB),SB_Glenmore_FS_Scenic,49.932879,-119.433542,KEL,Kelowna Regional Transit System,Kelowna
+140136,John Hindle at Glenmore (EB),EB_John Hindle_FS_Glenmore,49.946899,-119.423577,KEL,Kelowna Regional Transit System,Kelowna
+140137,John Hindle at Glenmore (WB),WB_John Hindle_NS_Glenmore,49.947603,-119.424715,KEL,Kelowna Regional Transit System,Kelowna
+140138,John Hindle at Campus Way (EB),EB_John Hindle_FS_Campus Way,49.938269,-119.401675,KEL,Kelowna Regional Transit System,Kelowna
+140140,Academy at Shetland (WB),WB_Academy_FS_Shetland,49.922358,-119.398018,KEL,Kelowna Regional Transit System,Kelowna
+140141,Academy Way at Arab (EB),EB_Academy Way_FS_Arab,49.922825,-119.399673,KEL,Kelowna Regional Transit System,Kelowna
+140142,Academy Way at Vint (NB),NB_Academy Way_FS_Vint,49.928309,-119.399929,KEL,Kelowna Regional Transit System,Kelowna
+140143,Academy Way at Vint (SB),SB_Academy Way_NS_Vint,49.928169,-119.400106,KEL,Kelowna Regional Transit System,Kelowna
+140144,Academy Way at Acadia (NB),NB_Academy Way_FS_Acadia,49.932283,-119.401323,KEL,Kelowna Regional Transit System,Kelowna
+140145,Academy Way at Acadia (SB),SB_Academy Way_NS_Acadia,49.932114,-119.401399,KEL,Kelowna Regional Transit System,Kelowna
+140146,Academy Way at 935 Block (NB),NB_Academy Way_AT_935 Block,49.934695,-119.401086,KEL,Kelowna Regional Transit System,Kelowna
+140147,Academy Way at 950 Block (SB),SB_Academy Way_AT_950 Block,49.934627,-119.401374,KEL,Kelowna Regional Transit System,Kelowna
+140148,Rutland Exchange Bay B,Rutland Exchange_Bay B,49.890663,-119.391887,KEL,Kelowna Regional Transit System,Kelowna
+140149,Rutland Exchange Bay C,Rutland Exchange_Bay C,49.890663,-119.390829,KEL,Kelowna Regional Transit System,Kelowna
+140150,Rutland Exchange Bay D,Rutland Exchange_Bay D,49.890511,-119.392352,KEL,Kelowna Regional Transit System,Kelowna
+140151,Rutland Exchange Bay E,Rutland Exchange_Bay E,49.890524,-119.391804,KEL,Kelowna Regional Transit System,Kelowna
+140152,Dougall Rd at Hwy 33 (NB),NB_Dougall Rd_FS_Hwy 33,49.889424,-119.392741,KEL,Kelowna Regional Transit System,Kelowna
+140139,John Hindle at Campus Way (WB),WB_John Hindle_FS_Campus Way,49.938589,-119.401818,KEL,Kelowna Regional Transit System,Kelowna
+140153,Westlake Rd at Peak Point (EB),EB_Westlake Rd_FS_Peak Point Rd,49.883947,-119.560435,KEL,Kelowna Regional Transit System,West Kelowna
+140155,Bear Creek at Vancouver (SB),SB_Bear Creek_NS_Vancouver,49.895268,-119.547437,KEL,Kelowna Regional Transit System,West Kelowna
+140159,Innovation Dr at University (NB),NB_Innovation Dr_at_University,49.942565,-119.39057,KEL,Kelowna Regional Transit System,Kelowna
+140160,Innovation Dr at University (SB),SB_Innovation Dr_at_University,49.943397,-119.390212,KEL,Kelowna Regional Transit System,Kelowna
+140158,Klo at Benvoulin Rd (WB),WB_Klo Rd_NS_Benvoulin Rd,49.861145,-119.454003,KEL,Kelowna Regional Transit System,Kelowna
+140154,Parkinson Rd at 1385 Block (EB),EB_Parkinson Rd_AT_1385 Block,49.895938,-119.549693,KEL,Kelowna Regional Transit System,West Kelowna
+140190,Shannon Lake at Tallus Ridge Dr (NB),NB_Shannon Lake Rd_NS_Tallus Ridge Dr,49.862474,-119.612802,KEL,Kelowna Regional Transit System,West Kelowna
+140191,Shannon Lake at Tallus Ridge (WB),WB_Shannon Lake_NS_Tallus Ridge,49.863284,-119.611984,KEL,Kelowna Regional Transit System,West Kelowna
+140192,Whispering Hills at Copper Ridge (SB),SB_Whispering Hills_FS_Copper Ridge,49.853189,-119.64016,KEL,Kelowna Regional Transit System,West Kelowna
+140193,Woodstock at Sandstone (WB),WB_Woodstock_FS_Sandstone,49.850235,-119.613851,KEL,Kelowna Regional Transit System,West Kelowna
+140194,Shannon Ridge at Ridge Pl (NB),NB_Shannon Ridge_FS_Ridge Pl,49.853332,-119.613709,KEL,Kelowna Regional Transit System,West Kelowna
+140195,Shannon Ridge at Shannon Green Crt (NB),NB_Shannon Ridge_FS_Shannon Green Crt,49.854589,-119.611447,KEL,Kelowna Regional Transit System,West Kelowna
+140196,Smith Creek AT Elliott (NB),NB_Smith Creek_FS_Elliott,49.847717,-119.639028,KEL,Kelowna Regional Transit System,West Kelowna
+140197,Smith Creek at Wild Horse (NB),NB_Smith Creek_NS_Wild Horse Dr,49.851279,-119.642276,KEL,Kelowna Regional Transit System,West Kelowna
+140198,Shannon Ridge at 2176 Blk (WB),WB_Shannon Ridge_AT_2176 Blk,49.855906,-119.605606,KEL,Kelowna Regional Transit System,West Kelowna
+140199,Auburn at Shelby (SB),SB_Auburn_FS_Shelby,49.856334,-119.600915,KEL,Kelowna Regional Transit System,West Kelowna
+140200,Auburn at Shannon Ridge Dr (SB),SB_Auburn_NS_Shannon Ridge Dr,49.853774,-119.600904,KEL,Kelowna Regional Transit System,West Kelowna
+140201,Bartley at Shannon Lake Rd (SB),SB_Bartley_FS_Shannon Lake Rd,49.864029,-119.587891,KEL,Kelowna Regional Transit System,West Kelowna
+140202,Byland at Compass Crt (SB),SB_Byland_FS_Compass Crt,49.860824,-119.589534,KEL,Kelowna Regional Transit System,West Kelowna
+140203,Byland at Kyle (SB),SB_Byland_FS_Kyle,49.858512,-119.592895,KEL,Kelowna Regional Transit System,West Kelowna
+140204,Shannon Lake at Alexandria (SB),SB_Shannon Lake_FS_Alexandria Way,49.855146,-119.618082,KEL,Kelowna Regional Transit System,West Kelowna
+140205,Shannon Lake at Stone Grove Cres (SB),SB_Shannon Lake_FS_Stone Grove Cres,49.858207,-119.617104,KEL,Kelowna Regional Transit System,West Kelowna
+140206,Shannon Lake Rd at Asquith (SB),SB_Shannon Lake_NS_Asquith ,49.851614,-119.618602,KEL,Kelowna Regional Transit System,West Kelowna
+140207,Shannon Ridge at Lakeside Crt (SB),SB_Shannon Ridge_FS_Lakeside Crt,49.853643,-119.613695,KEL,Kelowna Regional Transit System,West Kelowna
+140208,Shannon Ridge at Shannon Green Crt (SB),SB_Shannon Ridge_NS_Shannon Green Crt,49.854587,-119.612074,KEL,Kelowna Regional Transit System,West Kelowna
+140209,Daimier at Auburn (WB),WB_Daimier_NS_Auburn,49.857673,-119.598772,KEL,Kelowna Regional Transit System,West Kelowna
+140210,Shannon Lake at Crystal Dr (WB),WB_Shannon Lake_FS_Crystal Dr,49.868774,-119.593,KEL,Kelowna Regional Transit System,West Kelowna
+140211,Shannon Lake at Shannon Lake (WB),WB_Shonnon Lake_FS_Shannon Lake,49.866902,-119.600681,KEL,Kelowna Regional Transit System,West Kelowna
+140212,Shannon Lake at Shannon Woods (WB),WB_Shannon Lake_FS_Shannon Woods,49.865833,-119.606146,KEL,Kelowna Regional Transit System,West Kelowna
+140213,Westbank Exchange Bay D (EB),EB_Westbank Exchange_Bay D,49.828333,-119.6306,KEL,Kelowna Regional Transit System,West Kelowna
+140214,Westbank Exchange Bay E,Westbank Exchange_Bay E,49.829783,-119.630446,KEL,Kelowna Regional Transit System,West Kelowna
+140215,Queensway Exchange Bay K,Queensway Exchange_Bay K,49.887161,-119.494993,KEL,Kelowna Regional Transit System,Kelowna
+140105,Edwards Rd at Hwy 97  (EB),EB_Edwards Rd_FS_Hwy 97,49.924263,-119.385031,KEL,Kelowna Regional Transit System,Kelowna
+140106,Edwards Rd at Hwy 97 (WB),WB_Edwards Rd_NS_Hwy 97,49.924517,-119.385803,KEL,Kelowna Regional Transit System,Kelowna
+140107,Acland Rd at Penno Rd (SB),SB_Acland Rd_NS_Penno Rd,49.92214,-119.384048,KEL,Kelowna Regional Transit System,Kelowna
+140108,Acland Rd at Penno Rd (NB),NB_Acland Rd_NS_Penno Rd,49.92159,-119.383892,KEL,Kelowna Regional Transit System,Kelowna
+140109,Acland Rd at Old Vernon Rd (NB),NB_Acland_FS_Old Vernon Rd,49.918609,-119.383868,KEL,Kelowna Regional Transit System,Kelowna
+140110,Rutland Rd at Old Vernon Rd (SB),SB_Rutland Rd_FS_Old Vernon Rd,49.91784,-119.384409,KEL,Kelowna Regional Transit System,Kelowna
+140111,Rutland Rd at Commercial Dr (SB),SB_Rutland Rd_FS_Commercial Dr,49.915055,-119.386673,KEL,Kelowna Regional Transit System,Kelowna
+140112,Rutland Rd at Commercial Dr (NB),NB_Rutland Rd_FS_Commercial Dr,49.91558,-119.385904,KEL,Kelowna Regional Transit System,Kelowna
+140113,Hwy 97 at Sexsmith Rd (SB),SB_Hwy 97_FS_Sexsmith Rd,49.916959,-119.38904,KEL,Kelowna Regional Transit System,Kelowna
+140114,Hwy 97 at Old Vernon Rd (NB),NB_Hwy 07_FS_Old Vernon Rd,49.918993,-119.386966,KEL,Kelowna Regional Transit System,Kelowna
+140116,Elk Rd at Acorn (WB),WB_Elk Rd_FS_Acorn Dr,49.839227,-119.605915,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+140117,Elk Rd at Acorn Dr (EB),EB_Elk Rd_NS_Acorn Dr,49.839098,-119.60606,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+140165,Boucherie Exchange Bay F (EB),EB_Boucherie Exchange_Bay F,49.862222,-119.583849,KEL,Kelowna Regional Transit System,West Kelowna
+140166,Asquith at Saddleback (EB),EB_Asquith_NS_Saddleback,49.851183,-119.62471,KEL,Kelowna Regional Transit System,West Kelowna
+140167,Copper Ridge at Smith Creek (EB),EB_Copper Ridge_FS_Smith Creek,49.853763,-119.643532,KEL,Kelowna Regional Transit System,West Kelowna
+140168,Daimier at Auburn (EB),EB_Daimier_FS_Auburn,49.857547,-119.598918,KEL,Kelowna Regional Transit System,West Kelowna
+140169,Shannon Lake at Crystal (EB),EB_Shannon Lake_FS_Crystal,49.867258,-119.59108,KEL,Kelowna Regional Transit System,West Kelowna
+140170,Shannon Way at Westville (EB),EB_Shannon Way_FS_Westville,49.848879,-119.61538,KEL,Kelowna Regional Transit System,West Kelowna
+140171,Wild Horse at Bridlehill (EB),EB_Wild Horse_FS_Bridlehill,49.853709,-119.632746,KEL,Kelowna Regional Transit System,West Kelowna
+140172,Elliott at Butt (NB),NB_Elliott_FS_Butt,49.837114,-119.630837,KEL,Kelowna Regional Transit System,West Kelowna
+140173,Elliott at Reece (NB),NB_Elliott_FS_Reece,49.844621,-119.633643,KEL,Kelowna Regional Transit System,West Kelowna
+140174,Elliott at Springer Ln (NB),NB_Elliott_FS_Springer Ln,49.833314,-119.630778,KEL,Kelowna Regional Transit System,West Kelowna
+140175,Elliott at Neufeld (NB),NB_Elliott_NS_Neufeld,49.841686,-119.633659,KEL,Kelowna Regional Transit System,West Kelowna
+140176,Elliott at Solar (NB),NB_Elliott_NS_Solar,49.831196,-119.630813,KEL,Kelowna Regional Transit System,West Kelowna
+140177,Shannon Ridge at 2175 Blk (EB),EB_Shannon Ridge_AT_2175 Blk,49.855773,-119.605577,KEL,Kelowna Regional Transit System,West Kelowna
+140178,Wild Horse Dr at 2569 Blk (NB),NB_Wild Horse_AT_2569 Blk,49.853052,-119.636468,KEL,Kelowna Regional Transit System,West Kelowna
+140179,Auburn at 2886 Blk (NB),NB_Auburn_AT_2886 Blk,49.855621,-119.600689,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+140180,Bartley at Byland (NB),NB_Bartley_FS_Byland,49.863025,-119.587512,KEL,Kelowna Regional Transit System,West Kelowna
+140181,Byland at Kyle (NB),NB_Byland_FS_Kyle,49.859059,-119.591921,KEL,Kelowna Regional Transit System,West Kelowna
+140182,Byland at Compass (NB),NB_Byland_NS_Compass,49.860769,-119.589488,KEL,Kelowna Regional Transit System,West Kelowna
+140183,Ironridge Rd at Ironridge Crt (NB),NB_Ironridge Rd_FS_Ironridge Crt,49.854519,-119.627571,KEL,Kelowna Regional Transit System,West Kelowna
+140184,Shannon Lake at Golf Course Dr (NB),NB_Shannon Lake_FS_Golf Course Dr,49.863483,-119.609352,KEL,Kelowna Regional Transit System,West Kelowna
+140185,Shannon Lake at Shannon View Dr (NB),NB_Shannon Lake_FS_Shannon View Dr,49.865913,-119.604883,KEL,Kelowna Regional Transit System,West Kelowna
+140186,Shannon Lake Rd at Shannon Lake (NB),NB_Shannon Lake Rd_FS_Shannon Lake,49.866799,-119.599774,KEL,Kelowna Regional Transit System,West Kelowna
+140187,Shannon Lake Rd at Shannon Ridge Dr (NB),NB_Shannon Lake Rd_FS_Shannon Ridge Dr,49.85309,-119.617432,KEL,Kelowna Regional Transit System,West Kelowna
+140188,Shannon Lake at Stone Grove Cres (NB),NB_Shannon Lake_FS_Stone Grove Cres,49.858264,-119.616607,KEL,Kelowna Regional Transit System,West Kelowna
+140189,Shannon Lake Rd at Swite (NB),NB_Shannon Lake Rd_FS_Swite,49.855337,-119.617833,KEL,Kelowna Regional Transit System,West Kelowna
+140162,John Hindle at Landfilll (EB),EB_John Hindle_AT_Landfill,49.944169,-119.41265,KEL,Kelowna Regional Transit System,Kelowna
+140164,Shepherd at Roxby (EB),EB_Shepherd_FS_Roxby,49.890525,-119.388771,KEL,Kelowna Regional Transit System,Kelowna
+140163,John Hindle at Landfilll (WB),WB_John Hindle_AT_Landfill,49.944236,-119.412289,KEL,Kelowna Regional Transit System,Kelowna
+140217,Spiers at Klo (NB),NB_Spiers_NS_Klo,49.860222,-119.442977,KEL,Kelowna Regional Transit System,Kelowna
+140218,Spiers at Klo (SB),SB_Spiers_FS_Klo,49.860318,-119.443167,KEL,Kelowna Regional Transit System,Kelowna
+140216,Rutland Rd N at 705 Blk (NB),NB_Rutland Rd N_AT_705 Blk,49.896573,-119.3867,KEL,Kelowna Regional Transit System,Kelowna
+140056,Bernard at Elm (EB),EB_Bernard_NS_Elm,49.886239,-119.465803,KEL,Kelowna Regional Transit System,Kelowna
+140094,East Boundary at Wolfe (WB),WB_East Boundary_FS_Wolfe,49.839325,-119.5918,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+140095,Eastbond East Boundary at Wolfe,EB_East Boundary_NS_Wolfe,49.839161,-119.591808,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+140012,Gordon at Lexington (SB),SB_Gordon_FS_Lexington,49.839336,-119.482448,KEL,Kelowna Regional Transit System,Kelowna
+140013,Sneena at Westside  (SB),SB_Sneena_FS_Westside,49.88069,-119.534173,KEL,Kelowna Regional Transit System,Tsinstikeptum 10
+104911,Old Okanagan at Skyview (WB),WB_Old Okanagan_FS_Skyview,49.844959,-119.609489,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+104912,Beach at 12th (EB),EB_Beach_FS_12th,49.781855,-119.726076,KEL,Kelowna Regional Transit System,Peachland
+104913,Old Vernon at Teather (NB),NB_Old Vernon_FS_Teather,49.961447,-119.36875,KEL,Kelowna Regional Transit System,Central Okanagan
+104914,Crawford 1240 block (NB),NB_1240_block_Crawford,49.820415,-119.466778,KEL,Kelowna Regional Transit System,Kelowna
+104916,Innovation at Airport Way (NB),NB_Innovation_NS_Airport Way,49.951658,-119.38951,KEL,Kelowna Regional Transit System,Kelowna
+140044,Ellis at Doyle (NB),NB_Ellis_NS_Doyle,49.890383,-119.493404,KEL,Kelowna Regional Transit System,Kelowna
+140057,1300 blcok Ellis (SB),SB_1300_block_Ellis,49.889823,-119.49363,KEL,Kelowna Regional Transit System,Kelowna
+140096,Lake Hill at Oceola (NB),NB_Lake Hill_FS_Oceola,50.061049,-119.418137,KEL,Kelowna Regional Transit System,Lake Country
+140233,Ellis at Clement (NB),NB_Ellis_FS_Clement,49.894046,-119.49336,KEL,Kelowna Regional Transit System,Kelowna
+140243,Lakeshore at Richter (NB),NB_Lakeshore_NS_Richter,49.85489,-119.489873,KEL,Kelowna Regional Transit System,Kelowna
+140219,Old Okanagan at Shamrock (NB),NB_Old Okanagan_FS_Shamrock,49.849713,-119.600261,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+140220,Old Okanagan at Shamrock (SB),SB_Old Okanagan_NS_Shamrock,49.850027,-119.600603,KEL,Kelowna Regional Transit System,Tsinstikeptum  9
+140238,Innovation at Quail Ridge (SB),SB_Innovation Dr_FS_Quail Ridge,49.951732,-119.38994,KEL,Kelowna Regional Transit System,Kelowna
+140221,Beach at 4th St (SB),SB_Beach_NS_4th St,49.774775,-119.735206,KEL,Kelowna Regional Transit System,Peachland
+140222,Beach at 4th St (NB),NB_Beach_FS_4th St,49.774681,-119.734981,KEL,Kelowna Regional Transit System,Peachland
