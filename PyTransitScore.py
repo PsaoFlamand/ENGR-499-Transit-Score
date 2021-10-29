@@ -12,30 +12,36 @@ def main():
     t0 = time.time()
     
     '''gather address, bus stop coords'''
-    address_map, bus_stop_map, route_map = parse_source_data(source_folder)
+##    address_map, bus_stop_map, route_map = parse_source_data(source_folder)
 
     
     '''Scrape BC transit website for data to rank routes by'''
-    city_urls = get_city_urls(url)
-    route_info = get_route_info(city_urls)
+##    city_urls = get_city_urls(url)
+##    route_info = get_route_info(city_urls)
 
 
     '''get route rankings'''    
-    route_rankings = rank_routes(route_info)
-    normalized_ranking = normalize_ranking(route_rankings)
-    print(normalized_ranking)
+##    route_rankings = rank_routes(route_info)
+##    normalized_ranking = normalize_ranking(route_rankings)
+##    print(normalized_ranking)
 
 
     '''Associate routes with stops to allow us to weight stops according to active frequency'''
 ##    route_bound_stops = associate_routes_with_stops(bus_stop_map,route_map)
 ##    print(len(route_bound_stops))
 
+    
+    '''Get a list of all the coordinates for the element in the coordinate list'''
+    for amenity in amenities:
+        amenty_results = get_amenity_coordinates(amenity)
+        print('%s | %s | %s\n' % (amenity, len(amenty_results), amenty_results))
 
+  
     '''Dict with number of close stops'''
-    address_rankings = rank_addresses(address_map,bus_stop_map)    
-    with open('results.txt','w') as result:
-        result.write(str(address_rankings))
-        
+##    address_rankings = rank_addresses(address_map,bus_stop_map)    
+##    with open('results.txt','w') as result:
+##        result.write(str(address_rankings))
+
     print(time.time() - t0)
 
 
@@ -43,6 +49,24 @@ def main():
 def associate_routes_with_stops(bus_stop_map,route_map):
 
     return route_bound_stops
+
+
+def get_amenity_coordinates(amenity):
+    amenity_coordinates = []
+    list_size = 0
+    prev_list_size = -1
+    page_num = 0
+    while list_size != prev_list_size:
+        if amenity_coordinates:
+            prev_list_size = list_size
+        page_num +=1
+
+        url = 'https://www.yellowpages.ca/search/si/%s/%s/%s+BC/rci-%s%%2C+BC'%(page_num,amenity,city,city)
+        response=requests.get(url)
+
+        amenity_coordinates.extend(re.findall(r'coordinates\D+(.*?)]',str(response.content)))
+        list_size = len(amenity_coordinates)
+    return amenity_coordinates
 
 
 def calc_dist(cord1,cord2):
@@ -311,6 +335,9 @@ if __name__ == '__main__':
     '''Scraping setup'''
     url = 'https://www.bctransit.com/'
     test_city = 'kelowna'
+
+    city = 'Victoria'
+    amenities = ['restaurants','gyms','groceries','banks']
     
     main()
 
