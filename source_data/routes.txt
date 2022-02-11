@@ -1,0 +1,31 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+2,1,1,Lakeshore,Downtown,3,,004b8d,FFFFFF
+3,1,2,North End Shuttle,North End Shuttle,3,,8cc63f,000000
+4,1,3,Dilworth Mt.,Dilworth Mtn,3,,f37421,000000
+5,1,4,Pandosy / UBCO Express,Pandosy Express,3,,00aeef,000000
+6,1,5,Gordon,Gordon - Mission Rec Exch,3,,fcaff7,000000
+7,1,6,Glenmore / UBCO Express,Downtown,3,,00aa47,FFFFFF
+8,1,8,University / College,University - To UBCO,3,,ed1d8f,FFFFFF
+9,1,9,Shopper Shuttle,Shopper Shuttle - To Downtown,3,,8177b7,FFFFFF
+10,1,10,North Rutland,Downtown,3,,49176b,FFFFFF
+11,1,11,Rutland,To Orchard Park,3,,b2221e,FFFFFF
+12,1,12,McCulloch,McCulloch - To Orchard Park,3,,4f6f19,FFFFFF
+13,1,13,Quail Ridge,Quail Ridge,3,,77af99,000000
+14,1,14,Black Mountain,Black Mountain - To Orchard Park,3,,e270ab,000000
+15,1,15,Crawford,Crawford,3,,5d87a1,000000
+16,1,16,Kettle Valley,Kettle Valley,3,,0073ae,FFFFFF
+17,1,17,South Ridge,Southridge,3,,f49a5d,000000
+18,1,18,Glenmore / Downtown,Glenmore,3,,b3aa7e,000000
+19,1,19,Glenmore/Orchard Park,Glenmore,3,,bf83b9,000000
+20,1,20,Lakeview,Lakeview - To Westbank,3,,a54499,FFFFFF
+21,1,21,Glenrosa,Glenrosa,3,,00b5ad,000000
+22,1,22,Peachland,Peachland Exp,3,,b06e0e,FFFFFF
+23,1,23,Lake Country,Lake Country,3,,8e0c3a,FFFFFF
+24,1,24,Shannon Ridge,Shannon Ridge- To Westbank,3,,e31937,FFFFFF
+25,1,25,East Boundary,East Boundary - Boucherie Mtn,3,,ac5c3b,FFFFFF
+1390,1,26,Old Okanagan,Old Okanagan - Boucherie Mtn,3,,f37421,000000
+26,1,28,Shannon Lake,Shannon Lake - Boucherie Mtn,3,,875d9f,FFFFFF
+27,1,29,Bear Creek,Bear Creek,3,,7c3f25,FFFFFF
+28,1,32,The Lakes,The Lakes,3,,ffc20e,000000
+29,1,88,Special,Special,3,,004b8d,FFFFFF
+30,1,97,Okanagan,Westbank,3,,8cc63f,000000
