@@ -1,4 +1,4 @@
-import re,os,time,math,requests
+import re,os,time,math,requests, numpy
 import geopy.distance
 from pyroutelib3 import Router
 from scipy import spatial
@@ -9,56 +9,276 @@ def main():
     t0 = time.time()
 
     '''gather target, bus stop coords'''
-    target_map, bus_stop_map, grid_map, stop_times_map = parse_source_data(source_folder)
+    address_coords, grid_coords, bus_stop_ids_coords, route_schedules = parse_source_data(source_folder)
 
     '''used to test a sub sample of map points'''
-    #grid_map = dict(list(grid_map.items())[4800:5000])
-    
-    '''Get a list of all the coordinates for the element in the coordinate list'''
-    bus_stop_with_amenity_ranks = get_bus_stop_amenity_rank(bus_stop_map)
+    #grid_coords = dict(list(grid_coords.items())[4900:5000])
 
-    '''Grid Rankings'''
-    nearest_stop_map = get_closest_stop(grid_map, bus_stop_with_amenity_ranks)
-        
-    '''Hop around the nearest neighbors until a non zero amenity score is found'''
-    travel_time_to_amenity_from_origin = get_travel_time_from_origin_to_amenities(nearest_stop_map, bus_stop_with_amenity_ranks, stop_times_map, bus_stop_map)
+    '''Get list of the closest amenity to each stop'''
+    stop_coords_distance_to_amentity = get_stop_ids_distance_to_amentity(bus_stop_ids_coords)
 
+    '''Group the nearest k stops to each origin point'''
+    origins_coords_nearest_stops_coords = associate_origins_with_nearest_stops(grid_coords, stop_coords_distance_to_amentity)
+
+    '''Find the optimal stop to use from the nearest k stops'''
+    origin_to_amenities_travel_time = get_origin_to_amenities_travel_time(origins_coords_nearest_stops_coords, stop_coords_distance_to_amentity, route_schedules, bus_stop_ids_coords)
+
+    ### Code below will be recreated with the formula Chris finds ###
     '''merge distances into a singular score to be mapped'''
-    for origin in travel_time_to_amenity_from_origin:
-        sum = 0
-        for travel_times in travel_time_to_amenity_from_origin[origin]:
-            for travel_time in travel_times:
-                if travel_time == math.inf:
-                    sum *= 2
-                else:
-                    sum += float(travel_time)
-                
-        print('%s | %s' % (origin,sum))
+    with open('result.txt','w') as result:
+        for origin in origin_to_amenities_travel_time:
+            sum = 0
+            for travel_times in origin_to_amenities_travel_time[origin]:
+                for travel_time in travel_times:
+                    if travel_time == math.inf:
+                        sum *= 2
+                    else:
+                        sum += float(travel_time)
+                    
+            #print('%s, %s' % (str(origin).replace('(','').replace(')',''),sum))
+            result.write('%s, %s\n' % (str(origin).replace('(','').replace(')',''),sum))
+    ###     ####
 
-
-    '''Print time taken'''
+    '''Print total process duration'''
     print(time.time() - t0)
+
+def parse_source_data(source_folder):
+    bus_stop_ids_coords = dict()
+    address_coords = dict()
+    grid_coords = dict()
+    route_schedules = dict()
+    
+    source_folder = r'C:\Users\p\Documents\PyTransit\source_folder'
+    bus_stop_file = 'stops.txt'
+    stop_times_file = 'stop_times.txt'
+    grid_file = 'city_of_kelowna_grid_coordinates.txt'
+
+    with open(os.path.join(source_folder,bus_stop_file)) as bus_stops,\
+         open(os.path.join(source_folder,grid_file)) as grids,\
+         open(os.path.join(source_folder,stop_times_file)) as route_schedule:
+            
+        '''Parse bus stop coords'''
+        for bus_line in bus_stops:
+            bus_stop_id = bus_line.split(',')[0]
+            
+            try:    int(bus_stop_id)
+            except: continue
+                
+            bus_lat = float(bus_line.split(',')[4])
+            bus_lon = float(bus_line.split(',')[5])
+            
+            bus_stop_ids_coords[bus_stop_id] = (bus_lat, bus_lon)
+                
+        '''Parse Bus route Schedule'''
+        for schedule_line in route_schedule:
+
+            trip_id = schedule_line.split(',')[0]
+            arrival_time = schedule_line.split(',')[1]
+            departure_time = schedule_line.split(',')[2]
+            stop_id = schedule_line.split(',')[3]
+            stop_order = schedule_line.split(',')[4]
+            
+            try:    int(trip_id)
+            except: continue
+            
+            if trip_id in route_schedules:
+                route_schedules[trip_id].append([arrival_time,departure_time,stop_id,stop_order])
+            else:
+                route_schedules[trip_id] = [[arrival_time,departure_time,stop_id,stop_order]]
+
+        '''Parse Grid Points'''
+        for grid_point in grids:
+            grid_latitude = grid_point.split(',')[1].strip()
+            grid_longitude = grid_point.split(',')[0].strip()
+            if not grid_latitude.isalpha():
+                grid_coords[(float(grid_latitude),float(grid_longitude))] = (float(grid_latitude),float(grid_longitude))
+        
+    return address_coords, grid_coords, bus_stop_ids_coords, route_schedules
     
 
-def stop_hopper(stop_map,amenity_type,nearest_stop,index):
-    candidate_stops = []
-    bus_list = [x for x in stop_map]
-    tree = spatial.KDTree(bus_list)
+def get_stop_ids_distance_to_amentity(bus_stop_ids_coords):
+    stop_coords_distance_to_amentity = dict()
+    '''Scraping setup'''
+    url = 'https://www.bctransit.com/'
+    test_city = 'kelowna'
+
+    city = 'Kelowna'
+    AMENITIES = ['restaurants','gyms','groceries','banks']
+        
+    for amenity in AMENITIES:
+        amenity_info = get_amenity_info(amenity,city)
+        
+        for stop_id in bus_stop_ids_coords:
+            stop_coords = bus_stop_ids_coords[stop_id]
+            distance_from_stop_to_amenity = math.inf
+            
+            for amenity_coords in amenity_info:
+                straight_distance = geopy.distance.distance(amenity_coords, stop_coords)
+                if straight_distance <= 0.8:
+                    distance_from_stop_to_amenity = min(straight_distance,distance_from_stop_to_amenity) # calculate_network_distance(amenity_gps, bus_stop_ids_coords[bus_stop])
+
+            if stop_coords in stop_coords_distance_to_amentity:
+                stop_coords_distance_to_amentity[stop_coords].append(distance_from_stop_to_amenity)
+            else:
+                stop_coords_distance_to_amentity[stop_coords] = [distance_from_stop_to_amenity]
+
+    return stop_coords_distance_to_amentity
+
+
+def associate_origins_with_nearest_stops(origins, stop_coords_distance_to_amentity):
+    origins_coords_nearest_stops_coords = dict()
+    stop_coords = [x for x in stop_coords_distance_to_amentity]
+
+    '''Sort by number of bus stops within 400m'''
+    for origin in origins:
+        origin_to_nearest_stop_distance = math.inf
+        origin_coords = origins[origin]
+        
+        '''get nearest neighbor'''
+        tree = spatial.KDTree(stop_coords)
+        nearest_stops_coords = [stop_coords[int(index)] for index in tree.query([origin_coords], k = 3)[1][0]]############### Fix k?
+
+        #nearest_stops_coords = [stop_coords_distance_to_amentity[int(tree.query([origin_coords], k = 1)[1])]]############### Fix k?
+
+        if not nearest_stops_coords:
+            print('%s has no near neighbors'%origin_coords)
+        
+        for nearest_stop_coords in nearest_stops_coords:
+            origin_to_nearest_stop_straight_distance = geopy.distance.distance(origin_coords, nearest_stop_coords)
+            #print('straight_distance_to_nearest_stop',origin_to_nearest_stop_straight_distance)
+            '''Check if nearest neighbor is within distance'''
+            if origin_to_nearest_stop_straight_distance < 0.6:
+                '''Exception in the case where there is no route path found between the two points using network distance'''
+                try:
+                    distance = origin_to_nearest_stop_straight_distance # calculate_network_distance(origin_coords, closest_stop)
+                except Exception as e:
+                    distance = origin_to_nearest_stop_straight_distance
+                    print('Exception in network distance calculation: %s \n using straight line distance of %s'% (e,distance))
+                    pass
+                
+                if origin_coords in origins_coords_nearest_stops_coords:
+                    origins_coords_nearest_stops_coords[origin_coords].append([nearest_stop_coords, distance])
+                else:
+                    origins_coords_nearest_stops_coords[origin_coords] = [[nearest_stop_coords, distance]]
+
+    return origins_coords_nearest_stops_coords
+
+
+def get_origin_to_amenities_travel_time(origins_coords_nearest_stops_coords, stop_coords_distance_to_amentity, route_schedules, bus_stop_ids_coords):
+    origin_to_amenities_travel_time = dict()
+    test_city = 'kelowna'
+    bus_stop_coords_ids = dict()
+
+    for bus_stop in bus_stop_ids_coords:
+        bus_stop_coords_ids[bus_stop_ids_coords[bus_stop]] = bus_stop
+    
+    city = 'Kelowna'
+    AMENITIES = ['restaurants','gyms','groceries','banks']
+    connectivity_memory = dict()
+    for count,origin_coords in enumerate(origins_coords_nearest_stops_coords):
+        print('%s/%s' % (count,len(origins_coords_nearest_stops_coords)))
+        for amenity_index in range(len(AMENITIES)):
+            optimal_total_travel_time_to_amenity = math.inf
+            optimal_nearest_stop = None
+            for nearest_stops_coords_distances in origins_coords_nearest_stops_coords[origin_coords]:#Loop through all nearest stops for a given origin point
+                '''Result Variable'''
+                optimal_travel_time_between_stops = math.inf
+                optimal_candidate_stop_id = None
+                
+                '''Get nearest stop info'''
+                nearest_stop_coords = nearest_stops_coords_distances[0]
+                origin_to_nearest_stop_distance = nearest_stops_coords_distances[1]
+                nearest_stop_id = bus_stop_coords_ids[nearest_stop_coords]
+                nearest_stop_to_amenity_distance = stop_coords_distance_to_amentity[nearest_stop_coords][amenity_index]
+                
+                if nearest_stop_to_amenity_distance == math.inf:#Nearest stop has no access to amenity, check if amenity is accessible trough routes
+                    '''Nearest stop index relative to distance to amentity dict'''
+                    nearest_stop_index = list(stop_coords_distance_to_amentity).index(nearest_stop_coords)
+                    
+                    '''Search for nearest stop with amenity closest to the original nearest stop.'''
+                    '''We are assuing that the nearest stops are mostly going to be on that stops route network'''
+                    '''We will then verify that assumption in a later function'''
+                    candidate_stops_coords = stop_hopper(stop_coords_distance_to_amentity,amenity_index,nearest_stop_coords)
+
+                    candidate_stops_ids = [bus_stop_coords_ids[candidate_stop_coords] for candidate_stop_coords in candidate_stops_coords]
+ 
+                    '''Narrow down the candidate list to the best candidate'''                   
+                    for candidate_stop_id in candidate_stops_ids:
+                        if '%s-%s'%(nearest_stop_id,candidate_stop_id) not in connectivity_memory:
+                            connectivity_memory = check_connectivity_between_stops(nearest_stop_id, candidate_stop_id, route_schedules, bus_stop_ids_coords,connectivity_memory)
+                            travel_time_between_stops = connectivity_memory['%s-%s'%(nearest_stop_id,candidate_stop_id)]
+                        else:
+                            travel_time_between_stops = connectivity_memory['%s-%s'%(nearest_stop_id,candidate_stop_id)]
+                            
+                        '''In the case we have a successful connect, we will still test the rest to ensure we have the best candidate'''
+                        if travel_time_between_stops > 0 and travel_time_between_stops != False:
+                            if travel_time_between_stops < optimal_travel_time_between_stops:
+                                optimal_travel_time_between_stops = travel_time_between_stops
+                                optimal_candidate_stop_id = candidate_stop_id
+                                break
+                    if not optimal_candidate_stop_id:
+                        continue
+                    '''Distance from stop with amenity to its associated amenity'''
+                    origin_to_nearest_stop_travel_time = float(origin_to_nearest_stop_distance.km)*1000 / 40
+                    
+                    nearest_stop_to_optimal_candidate_stop_travel_time = optimal_travel_time_between_stops
+                    
+                    optimal_candiate_stop_to_amentiy_distance = stop_coords_distance_to_amentity[bus_stop_ids_coords[optimal_candidate_stop_id]][amenity_index]
+                    optimal_candiate_stop_to_amentiy_travel_time = float(optimal_candiate_stop_to_amentiy_distance.km)*1000 / 40
+                        
+                    total_travel_time_to_amenity = origin_to_nearest_stop_travel_time + \
+                                                   nearest_stop_to_optimal_candidate_stop_travel_time + \
+                                                   optimal_candiate_stop_to_amentiy_travel_time
+                    
+                    if optimal_travel_time_between_stops < 0 or optimal_travel_time_between_stops == False:
+                        '''will point out which areas have no access to amenities'''
+                        optimal_total_travel_time_to_amenity = math.inf
+                    else:
+##                        print('total_travel_time_to_amenity',total_travel_time_to_amenity)
+##                        print('optimal_total_travel_time_to_amenity',optimal_total_travel_time_to_amenity)
+                        if total_travel_time_to_amenity < optimal_total_travel_time_to_amenity:
+                            optimal_total_travel_time_to_amenity = total_travel_time_to_amenity
+                            optimal_nearest_stop = nearest_stop_id
+                        
+                else: # Case where the nearest stop has an amenity
+                    total_travel_time_to_amenity = float(nearest_stop_to_amenity_distance.km)*1000 / 40
+##                    print('total_travel_time_to_amenity',total_travel_time_to_amenity)
+##                    print('optimal_total_travel_time_to_amenity',optimal_total_travel_time_to_amenity)
+                    if total_travel_time_to_amenity < optimal_total_travel_time_to_amenity:
+                        optimal_total_travel_time_to_amenity = total_travel_time_to_amenity
+                        optimal_nearest_stop = nearest_stop_id
+                        
+            if optimal_total_travel_time_to_amenity == math.inf:
+                print('a suitable transfer was not found for %s | %s | %s' % (origins_coords_nearest_stops_coords[origin_coords],candidate_stops_ids, bus_stop_coords_ids[origins_coords_nearest_stops_coords[origin_coords][0][0]]))
+                print(AMENITIES[amenity_index])
+                
+            if origin_coords in origin_to_amenities_travel_time:
+                origin_to_amenities_travel_time[origin_coords].append([optimal_total_travel_time_to_amenity])
+            else:
+                origin_to_amenities_travel_time[origin_coords] = [[optimal_total_travel_time_to_amenity]]
+                    
+    #print('origin_to_amenities_travel_time',origin_to_amenities_travel_time)
+    return origin_to_amenities_travel_time
+
+
+def stop_hopper(stop_coords_distance_to_amentity, amenity_index, nearest_stop_coords):
+    candidate_stops_coords = []
+    stop_coords = [x for x in stop_coords_distance_to_amentity]
+    tree = spatial.KDTree(stop_coords)
     
     def get_neighbor(kp):
-        nearest_neighbor = tree.query([nearest_stop], k = kp)
+        nearest_neighbors_coords = [stop_coords[int(index)] for index in tree.query([nearest_stop_coords], k = kp)[1][0]]
+        for neighbor_coords in nearest_neighbors_coords:
+            if stop_coords_distance_to_amentity[neighbor_coords][amenity_index] != math.inf: # stop has access to amenity
+                candidate_stops_coords.append(neighbor_coords)
 
-        for neighbor in nearest_neighbor[1][0]:
-            if stop_map[bus_list[int(neighbor)]][amenity_type] != math.inf:
-                candidate_stops.append(neighbor)
-            else:
-                amenity_not_found = 1
-        if candidate_stops:
-            return candidate_stops
-        if amenity_not_found:
+        if candidate_stops_coords:
+            return candidate_stops_coords
+        else:
             return(get_neighbor(kp+1))
             
     return(get_neighbor(300))
+
 
 def get_travel_time_between_stops(origin_stop_times, stop1, stop2):
     travel_times = list()
@@ -71,6 +291,7 @@ def get_travel_time_between_stops(origin_stop_times, stop1, stop2):
                 departure_time = stop_info[1]
             elif stop_id == stop2:
                 arrival_time = stop_info[0]
+                
         if not arrival_time or not departure_time:
             continue
         arrival_hours = int(arrival_time.split(':')[0])
@@ -83,43 +304,80 @@ def get_travel_time_between_stops(origin_stop_times, stop1, stop2):
         total_arrival_minutes = arrival_hours*60 + arrival_minutes
 
         travel_times.append(total_arrival_minutes - total_departure_minutes)
-        
+
     if travel_times:
         return sum(travel_times) / len(travel_times)
     else:
         return math.inf
 
 
-def get_transit_schedule(target_stop_id, stop_times_map):
+def get_transit_schedule(target_stop_id, route_schedules):
     stop_ids_in_route = list()        
     reduced_result = list()
+    
 
-    for stop_times in stop_times_map:
-        for stop_time in stop_times_map[stop_times]:
+    for stop_times in route_schedules:
+        for stop_time in route_schedules[stop_times]:
             stop_id = stop_time[2]
             if int(stop_id) == int(target_stop_id):
-                if stop_times_map[stop_times] not in reduced_result:
-                    reduced_result.append(stop_times_map[stop_times])
-                    for stop in stop_times_map[stop_times]:
+                if route_schedules[stop_times] not in reduced_result:
+                    reduced_result.append(route_schedules[stop_times])
+                    for stop in route_schedules[stop_times]:
                         if int(stop[2]) not in stop_ids_in_route:
                             stop_ids_in_route.append(int(stop[2]))
                         
     sorted_reduced_stop_times = sorted(reduced_result, key = lambda x: x[0])
     sorted_stop_ids_in_route = sorted(stop_ids_in_route)
+    #print('sorted_reduced_stop_times',sorted_reduced_stop_times)
+    #print('sorted_stop_ids_in_route',sorted_stop_ids_in_route)
 
     return sorted_reduced_stop_times, sorted_stop_ids_in_route
 
     
-def check_connectivity_between_stops(stop1,stop2, stop_times_map, bus_stop_map):
+def check_connectivity_between_stops(stop1,stop2, route_schedules, bus_stop_ids_coords,connectivity_memory):
     stop_path = list()
+    headway_memory = dict()
     
-    origin_stop_times, the_original_route_stop_id_list = get_transit_schedule(stop1, stop_times_map)
-    destination_stop_times, the_destination_route_stop_id_list = get_transit_schedule(stop2, stop_times_map)
+    origin_stop_times, the_original_route_stop_id_list = get_transit_schedule(stop1, route_schedules)
+    destination_stop_times, the_destination_route_stop_id_list = get_transit_schedule(stop2, route_schedules)
+
+##    print('origin_stop_times',origin_stop_times)
+##    print('destination_stop_times',destination_stop_times)
+    arrival_times_for_origin_stop = []
+
     
+    '''Get the avereage wait time as 1/2 of the arrival frequency'''
+##    print('origin_stop_times',origin_stop_times)
+    if stop1 not in headway_memory:
+        
+        for origin_stop_time in origin_stop_times:
+            for stop_time in origin_stop_time:
+    ##            print('stop1',stop1)
+    ##            print('origin_stop_time[2]',stop_time[2])
+                if str(stop1) == stop_time[2]:
+                    #print('stop_time',stop_time)
+                    arrival_time = stop_time[0]
+                    arrival_hours = int(arrival_time.split(':')[0])
+                    arrival_minutes = int(arrival_time.split(':')[1])
+                    total_arrival_minutes = arrival_hours*60 + arrival_minutes
+
+                    arrival_times_for_origin_stop.append(total_arrival_minutes)
+                    
+        headway = sum(numpy.diff(numpy.array(sorted(arrival_times_for_origin_stop))))/len(arrival_times_for_origin_stop)
+    else:
+        headway = headway_memory[stop1]
+    if headway < 10:
+        waiting_time = headway/2
+        print('headway',headway,stop1,stop2)
+    else:
+        waiting_time = 5
+        
     '''check if the two routes are on the same route'''
     if int(stop2) in the_original_route_stop_id_list and int(stop1) in the_original_route_stop_id_list:    
         average_travel_time = get_travel_time_between_stops(origin_stop_times, stop1, stop2)
-        return average_travel_time
+        
+        connectivity_memory['%s-%s'%(stop1,stop2)] = average_travel_time
+        return connectivity_memory
     
     '''Check if there is one degree of transferability between stops'''
     for a_destination_stop_id in the_destination_route_stop_id_list:
@@ -128,7 +386,7 @@ def check_connectivity_between_stops(stop1,stop2, stop_times_map, bus_stop_map):
             a_destination_stop_id = str(a_destination_stop_id)
             a_origin_stop_id = str(a_origin_stop_id)
             
-            the_distance_between_stops_is = geopy.distance.distance(bus_stop_map[a_destination_stop_id], bus_stop_map[a_origin_stop_id])
+            the_distance_between_stops_is = geopy.distance.distance(bus_stop_ids_coords[a_destination_stop_id], bus_stop_ids_coords[a_origin_stop_id])
             
             if the_distance_between_stops_is < 0.6:
                 walking_time_to_transfer = float(the_distance_between_stops_is.km)*1000 / 40
@@ -136,112 +394,16 @@ def check_connectivity_between_stops(stop1,stop2, stop_times_map, bus_stop_map):
                 average_travel_time1 = get_travel_time_between_stops(origin_stop_times, stop1, a_origin_stop_id)
                 average_travel_time2 = get_travel_time_between_stops(destination_stop_times, a_destination_stop_id, stop2)
                 
-                average_travel_time = average_travel_time1 + walking_time_to_transfer + average_travel_time2
-                
-                return average_travel_time
-    #print('they were not found to be transferable in one degree', stop1, stop2)
-    return False
+                average_travel_time = waiting_time + average_travel_time1 + walking_time_to_transfer + average_travel_time2
 
+                connectivity_memory['%s-%s'%(stop1,stop2)] = average_travel_time
 
-
-
-def get_travel_time_from_origin_to_amenities(nearest_stop_map, ordered_bus_stop_with_amenity_ranks, stop_times_map, bus_stop_map):
-    travel_time_to_amenity_from_origin = dict()
-    test_city = 'kelowna'
-    inverse_bus_map = dict()
-
-    for bus_stop in bus_stop_map:
-        inverse_bus_map[bus_stop_map[bus_stop]] = bus_stop
-    city = 'Kelowna'
-    AMENITIES = ['restaurants','gyms','groceries','banks']
-
-    for origin in nearest_stop_map:
-        for amenity_type in range(len(AMENITIES)):
-            for nearest in nearest_stop_map[origin]:
-                '''walking distance from origin to nearest stop'''
-                nearest_stop = nearest[0]
-                distance_to_nearest_stop = nearest[1]
-
-                '''Distance from initial bus stop to amenity'''
-                distance_to_amenity = ordered_bus_stop_with_amenity_ranks[nearest_stop][amenity_type]
-                
-                if distance_to_amenity == math.inf:
-                    index = list(ordered_bus_stop_with_amenity_ranks).index(nearest_stop)
-                    nearest_stops_with_amenity_id = []
-                    
-                    '''If orginal stop doesnt have an associated amenity, search for nearest stop with amenity'''
-                    candidate_stops_index = stop_hopper(ordered_bus_stop_with_amenity_ranks,amenity_type,nearest_stop, index)
-
-                    for candidate_index in candidate_stops_index:
-                        nearest_stops_with_amenity_id.append(inverse_bus_map[list(ordered_bus_stop_with_amenity_ranks)[candidate_index]])
-                                        
-                    nearest_stop_id = inverse_bus_map[nearest_stop]# [key for key, value in bus_stop_map.items() if value == nearest_stop][0]
-                    #nearest_stops_with_amenity_id = [key for key, value in bus_stop_map.items() if value in candidate_nearest_stops]
-                    
-                    for nearest_stop_with_amenity_id in nearest_stops_with_amenity_id:
-                        travel_time_between_stops = check_connectivity_between_stops(nearest_stop_id, nearest_stop_with_amenity_id, stop_times_map, bus_stop_map)
-                        '''In the case we have a successful connect, no need to test the rest'''
-                        if travel_time_between_stops > 0 and travel_time_between_stops != False:
-                            break
-                        
-
-
-                    '''Distance from stop with amenity to its associated amenity'''
-                    stop_with_amenity_to_amentiy_travel_time = float(ordered_bus_stop_with_amenity_ranks[bus_stop_map[nearest_stop_with_amenity_id]][amenity_type].km)*1000 / 40
-                    
-                    nearest_stop_to_stop_with_amenity_travel_time = travel_time_between_stops
-                    origin_to_nearest_stop_travel_time = float(nearest[1].km)*1000 / 40
-    #
-                    total_travel_time_to_amenity = origin_to_nearest_stop_travel_time + nearest_stop_to_stop_with_amenity_travel_time + stop_with_amenity_to_amentiy_travel_time
-                    if travel_time_between_stops < 0 or travel_time_between_stops == False:
-                        '''will point out which areas have no access to amenities'''
-                        travel_time_between_stops = math.inf
-                    else:
-                        break
-
-                else:
-                    total_travel_time_to_amenity = float(distance_to_amenity.km)*1000 / 40
-                    break
-                
-            if travel_time_between_stops == math.inf:
-                print('a suitable transfer was not found for %s | %s | %s' % (nearest_stop_map[origin],nearest_stops_with_amenity_id, inverse_bus_map[nearest_stop_map[origin][0][0]]))
-                print(AMENITIES[amenity_type])
-            try:
-                travel_time_to_amenity_from_origin[origin].append([total_travel_time_to_amenity])
-            except Exception as e:
-                travel_time_to_amenity_from_origin[origin] = [[total_travel_time_to_amenity]]
-                    
-    #print('travel_time_to_amenity_from_origin',travel_time_to_amenity_from_origin)
-    return travel_time_to_amenity_from_origin
-
-
-def get_bus_stop_amenity_rank(bus_stop_map):
-    bus_stops_with_amenity_rank = dict()
-    '''Scraping setup'''
-    url = 'https://www.bctransit.com/'
-    test_city = 'kelowna'
-
-    city = 'Kelowna'
-    AMENITIES = ['restaurants','gyms','groceries','banks']
-        
-    for amenity in AMENITIES:
-        amenity_results = get_amenity_gps(amenity,city)
-        for bus_stop in bus_stop_map:
-            distance = math.inf
+                return connectivity_memory
             
-            for amenity_gps in amenity_results:
-                straight_distance = geopy.distance.distance(amenity_gps, bus_stop_map[bus_stop])
-                if straight_distance <= 0.8:
-                    distance = min(straight_distance,distance) # calculate_network_distance(amenity_gps, bus_stop_map[bus_stop])
-            try:
-                bus_stops_with_amenity_rank[bus_stop_map[bus_stop]].append(distance)
-            except Exception as e:
-                #print('exception in root',e)
-
-                bus_stops_with_amenity_rank[bus_stop_map[bus_stop]] = [distance]
-
-
-    return bus_stops_with_amenity_rank
+    #print('they were not found to be transferable in one degree', stop1, stop2)
+    connectivity_memory['%s-%s'%(stop1,stop2)] = False
+    return connectivity_memory
+    
 
 
 def scale_score(score):
@@ -266,7 +428,7 @@ def scale_score(score):
     return scaled_score
 
 
-def get_amenity_gps(amenity,city):
+def get_amenity_info(amenity,city):
     amenity_gps = []
     list_size = 0
     prev_list_size = -1
@@ -301,7 +463,8 @@ def calculate_network_distance(cord1,cord2):
     end = router.findNode(cord2[0],cord2[1])
     
     '''Find the route - a list of OSM nodes'''
-    status, route = router.doRoute(start, end) 
+    status, route = router.doRoute(start, end)
+    
     if status == 'success':
         # Get actual route coordinates
         routeLatLons = list(map(router.nodeLatLon, route))
@@ -310,112 +473,9 @@ def calculate_network_distance(cord1,cord2):
     return distance
 
 
-def get_closest_stop(target_map, bus_stop_map):
-    counter = 0
-    
-    nearest_stop_map = dict()
-    
-    broke_count = 0
-    net_count= 0
-    bus_list = [x for x in bus_stop_map]
-    #print(bus_list)
-##    print('target_map',len(target_map))
-    
-    '''Sort by number of bus stops within 400m'''
-    for target in target_map:
-        distance_to_closest_stop = math.inf
-        start_lat_lon = target_map[target]
-        '''get nearest neighbor'''
-        tree = spatial.KDTree(bus_list)
-        #print('tree.query([start_lat_lon], k = 2)',tree.query([start_lat_lon], k = 2)[1][0])
-        
-        closest_stops = [bus_list[int(x)] for x in tree.query([start_lat_lon], k = 2)[1][0]]
-        for closest_stop in closest_stops:
-            distance_to_closest_stop = geopy.distance.distance(start_lat_lon, closest_stop)
-            
-            '''check if nearest neighbor is within distance'''
-            if distance_to_closest_stop < 0.6:
-                try:
-                    distance = distance_to_closest_stop#calculate_network_distance(start_lat_lon, closest_stop)
-                except Exception:
-                    broke_count+=1
-                    #print('network broke at : %s | %s' % (counter,broke_count))
-                    continue
-                try:
-                    nearest_stop_map[start_lat_lon].append([closest_stop, distance])
-                except:
-                    nearest_stop_map[start_lat_lon] = [[closest_stop, distance]]
-
-    return nearest_stop_map
 
 
 
-def parse_source_data(source_folder):
-    bus_stop_map = dict()
-    target_map = dict()
-    grid_map = dict()
-    stop_times_map = dict()
-    
-    source_folder = '/home/p/Documents/backup_2021-11-18/PyTransit/source_data'
-    bus_stop_file = 'stops.txt'
-    route_file = 'kel_routes.kml'
-    stop_times_file = 'stop_times.txt'
-    address_file = 'Address_Points.geojson'
-    grid_file = 'city_of_kelowna_grid_coordinates.txt'
-
-
-    with open(os.path.join(source_folder,bus_stop_file)) as bus_stop_points,\
-         open(os.path.join(source_folder,address_file)) as address_points,\
-         open(os.path.join(source_folder,grid_file)) as grid_points,\
-         open(os.path.join(source_folder,stop_times_file)) as stop_times:
-            
-        address_lines = address_points.read()
-        bus_stop_lines = bus_stop_points.readlines()
-        grid_lines = grid_points.readlines()
-        '''Parse bus stop coords'''
-        for bus_line in bus_stop_lines:
-            try:int(bus_line[0])
-            except:continue
-            bus_lat = float(bus_line.split(',')[4])
-            bus_lon = float(bus_line.split(',')[5])
-            bus_stop_map[bus_line.split(',')[0]] = (bus_lat, bus_lon)
-                
-        '''Parse Bus route Schedule'''
-        for stop_line in stop_times:
-            try:int(stop_line[0])
-            except:continue
-            
-            trip_id = stop_line.split(',')[0]
-            arrival_time = stop_line.split(',')[1]
-            departure_time = stop_line.split(',')[2]
-            stop_id = stop_line.split(',')[3]
-            stop_order = stop_line.split(',')[4]
-            
-            try:    stop_times_map[trip_id].append([arrival_time,departure_time,stop_id,stop_order])
-            except: stop_times_map[trip_id] = [[arrival_time,departure_time,stop_id,stop_order]]
-
-        
-        '''Parse target street and gps coordinate'''
-        raw_address_info = re.findall(r'FULL_ADD(.*?) ] } }',address_lines)#[0:100]
-
-        '''parse address points'''
-        for address_line in raw_address_info:
-            street = address_line.split(':')[1].split(',')[0]
-            raw_coords = address_line.split(':')[-1].replace('[','').strip().split(',')
-
-            address_lat = float(raw_coords[1])
-            address_lon = float(raw_coords[0])
-            target_map[street] = (address_lat,address_lon)
-
-        '''Parse Grid Points'''
-        for grid_point in grid_lines:
-            grid_latitude = grid_point.split(',')[1].strip()
-            grid_longitude = grid_point.split(',')[0].strip()
-            if not grid_latitude.isalpha():
-##                print(grid_latitude)
-                grid_map[(float(grid_latitude),float(grid_longitude))] = (float(grid_latitude),float(grid_longitude))
-        
-    return target_map, bus_stop_map, grid_map, stop_times_map
 
     
 def rank_routes(route_info):
@@ -500,20 +560,27 @@ def get_route_info(city_urls):
     return route_map
 
 
+def convert_time_to_minutes(raw_time):
+    hours = int(raw_time.split(':')[0])
+    minutes = int(raw_time.split(':')[-1][:-3])
+
+    if raw_time[-2:]=='PM' and raw_time[:2] != '12':
+        hours+=12
+    elif raw_time[-2:]=='AM' and raw_time[:2]=='12':
+        hours+=12
+
+    total_minutes = hours*60 + minutes
+
+    return total_minutes
+
 
 def get_route_frequency(route_arrival_times):
     frequency_list = []
 
     for count, arrival_time in enumerate(route_arrival_times):
-        hours = int(arrival_time.split(':')[0])
-        minutes = int(arrival_time.split(':')[-1][:-3])
 
-        if arrival_time[-2:]=='PM' and arrival_time[:2] != '12':
-            hours+=12
-        elif arrival_time[-2:]=='AM' and arrival_time[:2]=='12':
-            hours+=12
-
-        total_minutes = hours*60 + minutes
+        total_minutes = convert_time_to_minutes(arrival_time)
+        
         if count>0:
             if total_minutes-prev_total_minutes > 0:
                 frequency_list.append(total_minutes-prev_total_minutes)
@@ -578,11 +645,11 @@ def calculate_route_distance(positions):
 if __name__ == '__main__':
     '''data setup'''
     
-    source_folder = '/home/p/Documents/backup_2021-11-18/PyTransit/source_data'
+    source_folder = r'C:\Users\p\Documents\PyTransit\source_folder'
     bus_stop_file = 'stops.txt'
     route_file = 'kel_routes.kml'
     stop_times_file = 'stop_times.txt'
-    address_file = 'Address_Points.geojson'
+    address_file = 'address_points.geojson'
     grid_file = 'city_of_kelowna_grid_coordinates.txt'
 
     '''Scraping setup'''
