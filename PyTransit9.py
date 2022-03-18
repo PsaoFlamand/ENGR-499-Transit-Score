@@ -9,8 +9,10 @@ def main():
     t0 = time.time()
 
     '''gather target, bus stop coords'''
-    address_coords, grid_coords, bus_stop_ids_coords, route_schedules,amenity_data = parse_source_data(source_folder)
+    address_coords, grid_coords, bus_stop_ids_coords, route_schedules,amenity_data,km_grid_coords = parse_source_data(source_folder)
 
+    amenity_data = get_employment_centres(km_grid_coords, amenity_data)
+        
     '''used to test a sub sample of map points'''
     #grid_coords = dict(list(grid_coords.items())[4900:5000])
 
@@ -34,13 +36,13 @@ def main():
                         sum *= 2
                     else:
                         sum += float(travel_time)
-                    
-            #print('%s, %s' % (str(origin).replace('(','').replace(')',''),sum))
             result.write('%s, %s\n' % (str(origin).replace('(','').replace(')',''),sum/len(AMENITIES)))
-    ###     ####
 
     '''Print total process duration'''
     print(time.time() - t0)
+
+
+
 
 def parse_source_data(source_folder):
     bus_stop_ids_coords = dict()
@@ -48,22 +50,25 @@ def parse_source_data(source_folder):
     grid_coords = dict()
     route_schedules = dict()
     amenity_data = dict()
+    km_grid_coords = dict()
     
     source_folder = r'C:\Users\p\Documents\PyTransit\source_folder'
     bus_stop_file = 'stops.txt'
     stop_times_file = 'stop_times.txt'
     grid_file = 'city_of_kelowna_grid_coordinates.txt'
     amenities_file = 'kelowna_amenities.csv'
+    km_grid_file = '1kmx1km_grid.csv'
     
     with open(os.path.join(source_folder,bus_stop_file)) as bus_stops,\
          open(os.path.join(source_folder,grid_file)) as grids,\
          open(os.path.join(source_folder,amenities_file)) as amenities,\
-         open(os.path.join(source_folder,stop_times_file)) as route_schedule:
+         open(os.path.join(source_folder,stop_times_file)) as route_schedule,\
+         open(os.path.join(source_folder,km_grid_file)) as km_grids:
 
         '''Parse Amenities'''
         for amenity_line in amenities:
 
-            try:                amenity_category = int(amenity_line.split(',')[-1])
+            try:    amenity_category = int(amenity_line.split(',')[-1])
             except: continue
             
             amenity_latitude = amenity_line.split(',')[1]
@@ -89,7 +94,6 @@ def parse_source_data(source_folder):
                 
         '''Parse Bus route Schedule'''
         for schedule_line in route_schedule:
-
             trip_id = schedule_line.split(',')[0]
             arrival_time = schedule_line.split(',')[1]
             departure_time = schedule_line.split(',')[2]
@@ -110,29 +114,65 @@ def parse_source_data(source_folder):
             grid_longitude = grid_point.split(',')[0].strip()
             if not grid_latitude.isalpha():
                 grid_coords[(float(grid_latitude),float(grid_longitude))] = (float(grid_latitude),float(grid_longitude))
+
+        '''parse km grid points'''
+        for km_grid in km_grids:
+            grid_latitude = km_grid.split(',')[6].strip()
+            grid_longitude = km_grid.split(',')[5].strip()
+            if not grid_latitude.isalpha():
+                km_grid_coords[(float(grid_latitude),float(grid_longitude))] = (float(grid_latitude),float(grid_longitude))
+
+    return address_coords, grid_coords, bus_stop_ids_coords, route_schedules,amenity_data, km_grid_coords
+
+
+def get_employment_centres(km_grid_coords, amenity_data): # have it so grid cords here is 1km x 1km centroid of grid
+    radius = 1000
+    employment_coords = list(set(amenity_data[3]))
+
+    tree = spatial.KDTree(employment_coords)
+    grid_coord_with_employment_density = dict()
+    
+    for count, grid_coord in enumerate(km_grid_coords):
+        print("%s/%s"%(count, len(km_grid_coords)))
+        nearest_employment_coords = [employment_coords[int(index)] for index in tree.query([grid_coord], k = len(employment_coords))[1][0]]
+ 
+        for employment_coord in nearest_employment_coords:
+            employment_to_grid_straight_distance = geopy.distance.distance(employment_coord, grid_coord).km*1000
+            if employment_to_grid_straight_distance <= radius:
+                if grid_coord not in grid_coord_with_employment_density:
+                    grid_coord_with_employment_density[grid_coord] = 1
+                else:
+                    grid_coord_with_employment_density[grid_coord] += 1
+            else:
+                break
+    '''get top percent'''
+    amenity_data[3] = []
+    top_percent = len(grid_coord_with_employment_density)/10
+    sorted_grid_coord_with_employment_density = dict(sorted(grid_coord_with_employment_density.items(), key=lambda item: item[1], reverse=True))
+    for count, grid_coord in enumerate(sorted_grid_coord_with_employment_density):
+        if count > top_percent:
+            break
+        employment_density = sorted_grid_coord_with_employment_density[grid_coord]
+        #print('employment_density',employment_density)
         
-    return address_coords, grid_coords, bus_stop_ids_coords, route_schedules,amenity_data
+        amenity_data[3].append(grid_coord)
+
+    return amenity_data
     
 
 def get_stop_ids_distance_to_amentity(bus_stop_ids_coords,amenity_data):
     stop_coords_distance_to_amentity = dict()
-    '''Scraping setup'''
-    url = 'https://www.bctransit.com/'
-    test_city = 'kelowna'
-            
-    city = 'Kelowna'
-    AMENITIES = ['restaurants','gyms','groceries','banks']#[1,2,3,4,5,6]#
-        
+
     for amenity in AMENITIES:
         print('%s/%s'%(amenity,len(AMENITIES)))
-        amenities_coords = get_amenity_info(amenity,city)#list(set(amenity_data[amenity]))#
+        amenities_coords = list(set(amenity_data[amenity]))
         tree = spatial.KDTree(amenities_coords)
         print(len(amenities_coords))
         for stop_id in bus_stop_ids_coords:
             stop_coords = bus_stop_ids_coords[stop_id]
             distance_from_stop_to_amenity = math.inf
+            
             nearest_amenities_coords = [amenities_coords[int(index)] for index in tree.query([stop_coords], k = 2)[1][0]]############### Fix k?
-            #print('nearest_amenities_coords',nearest_amenities_coords)
             for amenity_coords in nearest_amenities_coords:
                 stop_to_amenity_straight_distance = 1000 * geopy.distance.distance(amenity_coords, stop_coords).km
                 if stop_to_amenity_straight_distance <= 400:
@@ -169,14 +209,11 @@ def associate_origins_with_nearest_stops(origins, stop_coords_distance_to_amenti
         tree = spatial.KDTree(stop_coords)
         nearest_stops_coords = [stop_coords[int(index)] for index in tree.query([origin_coords], k = 3)[1][0]]############### Fix k?
 
-        #nearest_stops_coords = [stop_coords_distance_to_amentity[int(tree.query([origin_coords], k = 1)[1])]]############### Fix k?
-
         if not nearest_stops_coords:
             print('%s has no near neighbors'%origin_coords)
         
         for nearest_stop_coords in nearest_stops_coords:
             origin_to_nearest_stop_straight_distance = 1000 * geopy.distance.distance(origin_coords, nearest_stop_coords).km
-            #print('straight_distance_to_nearest_stop',origin_to_nearest_stop_straight_distance)
             '''Check if nearest neighbor is within distance'''
             
             if origin_to_nearest_stop_straight_distance < 600:
@@ -202,14 +239,11 @@ def associate_origins_with_nearest_stops(origins, stop_coords_distance_to_amenti
 
 def get_origin_to_amenities_travel_time(origins_coords_nearest_stops_coords, stop_coords_distance_to_amentity, route_schedules, bus_stop_ids_coords):
     origin_to_amenities_travel_time = dict()
-    test_city = 'kelowna'
     bus_stop_coords_ids = dict()
 
     for bus_stop in bus_stop_ids_coords:
         bus_stop_coords_ids[bus_stop_ids_coords[bus_stop]] = bus_stop
     
-    city = 'Kelowna'
-    AMENITIES = ['restaurants','gyms','groceries','banks']
     connectivity_memory = dict()
     for count,origin_coords in enumerate(origins_coords_nearest_stops_coords):
         print('%s/%s' % (count,len(origins_coords_nearest_stops_coords)))
@@ -252,8 +286,10 @@ def get_origin_to_amenities_travel_time(origins_coords_nearest_stops_coords, sto
                                 optimal_travel_time_between_stops = travel_time_between_stops
                                 optimal_candidate_stop_id = candidate_stop_id
                                 break
+
                     if not optimal_candidate_stop_id:
                         continue
+
                     '''Distance from stop with amenity to its associated amenity'''
                     origin_to_nearest_stop_travel_time = float(origin_to_nearest_stop_distance) / 40
                     
@@ -270,16 +306,12 @@ def get_origin_to_amenities_travel_time(origins_coords_nearest_stops_coords, sto
                         '''will point out which areas have no access to amenities'''
                         optimal_total_travel_time_to_amenity = math.inf
                     else:
-##                        print('total_travel_time_to_amenity',total_travel_time_to_amenity)
-##                        print('optimal_total_travel_time_to_amenity',optimal_total_travel_time_to_amenity)
                         if total_travel_time_to_amenity < optimal_total_travel_time_to_amenity:
                             optimal_total_travel_time_to_amenity = total_travel_time_to_amenity
                             optimal_nearest_stop = nearest_stop_id
                         
                 else: # Case where the nearest stop has an amenity
                     total_travel_time_to_amenity = float(nearest_stop_to_amenity_distance) / 40
-##                    print('total_travel_time_to_amenity',total_travel_time_to_amenity)
-##                    print('optimal_total_travel_time_to_amenity',optimal_total_travel_time_to_amenity)
                     if total_travel_time_to_amenity < optimal_total_travel_time_to_amenity:
                         optimal_total_travel_time_to_amenity = total_travel_time_to_amenity
                         optimal_nearest_stop = nearest_stop_id
@@ -293,7 +325,7 @@ def get_origin_to_amenities_travel_time(origins_coords_nearest_stops_coords, sto
             else:
                 origin_to_amenities_travel_time[origin_coords] = [[optimal_total_travel_time_to_amenity]]
                     
-    #print('origin_to_amenities_travel_time',origin_to_amenities_travel_time)
+
     return origin_to_amenities_travel_time
 
 
@@ -330,6 +362,7 @@ def get_travel_time_between_stops(origin_stop_times, stop1, stop2):
                 
         if not arrival_time or not departure_time:
             continue
+        
         arrival_hours = int(arrival_time.split(':')[0])
         arrival_minutes = int(arrival_time.split(':')[1])
 
@@ -350,7 +383,6 @@ def get_travel_time_between_stops(origin_stop_times, stop1, stop2):
 def get_transit_schedule(target_stop_id, route_schedules):
     stop_ids_in_route = list()        
     reduced_result = list()
-    
 
     for stop_times in route_schedules:
         for stop_time in route_schedules[stop_times]:
@@ -364,8 +396,6 @@ def get_transit_schedule(target_stop_id, route_schedules):
                         
     sorted_reduced_stop_times = sorted(reduced_result, key = lambda x: x[0])
     sorted_stop_ids_in_route = sorted(stop_ids_in_route)
-    #print('sorted_reduced_stop_times',sorted_reduced_stop_times)
-    #print('sorted_stop_ids_in_route',sorted_stop_ids_in_route)
 
     return sorted_reduced_stop_times, sorted_stop_ids_in_route
 
@@ -377,28 +407,19 @@ def check_connectivity_between_stops(stop1,stop2, route_schedules, bus_stop_ids_
     origin_stop_times, the_original_route_stop_id_list = get_transit_schedule(stop1, route_schedules)
     destination_stop_times, the_destination_route_stop_id_list = get_transit_schedule(stop2, route_schedules)
 
-##    print('origin_stop_times',origin_stop_times)
-##    print('destination_stop_times',destination_stop_times)
     arrival_times_for_origin_stop = []
 
-    
     '''Get the avereage wait time as 1/2 of the arrival frequency'''
-##    print('origin_stop_times',origin_stop_times)
     if stop1 not in headway_memory:
-        
         for origin_stop_time in origin_stop_times:
             for stop_time in origin_stop_time:
-    ##            print('stop1',stop1)
-    ##            print('origin_stop_time[2]',stop_time[2])
                 if str(stop1) == stop_time[2]:
-                    #print('stop_time',stop_time)
                     arrival_time = stop_time[0]
                     arrival_hours = int(arrival_time.split(':')[0])
                     arrival_minutes = int(arrival_time.split(':')[1])
                     total_arrival_minutes = arrival_hours*60 + arrival_minutes
 
-                    arrival_times_for_origin_stop.append(total_arrival_minutes)
-                    
+                    arrival_times_for_origin_stop.append(total_arrival_minutes)      
         headway = sum(numpy.diff(numpy.array(sorted(arrival_times_for_origin_stop))))/len(arrival_times_for_origin_stop)
     else:
         headway = headway_memory[stop1]
@@ -411,14 +432,13 @@ def check_connectivity_between_stops(stop1,stop2, route_schedules, bus_stop_ids_
     '''check if the two routes are on the same route'''
     if int(stop2) in the_original_route_stop_id_list and int(stop1) in the_original_route_stop_id_list:    
         average_travel_time = get_travel_time_between_stops(origin_stop_times, stop1, stop2)
-        
         connectivity_memory['%s-%s'%(stop1,stop2)] = average_travel_time
+
         return connectivity_memory
     
     '''Check if there is one degree of transferability between stops'''
     for a_destination_stop_id in the_destination_route_stop_id_list:
         for a_origin_stop_id in the_original_route_stop_id_list:
-
             a_destination_stop_id = str(a_destination_stop_id)
             a_origin_stop_id = str(a_origin_stop_id)
             
@@ -436,14 +456,11 @@ def check_connectivity_between_stops(stop1,stop2, route_schedules, bus_stop_ids_
 
                 return connectivity_memory
             
-    #print('they were not found to be transferable in one degree', stop1, stop2)
     connectivity_memory['%s-%s'%(stop1,stop2)] = False
     return connectivity_memory
     
 
-
 def scale_score(score):
-    
     if score <= 0.100:
         scaled_score = 1.6                        
     elif score <= 0.200:
@@ -462,37 +479,6 @@ def scale_score(score):
         scaled_score = 0.2
                     
     return scaled_score
-
-
-def get_amenity_info(amenity,city):
-    amenity_gps = []
-    list_size = 0
-    prev_list_size = -1
-    page_num = 0
-
-    requests.packages.urllib3.disable_warnings()
-    requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
-    try:
-        requests.packages.urllib3.contrib.pyopenssl.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
-    except AttributeError:
-        # no pyopenssl support used / needed / available
-        pass
-
-##    while list_size != prev_list_size:
-##        if amenity_gps:
-##            prev_list_size = list_size
-    page_num +=1
-
-    url = 'https://www.yellowpages.ca/search/si/%s/%s/%s+BC/rci-%s%%2C+BC'%(page_num,amenity,city,city)
-##    print(url)
-    response=requests.get(url,verify=False)
-
-    amenity_gps.extend(re.findall(r'coordinates\D+(.*?)]',str(response.content)))
-    list_size = len(amenity_gps)
-    amenity_coords = []
-    for gps in amenity_gps:
-        amenity_coords.append((float(gps.split(',')[0]),float(gps.split(',')[1])))
-    return amenity_coords
 
 
 def calculate_network_distance(cord1,cord2):
@@ -555,17 +541,8 @@ if __name__ == '__main__':
     address_file = 'address_points.geojson'
     grid_file = 'city_of_kelowna_grid_coordinates.txt'
 
+    AMENITIES = [1,2,3,4,5,6]
+
     '''Scraping setup'''
-    url = 'https://www.bctransit.com/'
-    test_city = 'kelowna'
-
-    city = 'Kelowna'
-    AMENITIES = ['restaurants','gyms','groceries','banks']
-
-
-    range_dict = {(50.019847274822695, -119.37532151949802) : [[1200,2700,0],[5210,8440,25]],
-                  (49.91729642268884, -119.33119246289769)  : [[11500,10000,0]],
-                  (49.82303160146931, -119.41015669675217)  : [[6000,4000,50]],}
-    
     main()
 
