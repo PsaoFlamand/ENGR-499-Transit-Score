@@ -27,21 +27,84 @@ def main():
 
     ### Code below will be recreated with the formula Chris finds ###
     '''merge distances into a singular score to be mapped'''
-    with open('result.txt','w') as result:
+    with open('result.txt','w') as overall_score,\
+        open('social_result.txt','w') as social_score,\
+        open('employment_score.txt','w') as employment_score,\
+        open('education_score.txt','w') as eduction_score,\
+        open('grocery_score.txt','w') as grocery_score,\
+        open('health_score.txt','w') as health_score,\
+        open('financial_score.txt','w') as financial_score:
+        
         for origin in origin_to_amenities_travel_time:
-            sum = 0
             for travel_times in origin_to_amenities_travel_time[origin]:
-                for travel_time in travel_times:
-                    if travel_time == math.inf:
-                        sum *= 2
-                    else:
-                        sum += float(travel_time)
-            result.write('%s, %s\n' % (str(origin).replace('(','').replace(')',''),sum/len(AMENITIES)))
+                for tt_hea,tt_ed,tt_emp,tt_gro,tt_sr,tt_fin in zip(travel_times):
+                    overall_tac_score,\
+                    social_tac_score,\
+                    employment_tac_score,\
+                    education_tac_score,\
+                    grocery_tac_score,\
+                    health_tac_score,\
+                    financial_tac_score = impedance_function(tt_hea,tt_ed,tt_emp,tt_gro,tt_sr,tt_fin)
+
+                    overall_score.write('%s, %s\n' % (str(origin).replace('(','').replace(')',''),overall_tac_score))
+                    social_score.write('%s, %s\n' % (str(origin).replace('(','').replace(')',''),social_tac_score))
+                    employment_score.write('%s, %s\n' % (str(origin).replace('(','').replace(')',''),employment_tac_score))
+                    eduction_score.write('%s, %s\n' % (str(origin).replace('(','').replace(')',''),education_tac_score))
+                    grocery_score.write('%s, %s\n' % (str(origin).replace('(','').replace(')',''),grocery_tac_score))
+                    health_score.write('%s, %s\n' % (str(origin).replace('(','').replace(')',''),health_tac_score))
+                    financial_score.write('%s, %s\n' % (str(origin).replace('(','').replace(')',''),financial_tac_score))
 
     '''Print total process duration'''
     print(time.time() - t0)
 
+    
+def impedance_function(tt_hea,tt_ed,tt_emp,tt_gro,tt_sr,tt_fin)
+    #Median trip durations (minutes)
+    mdur_sr  = 15  #Median trip duration for social and rec
+    mdur_emp = 30  #Median trip duration for employer
+    mdur_ed  = 30  #Median trip duration for education
+    mdur_gro = 22  #Median trip duration for grocery
+    mdur_hea = 20  #Median trip duration for health services
+    mdur_fin = 20  #Median trip duration for financial
 
+    #AHP
+    ahp_sr  = 0.067  #AHP for social and rec
+    ahp_emp = 0.247  #AHP for employer
+    ahp_ed  = 0.421  #AHP for education
+    ahp_gro = 0.097  #AHP for grocery
+    ahp_hea = 0.131  #AHP for health
+    ahp_fin = 0.038  #AHP for financial
+
+    va_erf  = 0.47693628
+
+    #Beta values using same naming convention as mdur and ahp
+    beta_sr  = ((va_erf** 2) * (((va_erf** 4) + 2 * (va_erf** 2) * math.log(mdur_sr))**  0.5)  + math.log(mdur_sr))  / (2 * (math.log(mdur_sr))** 2)
+    beta_emp = ((va_erf** 2) * (((va_erf** 4) + 2 * (va_erf** 2) * math.log(mdur_emp))** 0.5) + math.log(mdur_emp)) / (2 * (math.log(mdur_emp))** 2)
+    beta_ed  = ((va_erf** 2) * (((va_erf** 4) + 2 * (va_erf** 2) * math.log(mdur_ed))**  0.5)  + math.log(mdur_ed))  / (2 * (math.log(mdur_ed))** 2)
+    beta_gro = ((va_erf** 2) * (((va_erf** 4) + 2 * (va_erf** 2) * math.log(mdur_gro))** 0.5) + math.log(mdur_gro)) / (2 * (math.log(mdur_gro))** 2)
+    beta_hea = ((va_erf** 2) * (((va_erf** 4) + 2 * (va_erf** 2) * math.log(mdur_hea))** 0.5) + math.log(mdur_hea)) / (2 * (math.log(mdur_hea))** 2)
+    beta_fin = ((va_erf** 2) * (((va_erf** 4) + 2 * (va_erf** 2) * math.log(mdur_fin))** 0.5) + math.log(mdur_fin)) / (2 * (math.log(mdur_fin))** 2)
+
+    # fd impedence values using same naming convention as mdur and ahp
+    # Yo Psao put the appropriate distance per each ammenity in the following lines of code pls
+    # repace tt_var with respective travel time variable
+    fd_sr  = math.exp(-beta_sr * math.log(tt_sr)  ** 2)
+    fd_emp = math.exp(-beta_sr * math.log(tt_emp) ** 2)
+    fd_ed  = math.exp(-beta_sr * math.log(tt_ed)  ** 2)
+    fd_gro = math.exp(-beta_sr * math.log(tt_gro) ** 2)
+    fd_hea = math.exp(-beta_sr * math.log(tt_hea) ** 2)
+    fd_fin = math.exp(-beta_sr * math.log(tt_fin) ** 2)
+
+    social_tac_score = (ahp_sr * fd_sr)
+    employment_tac_score = (ahp_emp * fd_emp)
+    education_tac_score = (ahp_ed * fd_ed)
+    grocery_tac_score = (ahp_gro * fd_gro)
+    health_tac_score = (ahp_hea * fd_hea)
+    financial_tac_score = (ahp_fin * fd_fin)
+    
+    overall_tac_score = social_tac_score + employment_tac_score + education_tac_score + grocery_tac_score + health_tac_score + financial_tac_score
+    
+    return overall_tac_score, social_tac_score, employment_tac_score, education_tac_score, grocery_tac_score, health_tac_score, financial_tac_score
 
 
 def parse_source_data(source_folder):
